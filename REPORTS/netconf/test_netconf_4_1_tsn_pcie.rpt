@@ -1,0 +1,29 @@
+|****************************SOCE_TEST REPORT************************************|
+| Tested by	:	Marco Condori
+| Date		:	mar 25 ene 2022 12:02:03 CET
+|********************************************************************************|
+| Serial number  :  0123456789                                                   |
+| Product model  :  RELY_TSN_PCIE                                                |
+| Product version  :  21.1.0beta1                                                |
+| Device name  :  RELY_TSN_PCIe                                                  |
+| Device location  :  Relyum                                                     |
+| Contact info  :  support@relyum.com                                            |
+|--------------------------------------------------------------------------------|
+| HPS:
+| SWITCH:
+| Core version  :  21.01.1100                                                    |
+|--------------------------------------------------------------------------------|
+|
+|****************************SOCE_TEST REPORT************************************|
+Condition Description                                             Frames to analyze                        Expected Results PASS/FAIL
+1         Total 4500 frames                                       *                                        4500     4500    PASS
+2         Unicast Frames                                          *                                        4500     4500    PASS
+3         First 1500 frames -> VLAN tagged (VID=100 PRI=0 DEI=0)  frame.number<=1500                       1500     1500    PASS
+4         First 1500 frames -> MIN size=68                        frame.number<=1500                       68       68      PASS
+5         First 1500 frames -> MAX size=1518                      frame.number<=1500                       1518     1518    PASS
+6         Second 1500 frames -> VLAN tagged (VID=100 PRI=0 DEI=0) frame.number>1500 and frame.number<=3000 1500     1500    PASS
+7         Second 1500 frames -> MIN size=64                       frame.number>1500 and frame.number<=3000 64       64      PASS
+8         Second 1500 frames -> MAX size=1514                     frame.number>1500 and frame.number<=3000 1514     1514    PASS
+9         Last 1500 frames -> VLAN tagged (VID=200 PRI=0 DEI=0)   frame.number>3000 and frame.number<=4500 1500     1500    PASS
+10        Last 1500 frames -> MIN size=64                         frame.number>3000 and frame.number<=4500 64       64      PASS
+11        Last 1500 frames -> MAX size=1514                       frame.number>3000 and frame.number<=4500 1514     1514    PASS

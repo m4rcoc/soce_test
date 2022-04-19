@@ -1,0 +1,54 @@
+MAC_src				=F4:8E:38:8C:52:F0
+MAC_dst 			=DC:A6:32:47:4E:18
+interface			=Ethernet
+Duration(s)			=5
+Interval(frames/s)	=0.5
+Protocol ID(2)		=0x0000
+VersionID(1)		=0x02
+BPDU type(1)		=0x02
+(*)BPDU Flags(1) 	=0-0-0-0-11-1-0
+(**)RootID(8)	  	=8001-00:19:06:ea:b8:80
+Cost Path(4)		=0x00000000
+(**)BridgeID(8)	  	=8001-00:19:06:ea:b8:80
+PortID(2)			=0x800c
+Message age(2)		=0x0000
+Max age(2)			=0x1400
+Hello time(2)		=0x0200
+Forward delay(2)	=0x0f00
+
+----------------------------------------
+(*)NOTE:
+
+"BPDU_flags" format: T-A-F-L-PR-P-TC
+		  example -> 0-0-0-0-11-1-0
+
+	T-  (1)Topology Change Ack
+	A-  (1)Agreement
+	F-  (1)Forwarding
+	L-  (1)Learning
+	PR- (2)Port Role
+	P-  (1)Proposal
+	TC- (1)Topology Change
+	
+		(1) -> 1:Yes  / 0:No
+		(2) Port Role:
+			11 : Designed
+			10 : Root
+			01 : Alternate
+			00 : Unknown
+	
+----------------------------------------	
+(**)NOTE:
+
+"RootID" format: Priority-RootMAC
+	     example-> 8001-00:19:06:ea:b8:80
+		 
+		 8001 -> 32769 (default)
+		 
+		 
+"BridgeID" format: Priority-BridgeMAC
+	     example-> 8001-00:19:06:ea:b8:80
+		 
+		 8001 -> 32769 (default)
+		 		 
+

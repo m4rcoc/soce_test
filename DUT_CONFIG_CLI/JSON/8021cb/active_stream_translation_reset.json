@@ -1,0 +1,24 @@
+{
+	"activeTranslationPorts" : [
+		{
+			"portName":"PORT_0",
+			"streamHandleList" : [
+			]
+		},
+		{
+			"portName":"PORT_1",
+			"streamHandleList" : [
+			]
+		},
+		{
+			"portName":"PORT_2",
+			"streamHandleList" : [
+			]
+		},
+		{
+			"portName":"PORT_3",
+			"streamHandleList" : [
+			]
+		}
+	]
+}

@@ -1,0 +1,105 @@
+# --------------------------------------------------------------------------#
+# DUT SSH parameters
+# --------------------------------------------------------------------------#
+
+ip=192.168.5.65
+username=sys-admin
+password=sys-admin
+
+# --------------------------------------------------------------------------#
+# Web Manager credentials
+# --------------------------------------------------------------------------#
+user_admin=sys-admin
+pass_admin=sys-admin
+user_basic=sys-operator
+pass_basic=sys-operator
+
+# --------------------------------------------------------------------------#
+# HOST PC (required for Selenium scripts)
+# --------------------------------------------------------------------------#
+iface_host=enp2s0
+ip_host=192.168.2.245
+user_host=soce
+pass_host=soce
+
+# --------------------------------------------------------------------------#
+# REPORTS/RESULTS:
+# --------------------------------------------------------------------------#
+TestedBy="Marco Condori"
+tmp_results=/media/soce_industrial/04-Internal_Projects/S-4103-SoCe_Testing/2_generated_technical_documentation/2_equipment_test/Results/SOCE_TEST_RESULTS
+#results_path=/media/soce_industrial/03-End_Product/S-3528-12x_Port_MTSN_KIT/2_generated_technical_documentation/5_equipment_test/v21.3/Results
+
+version="22.1.0beta1"
+model="RELY_PCIE_LP"
+
+# SELENIUM VARS:
+pathUploadFile="/home/joninchausti/sw_develop/SOCE_TEST_v21.1.2/FILES_EXCHANGE/CONFIGURATIONS/config_1.zip"
+
+# --------------------------------------------------------------------------#
+# SOCE_TEST PORTS:
+# --------------------------------------------------------------------------#
+#                                    _______________
+#                    _____          |_______        |
+#                   |     |         |       |       |
+#                   | IF4 |<------->|   3   |       |
+#                   |_____|         |_______|       |
+#                    _____          |_______        |
+#                   |     |         |       |   _   |
+#    ______   ____  | IF3 |<------->|   2   |  | \  |
+#   |      | |____| |_____|         |_______|  |_/  |
+#   |  PC  | |   -|  _____          |_______        |
+#   |______| |   ·| |     |         |       |  | |  |
+#     _||_   |    | | IF2 |<------->|   1   |  |_|  |
+#    /____\  |____| |_____|         |_______|       |
+#                    _____          |_______   ___  |
+#                   |     |         |       |   |   |
+#                   | IF1 |<------->|   0   |   |   |
+#                   |_____|         |_______|_______|
+# 
+IF1="enx7cc2c61e2f9b"
+IF2="enx7cc2c61f0a49"
+IF3="enxd0374502ac6e"
+IF4="enx60a4b758ebbb"
+
+# --------------------------------------------------------------------------#
+# SWITCH port names:
+# --------------------------------------------------------------------------#
+
+port_0_name="PORT_0"
+port_1_name="PORT_1"
+port_1_name="PORT_2"
+internal_port_name="INTERNAL_PORT"
+port_pcie_name="PORT_PCIe"
+
+MGT_PORT="eth0"
+
+Redundant_A="PORT_0"
+Redundant_B="PORT_1"
+Interlink="PORT_2"
+
+IP_core_name="SWITCH"
+#IP_core_name="HPS"
+
+# --------------------------------------------------------------------------#
+# Certificates (syslog test):
+# --------------------------------------------------------------------------#
+
+CA_certificate="cacert.pem"
+
+# --------------------------------------------------------------------------#
+# Fix testing:
+# --------------------------------------------------------------------------#
+# generate_dig_sign <file_to_sign> <sign_key> <certificate_dst> <output_name>
+sign_key="/media/keys/relyum_priv.key"
+certificate_dst="/media/keys/rely_pcie_lp.crt"
+
+# --------------------------------------------------------------------------#
+# Image files:
+# --------------------------------------------------------------------------#
+md5sums="md5sums.txt"
+boot_files="boot_files.bin"
+target_fs="target_fs.bin"
+
+
+# TMP vars
+

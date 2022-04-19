@@ -1,0 +1,28 @@
+|****************************SOCE_TEST REPORT************************************|
+| Tested by	:	Marco Condori
+| Date		:	vie 18 feb 2022 09:46:45 CET
+|********************************************************************************|
+| Serial number  :  12345                                                        |
+| Product model  :  RELY_PCIe_LP                                                 |
+| Product version  :  22.1.0beta1                                                |
+| Device name  :  RELY_PCIe                                                      |
+| Device location  :  Relyum                                                     |
+| Contact info  :  support@relyum.com                                            |
+|--------------------------------------------------------------------------------|
+| HPS:
+| SWITCH:
+| Core version  :  21.01.1400                                                    |
+|--------------------------------------------------------------------------------|
+|
+|****************************SOCE_TEST REPORT************************************|
+PCAP                           Description                        Filter                                                          Expected Results PASS/FAIL
+test_prp_2_1_captured_IF1.pcap Total frames in Redundant A = 1498 -                                                               1498     1498    PASS
+test_prp_2_1_captured_IF1.pcap Unicast frames                     eth.src==00:AA:AA:AA:AA:AA and eth.dst==00:BB:BB:BB:BB:BB       1498     1498    PASS
+test_prp_2_1_captured_IF1.pcap PRP tagged with LAN ID=A (10)      prp.trailer.prp1_suffix == 0x88fb and prp.trailer.prp_lan == 10 1498     1498    PASS
+test_prp_2_1_captured_IF1.pcap MIN size=66                        MIN(frame.len)frame.len                                         66       66      PASS
+test_prp_2_1_captured_IF1.pcap MAX size=1518                      MAX(frame.len)frame.len                                         1518     1518    PASS
+test_prp_2_1_captured_IF2.pcap Total frames in Redundant B = 1498 -                                                               1498     1498    PASS
+test_prp_2_1_captured_IF2.pcap Unicast frames                     eth.src==00:AA:AA:AA:AA:AA and eth.dst==00:BB:BB:BB:BB:BB       1498     1498    PASS
+test_prp_2_1_captured_IF2.pcap PRP tagged with LAN ID=B (11)      prp.trailer.prp1_suffix == 0x88fb and prp.trailer.prp_lan == 11 1498     1498    PASS
+test_prp_2_1_captured_IF2.pcap MIN size=66                        MIN(frame.len)frame.len                                         66       66      PASS
+test_prp_2_1_captured_IF2.pcap MAX size=1518                      MAX(frame.len)frame.len                                         1518     1518    PASS

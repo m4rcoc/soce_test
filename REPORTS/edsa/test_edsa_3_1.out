@@ -1,0 +1,55 @@
+|********************************************************************************|
+| Tested by	:	Marco Condori
+| Date		:	mar 02 nov 2021 13:05:33 CET
+|********************************************************************************|
+| Serial number  :  1234-567A                                                    |
+| Product model  :  S3508                                                        |
+| Product version  :  21.2.beta1                                                 |
+| Device name  :  S3508                                                          |
+| Device location  :  soc-e                                                      |
+| Contact info  :  support@relyum.com                                            |
+|--------------------------------------------------------------------------------|
+| HPS:
+| Core version  :  21.01.1200                                                    |
+|--------------------------------------------------------------------------------|
+| SWITCH:
+| Core version  :  21.07.1600                                                    |
+|--------------------------------------------------------------------------------|
+|
+|
+|
+|
+[+] Info: 	Capturing in remote virtual ports (J1A, J1B, J1C and J1D) of the DUT [parallel process] 
+[+] Info: 	Sending Reserved [01:80:c2:00:00:00] Multicast traffic through all interfaces (IF1, IF2, IF3 and IF4)  [parallel process] 
+Actual: 1500 packets (1149151 bytes) sent in 1.83 seconds
+Rated: 624997.4 Bps, 4.99 Mbps, 815.81 pps
+Statistics for network device: enx7cc2c61e2f9b
+	Successful packets:        1500
+	Failed packets:            0
+	Truncated packets:         0
+	Retried packets (ENOBUFS): 0
+	Retried packets (EAGAIN):  0
+Actual: 1500 packets (1149151 bytes) sent in 1.83 seconds
+Rated: 624995.7 Bps, 4.99 Mbps, 815.81 pps
+Statistics for network device: enx7cc2c61f0a49
+	Successful packets:        1500
+	Failed packets:            0
+	Truncated packets:         0
+	Retried packets (ENOBUFS): 0
+	Retried packets (EAGAIN):  0
+Actual: 1500 packets (1149151 bytes) sent in 1.83 seconds
+Rated: 624996.1 Bps, 4.99 Mbps, 815.81 pps
+Statistics for network device: enxd0374502ac6e
+	Successful packets:        1500
+	Failed packets:            0
+	Truncated packets:         0
+	Retried packets (ENOBUFS): 0
+	Retried packets (EAGAIN):  0
+Actual: 1500 packets (1149151 bytes) sent in 1.83 seconds
+Rated: 624999.5 Bps, 4.99 Mbps, 815.81 pps
+Statistics for network device: enx60a4b758ebbb
+	Successful packets:        1500
+	Failed packets:            0
+	Truncated packets:         0
+	Retried packets (ENOBUFS): 0
+	Retried packets (EAGAIN):  0

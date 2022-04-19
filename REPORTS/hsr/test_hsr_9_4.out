@@ -1,0 +1,94 @@
+|****************************SOCE_TEST REPORT************************************|
+| Tested by	:	Marco Condori
+| Date		:	vie 04 feb 2022 11:05:39 CET
+|********************************************************************************|
+| Serial number  :  12345                                                        |
+| Product model  :  RELY_PCIe_LP                                                 |
+| Product version  :  22.1.0beta1                                                |
+| Device name  :  RELY_PCIe                                                      |
+| Device location  :  Relyum                                                     |
+| Contact info  :  support@relyum.com                                            |
+|--------------------------------------------------------------------------------|
+| HPS:
+| SWITCH:
+| Core version  :  21.01.1400                                                    |
+|--------------------------------------------------------------------------------|
+|
+|****************************SOCE_TEST REPORT************************************|
+soce_cli# statistics get_rx_advanced_statistics PORT_0
+|--------------------------------------------------------------------------------|
+| Received bytes  :  569500                                                      |
+| Received frames  :  500                                                        |
+| CRC errors  :  500                                                             |
+| 64 byte frames  :  0                                                           |
+| 65 to 127 bytes frames  :  28                                                  |
+| 128 to 255 bytes frames  :  64                                                 |
+| 256 to 511 bytes frames  :  128                                                |
+| 512 to 1023 bytes frames  :  256                                               |
+| 1024 to max bytes frames  :  24                                                |
+| Unicast frames  :  500                                                         |
+| Multicast frames  :  0                                                         |
+| Broadcast frames  :  0                                                         |
+| VLAN tagged frames  :  0                                                       |
+| PTP frames  :  0                                                               |
+| PTP Sync frames  :  0                                                          |
+| PTP Delay Request frames  :  0                                                 |
+| PTP Pdelay Request frames  :  0                                                |
+| PTP Pdelay Response frames  :  0                                               |
+| PTP Follow Up frames  :  0                                                     |
+| PTP Delay Response frames  :  0                                                |
+| PTP Pdelay Response Follow Up frames  :  0                                     |
+| PTP Announce frames  :  0                                                      |
+| PTP Signalling frames  :  0                                                    |
+| PTP Management frames  :  0                                                    |
+| Control frames  :  0                                                           |
+| Pause frames  :  0                                                             |
+| Oversized frames  :  0                                                         |
+| Undersized frames  :  0                                                        |
+| Dropped frames due to memory overflow  :  0                                    |
+| Discarded frames  :  0                                                         |
+| Fragment frames  :  0                                                          |
+| Jabber frames  :  0                                                            |
+| Preemption start frames  :  0                                                  |
+| Preemption continue frames  :  0                                               |
+| Preemption Bad Sequence Continue frames  :  0                                  |
+| Preemption CRC error frames  :  0                                              |
+|--------------------------------------------------------------------------------|
+soce_cli# statistics get_tx_advanced_statistics PORT_1
+|--------------------------------------------------------------------------------|
+| Transmitted bytes  :  570372                                                   |
+| Good frames  :  512                                                            |
+| 64 byte frames  :  0                                                           |
+| 65 to 127 bytes frames  :  40                                                  |
+| 128 to 255 bytes frames  :  64                                                 |
+| 256 to 511 bytes frames  :  128                                                |
+| 512 to 1023 bytes frames  :  256                                               |
+| 1024 to max bytes frames  :  24                                                |
+| Unicast frames  :  500                                                         |
+| Multicast frames  :  8                                                         |
+| Broadcast frames  :  4                                                         |
+| VLAN tagged frames  :  0                                                       |
+| PTP frames  :  4                                                               |
+| PTP Sync frames  :  0                                                          |
+| PTP Delay Request frames  :  0                                                 |
+| PTP Pdelay Request frames  :  4                                                |
+| PTP Pdelay Response frames  :  0                                               |
+| PTP Follow Up frames  :  0                                                     |
+| PTP Delay Response frames  :  0                                                |
+| PTP Pdelay Response Follow Up frames  :  0                                     |
+| PTP Announce frames  :  0                                                      |
+| PTP Signalling frames  :  0                                                    |
+| PTP Management frames  :  0                                                    |
+| Control frames  :  0                                                           |
+| Pause frames  :  0                                                             |
+| Oversized frames  :  0                                                         |
+| Dropped frames due to memory overflow  :  0                                    |
+| Discarded frames  :  0                                                         |
+| TX error frames  :  500                                                        |
+| TX single collision frames  :  0                                               |
+| TX multiple collision frames  :  0                                             |
+| Preemption start frames  :  0                                                  |
+| Preemption continue frames  :  0                                               |
+|--------------------------------------------------------------------------------|
+soce_cli# 
+

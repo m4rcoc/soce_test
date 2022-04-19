@@ -1,0 +1,84 @@
+{
+	"qbvPorts" : [
+		{
+			"portName":"PORT_0",
+			"gateEnable" : false,
+			"adminGateControl" : {
+				"gateStates" : 255,
+				"cycleTimeNumerator" : 1,
+				"cycleTimeDenominator" : 10000,
+				"cycleTimeExtension" : 0,
+				"baseTimeSeconds" : 0,
+				"baseTimeNanoseconds" : 0,
+				"gateControlList" : [
+					{
+						"gateStates" : 255,
+						"operationName" : 0,
+						"timeInterval" : 100000
+					}
+				]
+			},
+			"maxSduTable" : [ 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500]
+		},
+		{
+			"portName":"PORT_1",
+			"gateEnable" : false,
+			"adminGateControl" : {
+				"gateStates" : 255,
+				"cycleTimeNumerator" : 1,
+				"cycleTimeDenominator" : 100000,
+				"cycleTimeExtension" : 0,
+				"baseTimeSeconds" : 0,
+				"baseTimeNanoseconds" : 0,
+				"gateControlList" : [
+					{
+						"gateStates" : 255,
+						"operationName" : 0,
+						"timeInterval" : 100000
+					}
+				]
+			},
+			"maxSduTable" : [ 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500]
+		},
+		{
+			"portName":"PORT_2",
+			"gateEnable" : false,
+			"adminGateControl" : {
+				"gateStates" : 255,
+				"cycleTimeNumerator" : 1,
+				"cycleTimeDenominator" : 100000,
+				"cycleTimeExtension" : 0,
+				"baseTimeSeconds" : 0,
+				"baseTimeNanoseconds" : 0,
+				"gateControlList" : [
+					{
+						"gateStates" : 255,
+						"operationName" : 0,
+						"timeInterval" : 100000
+					}
+				]
+			},
+			"maxSduTable" : [ 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500]
+		},
+		{
+			"portName":"PORT_3",
+			"gateEnable" : false,
+			"adminGateControl" : {
+				"gateStates" : 255,
+				"cycleTimeNumerator" : 1,
+				"cycleTimeDenominator" : 100000,
+				"cycleTimeExtension" : 0,
+				"baseTimeSeconds" : 0,
+				"baseTimeNanoseconds" : 0,
+				"gateControlList" : [
+					{
+						"gateStates" : 255,
+						"operationName" : 0,
+						"timeInterval" : 100000
+					}
+				]
+			},
+			"maxSduTable" : [ 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500]
+		}
+	]
+}

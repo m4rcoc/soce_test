@@ -1,0 +1,15 @@
+DEBUG_MODE(ON/OFF)	=ON
+interface(I)        =enp0s10
+interface(A)        =enp0s8
+interface(B)        =enp0s9
+MAC_1               =00:AA:AA:AA:AA:14
+MAC_2               =00:BB:BB:BB:BB:14
+IP_multicast		=224.1.2.3
+IP_unicast			=192.168.1.11
+NumberOfPackets     =5
+interval(packet/s)  =0.1
+EtherType			=0x0800
+len_pack(inc. FCS)  =64
+delay_hsr(seg)		=0.1
+ProxyTableSize      =64
+JumboEnabled        =0

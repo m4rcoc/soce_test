@@ -1,0 +1,121 @@
+v21.1.9T
+
+* soce_bash_functions.sh:
+    - gen_testing_fix: this function will automatically generate a testing fix for DUT (included edsa sw and packages required)
+* Platform.vars minor changes:
+    - sign_key and certificate_dst variables for function "gen_testing_fix"
+* Fixed conflict with export_results function
+* Updated Netconf tests
+* Fixed MSTP SG_FLOWS scripts
+* Added changelog file
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+v21.1.10T
+
+* Platform.vars:
+    - variables reordered
+    - Obsolete variables removed
+    - added tmp_results path
+    - added a templates of platform.vars file (8x8, 12MTSN, bridge)
+* soce_bash_functions.sh:
+    - exports results function will upload results to $tmp_results
+    - new function upload_results to exports final results to $results_path
+    - fixed pcaps name when uploading
+* vars_to_json.sh converted to soce bash function
+* soce_test.sh:
+    - improved '-d' option to run only restore, config or traffic STEP. "-d all" to stop in all steps.
+* automated_tests.sh:
+    - 8021qbv: tested OK
+    - 8021qbv_2: special test using '-d' option
+* Added new HSR tests (7,8,9)
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+v21.1.11T
+
+* soce_bash_functions.sh:
+    - export_results: fixed bug associated to multiple pcaps + new file .rpt
+    - New function: fast_soce_cli
+    - New funtion: print_csv <FILE.csv>
+    - Added new function for soce_verifier tool (append_Results_csv and analyze_results)
+
+* Added 8021qci tests
+* Added multiple_stream_identification tests
+* Updated netconf tests
+
+* soce_test.sh:
+    - Updated help information (./soce_test.sh -h)
+    - New dependencies for VERIFIER tool: tshark and miller packages
+    - Improved soce_bash_functions independent function call (print_csv function)
+    - STEP 5 modified -> no input parameters (functions add_tmp_vars and remove_tmp_vars)
+
+* VLAN tests:
+    - Tests 6,7,8 fixed -> priority tagged frames injected
+    - All SG_FLOWS -> updated (no input params)
+    - VERIFIER tool adapted for all tests
+
+* 8021cb:
+    - New test added
+
+* qos:
+    - Tests modified
+
+* new folder platform_vars_templates
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+v22.1.1T
+
+* soce_bash_functions.sh:
+    - export_results:
+        - fixed bug
+        - added ${id_special} option
+    - new architecture of verifier (pcap and stats type)
+    - new function for dependencies installer
+
+* 8021qbv: 
+    - added special functions for TSN_PCIe platform
+    - initial version of verifier for stats files
+
+* VLAN: fixed issue in SG_FLOWS + new verifier pcap mechanism
+
+* RSTP/MSTP: tests updated (tsn_pcie platform adapted)
+
+* MAC table: updated tests (tsn_pcie)
+
+* soce_test.sh
+    - Print info associated to device
+    - fixed autoinstaller dependencies
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+v22.1.2T
+
+* soce_generator: v22.1.1T
+    - fixed fps mode (pps-multi=2)
+    - fixed issue IPv4+UDP or TCP
+    - Added TODO.txt
+
+* HSR tests adapted (and defined new tests)
+
+* PRP tests adapted (and defined new tests)
+
+* Minor changes on Multiple Stream Identification tests
+
+* soce_bash_functions.sh:
+    - fixed pcap analyzer when the condition is 1
+    - fixed function analyze_results_stats
+
+* Added python script for timestamp modification of PCAP (SW/mod_timestamp.py) 
+
+* Added TODO.txt: features/functionalities to add in the future
+
+* Update FILES_EXCHANGE/CA certificate (Syslog test) because of expired cert in Syslog Server (VM)
+
+* 8021Qci: added notes for Observable Results
+
+* Multiple Stream Identification: fixed some tests
+
+
+

@@ -1,0 +1,4 @@
+PCAP,Description,Frames to analyze,Filter,Expected,Results,PASS/FAIL,PCAP file path
+test_hsr_9_3_captured_IF3.pcap,Total frames in Interlink = 20,*,,20,20,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_9_3/test_hsr_9_3_captured_IF3.pcap
+test_hsr_9_3_captured_IF3.pcap,Broadcast frames,*,eth.dst==FF:FF:FF:FF:FF:FF,20,20,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_9_3/test_hsr_9_3_captured_IF3.pcap
+test_hsr_9_3_captured_IF3.pcap,Not HSR tagged,*,!hsr,20,20,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_9_3/test_hsr_9_3_captured_IF3.pcap

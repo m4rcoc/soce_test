@@ -1,0 +1,6 @@
+PCAP,Description,Frames to analyze,Filter,Expected,Results,PASS/FAIL,PCAP file path
+test_vlan_6_3_captured_IF2.pcap,Total 1500 frames,*,,1500,1500,PASS,VERIFIER/Report/soce_cli/vlan/test_vlan_6_3_captured_IF2.pcap
+test_vlan_6_3_captured_IF2.pcap,Unicast Frames,*,eth.src==00:aa:aa:aa:aa:aa and eth.dst==00:00:00:00:00:01,1500,1500,PASS,VERIFIER/Report/soce_cli/vlan/test_vlan_6_3_captured_IF2.pcap
+test_vlan_6_3_captured_IF2.pcap,Untagged frames,frame.number<=1500,!(vlan),1500,1500,PASS,VERIFIER/Report/soce_cli/vlan/test_vlan_6_3_captured_IF2.pcap
+test_vlan_6_3_captured_IF2.pcap,MIN size=60,frame.number<=1500,MIN(frame.len)frame.len,60,60,PASS,VERIFIER/Report/soce_cli/vlan/test_vlan_6_3_captured_IF2.pcap
+test_vlan_6_3_captured_IF2.pcap,MAX size=1510,frame.number<=1500,MAX(frame.len)frame.len,1510,1510,PASS,VERIFIER/Report/soce_cli/vlan/test_vlan_6_3_captured_IF2.pcap

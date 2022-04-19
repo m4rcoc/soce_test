@@ -1,0 +1,46 @@
+|****************************SOCE_TEST REPORT************************************|
+| Tested by	:	Marco Condori
+| Date		:	mié 09 mar 2022 11:11:22 CET
+|********************************************************************************|
+| Serial number  :  54321                                                        |
+| Product model  :  12xPort_MTSN_KIT                                             |
+| Product version  :  21.3.2                                                     |
+| Device name  :  12xPortMtsnKit                                                 |
+| Device location  :  soc-e                                                      |
+| Contact info  :  support@soc-e.com                                             |
+|--------------------------------------------------------------------------------|
+| HPS:
+| SWITCH:
+| Core version  :  21.02.0100                                                    |
+|--------------------------------------------------------------------------------|
+|
+|****************************SOCE_TEST REPORT************************************|
+Row:0  View:Flow Statistics  Sampled:2022-03-09 10:12:48.850324 UTC
+	Tx Port: Port_0
+	Rx Port: Port_1
+	Traffic Item: Traffic Item 1
+	Flow Group: Traffic Item 1-EndpointSet-3 - Flow Group 0001
+	Tx Frames: 652256
+	Rx Frames: 0
+	Frames Delta: 652256
+	Loss %: 100.000
+	Tx Frame Rate: 82237.000
+	Rx Frame Rate: 0.000
+	Tx L1 Rate (bps): 1000001920.000
+	Rx L1 Rate (bps): 0.000
+	Rx Bytes: 0
+	Tx Rate (Bps): 123355500.000
+	Rx Rate (Bps): 0.000
+	Tx Rate (bps): 986844000.000
+	Rx Rate (bps): 0.000
+	Tx Rate (Kbps): 986844.000
+	Rx Rate (Kbps): 0.000
+	Tx Rate (Mbps): 986.844
+	Rx Rate (Mbps): 0.000
+	Store-Forward Avg Latency (ns): 
+	Store-Forward Min Latency (ns): 
+	Store-Forward Max Latency (ns): 
+	First TimeStamp: 
+	Last TimeStamp: 
+	Dead Flow: 0
+

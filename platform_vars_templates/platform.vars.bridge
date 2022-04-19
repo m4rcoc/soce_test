@@ -1,0 +1,138 @@
+# --------------------------------------------------------------------------#
+# DUT SSH parameters
+# --------------------------------------------------------------------------#
+
+ip=192.168.2.129
+username=sys-admin
+password=sys-admin
+
+# --------------------------------------------------------------------------#
+# Web Manager credentials
+# --------------------------------------------------------------------------#
+user_admin=sys-admin
+pass_admin=sys-admin
+user_basic=sys-operator
+pass_basic=sys-operator
+
+# --------------------------------------------------------------------------#
+# HOST PC (required for Selenium scripts)
+# --------------------------------------------------------------------------#
+iface_host=enp2s0
+ip_host=192.168.2.245
+user_host=soce
+pass_host=soce
+
+# --------------------------------------------------------------------------#
+# REPORTS/RESULTS:
+# --------------------------------------------------------------------------#
+TestedBy="Marco Condori"
+tmp_results=/media/soce_industrial/04-Internal_Projects/S-4103-SoCe_Testing/2_generated_technical_documentation/2_equipment_test/Results/SOCE_TEST_RESULTS/
+results_path=/media/relyum/2._EQUIPOS/S-3524-RELY_TSN_BRIDGE/1_generated_technical_documentation/5_equipment_test/imagen_21.1.0/Results
+
+version="21.3.0"
+model="12xPort_MTSN_KIT"
+
+# SELENIUM VARS:
+pathUploadFile="/home/joninchausti/sw_develop/SOCE_TEST_v21.1.2/FILES_EXCHANGE/CONFIGURATIONS/config_1.zip"
+
+# --------------------------------------------------------------------------#
+# SOCE_TEST PORTS:
+# --------------------------------------------------------------------------#
+#                                    _______________
+#                    _____          |_______        |
+#                   |     |         |       |       |
+#                   | IF4 |<------->|   3   |       |
+#                   |_____|         |_______|       |
+#                    _____          |_______        |
+#                   |     |         |       |   _   |
+#    ______   ____  | IF3 |<------->|   2   |  | \  |
+#   |      | |____| |_____|         |_______|  |_/  |
+#   |  PC  | |   -|  _____          |_______        |
+#   |______| |   ·| |     |         |       |  | |  |
+#     _||_   |    | | IF2 |<------->|   1   |  |_|  |
+#    /____\  |____| |_____|         |_______|       |
+#                    _____          |_______   ___  |
+#                   |     |         |       |   |   |
+#                   | IF1 |<------->|   0   |   |   |
+#                   |_____|         |_______|_______|
+
+IF1="enx7cc2c61e2f9b"
+IF2="enx7cc2c61f0a49"
+IF3="enxd0374502ac6e"
+IF4="enx60a4b758ebbb"
+
+# --------------------------------------------------------------------------#
+# SWITCH port names:
+# --------------------------------------------------------------------------#
+number_of_ports=5
+
+port_0_name="PORT_0"
+port_1_name="PORT_1"
+port_2_name="PORT_2"
+port_3_name="PORT_3"
+
+port_4_name="J2A"
+port_5_name="J2B"
+port_6_name="J2C"
+port_7_name="J2D"
+
+port_8_name="J3A"
+port_9_name="J3B"
+port_10_name="J3C"
+port_11_name="J3D"
+
+port_12_name="J4A"
+port_13_name="J4B"
+port_14_name="J4C"
+port_15_name="J4D"
+
+port_16_name="J5A"
+port_17_name="J5B"
+port_18_name="J5C"
+port_19_name="J5D"
+
+port_20_name="OP1B"
+port_21_name="OP1D"
+port_22_name="OP2AB"
+port_23_name="OP2CD"
+
+port_24_name="MGT"
+port_25_name="RT1"
+port_26_name="RT2"
+port_27_name="RT3"
+
+internal_port_name="INTERNAL_PORT"
+
+MGT_PORT="eth0"
+RT1="RT1"
+RT2="RT2"
+RT3="RT3"
+SERVICE_PORT="eth1"
+
+Redundant_A="OP1AB"
+Redundant_B="OP2AB"
+Interlink="RB1"
+
+# --------------------------------------------------------------------------#
+# Certificates (syslog test):
+# --------------------------------------------------------------------------#
+
+CA_certificate="cacert.pem"
+
+# --------------------------------------------------------------------------#
+# Fix testing:
+# --------------------------------------------------------------------------#
+# generate_dig_sign <file_to_sign> <sign_key> <certificate_dst> <output_name>
+sign_key="/media/keys/relyum_priv.key"
+certificate_dst="/media/keys/rely_tsn_bridge.crt"
+
+# --------------------------------------------------------------------------#
+# Image files:
+# --------------------------------------------------------------------------#
+md5sums="md5sums.txt"
+boot_files="boot_files.bin"
+target_fs="target_fs.bin"
+
+
+# TMP vars
+

@@ -1,0 +1,328 @@
+[0;34m[1m./soce_test.sh -f 8021qci -t 2 -p 1 -c soce_cli[0m[0m
+[0;34m[1m
+[---------------------------------------------]
+	STEP 1 - INIT SOCE_TEST
+[---------------------------------------------] 
+[0m[0m
+[0;33m[1m[*][0m[0m[0;37m[1m Reading platform.vars[0m[0m
+
+[0;34m[1m[*] Tool[0m[0m[0;35m[1m sshpass[0m[0m[0;34m[1m...[0m[0m [0;32m[1m(V)[0m[0m
+
+[0;34m[1m[*] Tool[0m[0m[0;35m[1m pip3[0m[0m[0;34m[1m...[0m[0m [0;32m[1m(V)[0m[0m
+
+[0;34m[1m[*] Tool[0m[0m[0;35m[1m scapy[0m[0m[0;34m[1m...[0m[0m [0;32m[1m(V)[0m[0m
+
+[0;34m[1m[*] Tool[0m[0m[0;35m[1m tcpdump[0m[0m[0;34m[1m...[0m[0m [0;32m[1m(V)[0m[0m
+
+[0;34m[1m[*] Tool[0m[0m[0;35m[1m tcpreplay[0m[0m[0;34m[1m...[0m[0m [0;32m[1m(V)[0m[0m
+
+[0;34m[1m[*] Tool[0m[0m[0;35m[1m ifconfig[0m[0m[0;34m[1m...[0m[0m [0;32m[1m(V)[0m[0m
+
+[0;34m[1m[*] Tool[0m[0m[0;35m[1m xterm[0m[0m[0;34m[1m...[0m[0m [0;32m[1m(V)[0m[0m
+
+[0;34m[1m[*] Tool[0m[0m[0;35m[1m netconf-console[0m[0m[0;34m[1m...[0m[0m [0;32m[1m(V)[0m[0m
+
+[0;34m[1m[*] Tool[0m[0m[0;35m[1m mlr[0m[0m[0;34m[1m...[0m[0m [0;32m[1m(V)[0m[0m
+
+[0;34m[1m[*] Tool[0m[0m[0;35m[1m tshark[0m[0m[0;34m[1m...[0m[0m [0;32m[1m(V)[0m[0m
+
+[0;34m[1m
+[---------------------------------------------]
+	STEP 2 - RESTORE DUT CONFIG
+[---------------------------------------------] 
+[0m[0m
+[0;32m[1m[+] Info: Executing [DUT_CONFIG_CLI/8021qci_cli.conf] "test_8021qci_2_1_restore" function (soce_cli) [0m[0m
+/**************************************************************\
+*                    _______               _______             *
+*    _||_||_||_     / ____  |             / ____  |            *
+*   |          |   | /    \_|   ______   | /    \_|     ____   *
+* ==|          |== | \_____    / ____ \  | |           / __  \ *
+* ==|          |==  \_____ \  | /    \ | | |          / /__/ / *
+* ==|          |==  _     \ | | |    | | | |     _   / _____/  *
+*   |__________|   | \____/ | | \____/ | | \____/ | / /____    *
+*     || || ||     |_______/   \______/   \______/  \_____/    *
+*                                                              *
+*               System on Chip engineering, S.L.               *
+*                        www.soc-e.com                         *
+\**************************************************************/
+soce_cli# vlan reset SWITCH
+|--------------------------------------------------------------------------------|
+| Operation successful                                                           |
+|--------------------------------------------------------------------------------|
+soce_cli# ieee8021qci clear_all_psfp_statistics SWITCH
+|--------------------------------------------------------------------------------|
+| Operation successful                                                           |
+|--------------------------------------------------------------------------------|
+soce_cli# ieee8021qci reload_configuration SWITCH
+|--------------------------------------------------------------------------------|
+| Operation successful                                                           |
+|--------------------------------------------------------------------------------|
+soce_cli# stream_identification reload_configuration SWITCH
+|--------------------------------------------------------------------------------|
+| Operation successful                                                           |
+|--------------------------------------------------------------------------------|
+soce_cli# active_stream_translation reload_configuration SWITCH
+|--------------------------------------------------------------------------------|
+| Operation successful                                                           |
+|--------------------------------------------------------------------------------|
+soce_cli# 
+
+[0;34m[1m
+[---------------------------------------------]
+	STEP 3 - PRE-CONFIG
+[---------------------------------------------] 
+[0m[0m
+[0;33m[1m[-] Warning: No PRE-CONFIG script [0m[0m
+
+[0;34m[1m
+[---------------------------------------------]
+	STEP 4 - DUT CONFIG
+[---------------------------------------------] 
+[0m[0m
+[0;32m[1m[+] Info: Executing function "test_8021qci_2_1" [DUT_CONFIG_CLI/8021qci_cli.conf] (soce_cli) [0m[0m
+/**************************************************************\
+*                    _______               _______             *
+*    _||_||_||_     / ____  |             / ____  |            *
+*   |          |   | /    \_|   ______   | /    \_|     ____   *
+* ==|          |== | \_____    / ____ \  | |           / __  \ *
+* ==|          |==  \_____ \  | /    \ | | |          / /__/ / *
+* ==|          |==  _     \ | | |    | | | |     _   / _____/  *
+*   |__________|   | \____/ | | \____/ | | \____/ | / /____    *
+*     || || ||     |_______/   \______/   \______/  \_____/    *
+*                                                              *
+*               System on Chip engineering, S.L.               *
+*                        www.soc-e.com                         *
+\**************************************************************/
+soce_cli# vlan set_vlan_port PORT_0 1 0 0 trunk all tag-all original none none
+|--------------------------------------------------------------------------------|
+| Operation successful                                                           |
+|--------------------------------------------------------------------------------|
+soce_cli# vlan set_vlan_port PORT_1 1 0 0 trunk all tag-all original none none
+|--------------------------------------------------------------------------------|
+| Operation successful                                                           |
+|--------------------------------------------------------------------------------|
+soce_cli# vlan set_vlan_port PORT_2 1 0 0 trunk all tag-all original none none
+|--------------------------------------------------------------------------------|
+| Operation successful                                                           |
+|--------------------------------------------------------------------------------|
+soce_cli# vlan set_vlan_port PORT_3 1 0 0 trunk all tag-all original none none
+|--------------------------------------------------------------------------------|
+| Operation successful                                                           |
+|--------------------------------------------------------------------------------|
+soce_cli# vlan set_vlan_entry SWITCH 1 1 PORT_0,PORT_1,PORT_2,PORT_3 ""
+|--------------------------------------------------------------------------------|
+| Operation successful                                                           |
+|--------------------------------------------------------------------------------|
+soce_cli# vlan set_vlan_entry SWITCH 2 2 PORT_0,PORT_1,PORT_2,PORT_3 ""
+|--------------------------------------------------------------------------------|
+| Operation successful                                                           |
+|--------------------------------------------------------------------------------|
+soce_cli# vlan set_vlan_entry SWITCH 3 3 PORT_0,PORT_1,PORT_2,PORT_3 ""
+|--------------------------------------------------------------------------------|
+| Operation successful                                                           |
+|--------------------------------------------------------------------------------|
+soce_cli# vlan set_vlan_entry SWITCH 4 4 PORT_0,PORT_1,PORT_2,PORT_3 ""
+|--------------------------------------------------------------------------------|
+| Operation successful                                                           |
+|--------------------------------------------------------------------------------|
+soce_cli# stream_identification set_active_stream_id SWITCH 2 0 00:12:01:00:00:$tive_stream_id SWITCH 2 0 00:12:01:00:00:0                          1 1 0 taggedstream_identification set_active_stream_id SWITCH 2 0 00:12:01:00:00$
+|--------------------------------------------------------------------------------|
+| Operation successful                                                           |
+|--------------------------------------------------------------------------------|
+soce_cli# stream_identification set_active_stream_id SWITCH 2 1 00:12:01:00:00:$tive_stream_id SWITCH 2 1 00:12:01:00:00:0                          1 2 0 taggedstream_identification set_active_stream_id SWITCH 2 1 00:12:01:00:00$
+|--------------------------------------------------------------------------------|
+| Operation successful                                                           |
+|--------------------------------------------------------------------------------|
+soce_cli# stream_identification set_active_stream_id SWITCH 2 2 00:12:01:00:00:$tive_stream_id SWITCH 2 2 00:12:01:00:00:0                          1 3 0 taggedstream_identification set_active_stream_id SWITCH 2 2 00:12:01:00:00$
+|--------------------------------------------------------------------------------|
+| Operation successful                                                           |
+|--------------------------------------------------------------------------------|
+soce_cli# stream_identification set_active_stream_id SWITCH 2 3 00:12:01:00:00:$tive_stream_id SWITCH 2 3 00:12:01:00:00:0                          1 4 0 taggedstream_identification set_active_stream_id SWITCH 2 3 00:12:01:00:00$
+|--------------------------------------------------------------------------------|
+| Operation successful                                                           |
+|--------------------------------------------------------------------------------|
+soce_cli# ieee8021qci set_stream_filter_transtation_table_entry SWITCH 0 0 0 
+|--------------------------------------------------------------------------------|
+| Operation successful                                                           |
+|--------------------------------------------------------------------------------|
+soce_cli# ieee8021qci set_stream_filter_table_entry SWITCH 0 enabled 1000 enabl$r_table_entry SWITCH 0 enabled 1000 enable                          d 0 disabled 0ieee8021qci set_stream_filter_table_entry SWITCH 0 enabled 1000 enab$
+|--------------------------------------------------------------------------------|
+| Operation successful                                                           |
+|--------------------------------------------------------------------------------|
+soce_cli# ieee8021qci reset_stream_blocked_due_to_oversize_frame SWITCH 0
+|--------------------------------------------------------------------------------|
+| Operation successful                                                           |
+|--------------------------------------------------------------------------------|
+soce_cli# ieee8021qci enable_global_psfp SWITCH
+|--------------------------------------------------------------------------------|
+| Operation successful                                                           |
+|--------------------------------------------------------------------------------|
+soce_cli# 
+
+[0;34m[1m
+[---------------------------------------------]
+	STEP 5 - SG / IXIA / CUSTOM APP
+[---------------------------------------------] 
+[0m[0m
+[0;32m[1m[+] Info: Executing SG / IXIA / CUSTOM APP software. Check script -> [SG_FLOWS/8021qci/test_8021qci_2_1.sh] [0m[0m
+Microsoft Windows [Version 10.0.19041.1415]
+(c) Microsoft Corporation. All rights reserved.
+
+soce@VM-MARCO C:\Users\soce>cd c:\Users\soce\Documents\ixia
+
+soce@VM-MARCO c:\Users\soce\Documents\ixia>python automated_ixia.py -t test_8021qci_2_1 -a start
+2022-03-10 11:28:48 [ixnetwork_restpy.connection] [INFO] using python version 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]
+2022-03-10 11:28:48 [ixnetwork_restpy.connection] [INFO] using ixnetwork-restpy version 1.1.2
+2022-03-10 11:28:48 [ixnetwork_restpy.connection] [WARNING] Verification of certificates is disabled
+2022-03-10 11:28:48 [ixnetwork_restpy.connection] [INFO] Determining the platform and rest_port using the 127.0.0.1 address...
+2022-03-10 11:28:48 [ixnetwork_restpy.connection] [INFO] Connection established to `http://127.0.0.1:65052 on windows`
+2022-03-10 11:28:50 [ixnetwork_restpy.connection] [INFO] Using IxNetwork api server version 9.05.2001.10
+2022-03-10 11:28:50 [ixnetwork_restpy.connection] [INFO] User info IxNetwork/VM-marco/soce
+2022-03-10 11:28:57 [ixnetwork_restpy.connection] [INFO] Loading config file: ts_test_8021qci_2_1.ixncfg
+8021qci_2_1
+
+soce@VM-MARCO c:\Users\soce\Documents\ixia>[0;32m[1m[+] Info: 	Reading Flow Statistics Results  [0m[0m
+[0;32m[1m[+] Info: 	Getting Flow statistics report file from IXIA VM (saved in REPORTS/8021qci/test_8021qci_2_1_1.stats )  [0m[0m
+[0;32m[1m[+] Info: 	Clear Flow statistics on IXIA  [0m[0m
+Microsoft Windows [Version 10.0.19041.1415]
+(c) Microsoft Corporation. All rights reserved.
+
+soce@VM-MARCO C:\Users\soce>cd c:\Users\soce\Documents\ixia
+
+soce@VM-MARCO c:\Users\soce\Documents\ixia>python automated_ixia.py -t test_8021qci_2_1 -a clear
+2022-03-10 11:29:35 [ixnetwork_restpy.connection] [INFO] using python version 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]
+2022-03-10 11:29:35 [ixnetwork_restpy.connection] [INFO] using ixnetwork-restpy version 1.1.2
+2022-03-10 11:29:35 [ixnetwork_restpy.connection] [WARNING] Verification of certificates is disabled
+2022-03-10 11:29:35 [ixnetwork_restpy.connection] [INFO] Determining the platform and rest_port using the 127.0.0.1 address...
+2022-03-10 11:29:35 [ixnetwork_restpy.connection] [INFO] Connection established to `http://127.0.0.1:65052 on windows`
+2022-03-10 11:29:35 [ixnetwork_restpy.connection] [INFO] Using IxNetwork api server version 9.05.2001.10
+2022-03-10 11:29:35 [ixnetwork_restpy.connection] [INFO] User info IxNetwork/VM-marco/soce
+8021qci_2_1
+
+soce@VM-MARCO c:\Users\soce\Documents\ixia>[0;32m[1m[+] Info: 	Reading Flow Statistics Results  [0m[0m
+Microsoft Windows [Version 10.0.19041.1415]
+(c) Microsoft Corporation. All rights reserved.
+
+soce@VM-MARCO C:\Users\soce>cd c:\Users\soce\Documents\ixia
+
+soce@VM-MARCO c:\Users\soce\Documents\ixia>python automated_ixia.py -t test_8021qci_2_1 -a stats
+2022-03-10 11:30:00 [ixnetwork_restpy.connection] [INFO] using python version 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]
+2022-03-10 11:30:00 [ixnetwork_restpy.connection] [INFO] using ixnetwork-restpy version 1.1.2
+2022-03-10 11:30:00 [ixnetwork_restpy.connection] [WARNING] Verification of certificates is disabled
+2022-03-10 11:30:00 [ixnetwork_restpy.connection] [INFO] Determining the platform and rest_port using the 127.0.0.1 address...
+2022-03-10 11:30:00 [ixnetwork_restpy.connection] [INFO] Connection established to `http://127.0.0.1:65052 on windows`
+2022-03-10 11:30:01 [ixnetwork_restpy.connection] [INFO] Using IxNetwork api server version 9.05.2001.10
+2022-03-10 11:30:01 [ixnetwork_restpy.connection] [INFO] User info IxNetwork/VM-marco/soce
+8021qci_2_1
+
+soce@VM-MARCO c:\Users\soce\Documents\ixia>[0;32m[1m[+] Info: 	Getting Flow statistics report file from IXIA VM (saved in REPORTS/8021qci/test_8021qci_2_1_2.stats )  [0m[0m
+[0;32m[1m[+] Info: 	Reset StreamBlockedDutToOversizeFrame to 0 [0m[0m
+soce_cli# ieee8021qci reset_stream_blocked_due_to_oversize_frame SWITCH 0
+|--------------------------------------------------------------------------------|
+| Operation successful                                                           |
+|--------------------------------------------------------------------------------|
+soce_cli# 
+[0;32m[1m[+] Info: 	Re-launch Ixia Traffic Flows  [0m[0m
+Microsoft Windows [Version 10.0.19041.1415]
+(c) Microsoft Corporation. All rights reserved.
+
+soce@VM-MARCO C:\Users\soce>cd c:\Users\soce\Documents\ixia
+
+soce@VM-MARCO c:\Users\soce\Documents\ixia>python automated_ixia.py -t test_8021qci_2_1 -a start
+2022-03-10 11:30:11 [ixnetwork_restpy.connection] [INFO] using python version 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]
+2022-03-10 11:30:11 [ixnetwork_restpy.connection] [INFO] using ixnetwork-restpy version 1.1.2
+2022-03-10 11:30:11 [ixnetwork_restpy.connection] [WARNING] Verification of certificates is disabled
+2022-03-10 11:30:11 [ixnetwork_restpy.connection] [INFO] Determining the platform and rest_port using the 127.0.0.1 address...
+2022-03-10 11:30:11 [ixnetwork_restpy.connection] [INFO] Connection established to `http://127.0.0.1:65052 on windows`
+2022-03-10 11:30:12 [ixnetwork_restpy.connection] [INFO] Using IxNetwork api server version 9.05.2001.10
+2022-03-10 11:30:12 [ixnetwork_restpy.connection] [INFO] User info IxNetwork/VM-marco/soce
+2022-03-10 11:30:19 [ixnetwork_restpy.connection] [INFO] Loading config file: ts_test_8021qci_2_1.ixncfg
+8021qci_2_1
+
+soce@VM-MARCO c:\Users\soce\Documents\ixia>[0;32m[1m[+] Info: 	Clear Flow statistics on IXIA  [0m[0m
+Microsoft Windows [Version 10.0.19041.1415]
+(c) Microsoft Corporation. All rights reserved.
+
+soce@VM-MARCO C:\Users\soce>cd c:\Users\soce\Documents\ixia
+
+soce@VM-MARCO c:\Users\soce\Documents\ixia>python automated_ixia.py -t test_8021qci_2_1 -a clear
+2022-03-10 11:30:48 [ixnetwork_restpy.connection] [INFO] using python version 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]
+2022-03-10 11:30:48 [ixnetwork_restpy.connection] [INFO] using ixnetwork-restpy version 1.1.2
+2022-03-10 11:30:48 [ixnetwork_restpy.connection] [WARNING] Verification of certificates is disabled
+2022-03-10 11:30:48 [ixnetwork_restpy.connection] [INFO] Determining the platform and rest_port using the 127.0.0.1 address...
+2022-03-10 11:30:48 [ixnetwork_restpy.connection] [INFO] Connection established to `http://127.0.0.1:65052 on windows`
+2022-03-10 11:30:49 [ixnetwork_restpy.connection] [INFO] Using IxNetwork api server version 9.05.2001.10
+2022-03-10 11:30:49 [ixnetwork_restpy.connection] [INFO] User info IxNetwork/VM-marco/soce
+8021qci_2_1
+
+soce@VM-MARCO c:\Users\soce\Documents\ixia>[0;32m[1m[+] Info: 	Reading Flow Statistics Results  [0m[0m
+Microsoft Windows [Version 10.0.19041.1415]
+(c) Microsoft Corporation. All rights reserved.
+
+soce@VM-MARCO C:\Users\soce>cd c:\Users\soce\Documents\ixia
+
+soce@VM-MARCO c:\Users\soce\Documents\ixia>python automated_ixia.py -t test_8021qci_2_1 -a stats
+2022-03-10 11:31:14 [ixnetwork_restpy.connection] [INFO] using python version 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]
+2022-03-10 11:31:14 [ixnetwork_restpy.connection] [INFO] using ixnetwork-restpy version 1.1.2
+2022-03-10 11:31:14 [ixnetwork_restpy.connection] [WARNING] Verification of certificates is disabled
+2022-03-10 11:31:14 [ixnetwork_restpy.connection] [INFO] Determining the platform and rest_port using the 127.0.0.1 address...
+2022-03-10 11:31:14 [ixnetwork_restpy.connection] [INFO] Connection established to `http://127.0.0.1:65052 on windows`
+2022-03-10 11:31:15 [ixnetwork_restpy.connection] [INFO] Using IxNetwork api server version 9.05.2001.10
+2022-03-10 11:31:15 [ixnetwork_restpy.connection] [INFO] User info IxNetwork/VM-marco/soce
+8021qci_2_1
+
+soce@VM-MARCO c:\Users\soce\Documents\ixia>[0;32m[1m[+] Info: 	Getting Flow statistics report file from IXIA VM (saved in REPORTS/8021qci/test_8021qci_2_1_3.stats )  [0m[0m
+
+[0;34m[1m
+[---------------------------------------------]
+	STEP 6 - VERIFIER
+[---------------------------------------------] 
+[0m[0m
+[0;32m[1m[+] Info: Executing VERIFIER/8021qci_verifier.sh [function test_8021qci_2_1_verifier] script [0m[0m
+
+[0;34m[1m
+[---------------------------------------------]
+	STEP 7 - RESTORE DUT CONFIG
+[---------------------------------------------] 
+[0m[0m
+[0;32m[1m[+] Info: Executing [DUT_CONFIG_CLI/8021qci_cli.conf] "test_8021qci_2_1_restore" function (soce_cli) [0m[0m
+/**************************************************************\
+*                    _______               _______             *
+*    _||_||_||_     / ____  |             / ____  |            *
+*   |          |   | /    \_|   ______   | /    \_|     ____   *
+* ==|          |== | \_____    / ____ \  | |           / __  \ *
+* ==|          |==  \_____ \  | /    \ | | |          / /__/ / *
+* ==|          |==  _     \ | | |    | | | |     _   / _____/  *
+*   |__________|   | \____/ | | \____/ | | \____/ | / /____    *
+*     || || ||     |_______/   \______/   \______/  \_____/    *
+*                                                              *
+*               System on Chip engineering, S.L.               *
+*                        www.soc-e.com                         *
+\**************************************************************/
+soce_cli# vlan reset SWITCH
+|--------------------------------------------------------------------------------|
+| Operation successful                                                           |
+|--------------------------------------------------------------------------------|
+soce_cli# ieee8021qci clear_all_psfp_statistics SWITCH
+|--------------------------------------------------------------------------------|
+| Operation successful                                                           |
+|--------------------------------------------------------------------------------|
+soce_cli# ieee8021qci reload_configuration SWITCH
+|--------------------------------------------------------------------------------|
+| Operation successful                                                           |
+|--------------------------------------------------------------------------------|
+soce_cli# stream_identification reload_configuration SWITCH
+|--------------------------------------------------------------------------------|
+| Operation successful                                                           |
+|--------------------------------------------------------------------------------|
+soce_cli# active_stream_translation reload_configuration SWITCH
+|--------------------------------------------------------------------------------|
+| Operation successful                                                           |
+|--------------------------------------------------------------------------------|
+soce_cli# 
+
+[0;34m[1m
+[---------------------------------------------]
+	STEP 8 - PRE-CONFIG_restore
+[---------------------------------------------] 
+[0m[0m

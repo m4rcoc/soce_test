@@ -1,0 +1,11 @@
+PCAP,Description,Frames to analyze,Filter,Expected,Results,PASS/FAIL,PCAP file path
+test_hsr_2_1_captured_IF1.pcap,Total frames in Redundant A = 1498,*,,1498,1498,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_2_1/test_hsr_2_1_captured_IF1.pcap
+test_hsr_2_1_captured_IF1.pcap,Unicast frames,*,eth.src==00:AA:AA:AA:AA:AA and eth.dst==00:BB:BB:BB:BB:BB,1498,1498,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_2_1/test_hsr_2_1_captured_IF1.pcap
+test_hsr_2_1_captured_IF1.pcap,HSR tagged with LAN ID=A (0),*,eth.type==0x892f and hsr.laneid==0,1498,1498,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_2_1/test_hsr_2_1_captured_IF1.pcap
+test_hsr_2_1_captured_IF1.pcap,MIN size=66,*,MIN(frame.len)frame.len,66,66,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_2_1/test_hsr_2_1_captured_IF1.pcap
+test_hsr_2_1_captured_IF1.pcap,MAX size=1518,*,MAX(frame.len)frame.len,1518,1518,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_2_1/test_hsr_2_1_captured_IF1.pcap
+test_hsr_2_1_captured_IF2.pcap,Total frames in Redundant B = 1498,*,,1498,1498,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_2_1/test_hsr_2_1_captured_IF2.pcap
+test_hsr_2_1_captured_IF2.pcap,Unicast frames,*,eth.src==00:AA:AA:AA:AA:AA and eth.dst==00:BB:BB:BB:BB:BB,1498,1498,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_2_1/test_hsr_2_1_captured_IF2.pcap
+test_hsr_2_1_captured_IF2.pcap,HSR tagged with LAN ID=B (1),*,eth.type==0x892f and hsr.laneid==1,1498,1498,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_2_1/test_hsr_2_1_captured_IF2.pcap
+test_hsr_2_1_captured_IF2.pcap,MIN size=66,*,MIN(frame.len)frame.len,66,66,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_2_1/test_hsr_2_1_captured_IF2.pcap
+test_hsr_2_1_captured_IF2.pcap,MAX size=1518,*,MAX(frame.len)frame.len,1518,1518,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_2_1/test_hsr_2_1_captured_IF2.pcap

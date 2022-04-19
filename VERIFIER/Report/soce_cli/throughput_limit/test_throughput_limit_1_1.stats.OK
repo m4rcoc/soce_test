@@ -1,0 +1,31 @@
+Row:0  View:Flow Statistics  Sampled:2022-01-18 10:01:44.553544 UTC
+	Tx Port: Ethernet - 001
+	Rx Port: Ethernet - 002
+	Tx Port: Port_0
+	Rx Port: Port_1
+	Traffic Item: Traffic Item 1
+	Flow Group: Traffic Item 1-EndpointSet-4 - Flow Group 0001
+	Ethernet II:Destination MAC Address: 00:12:01:00:00:01
+	Tx Frames: 23785187
+	Rx Frames: 23785187
+	Frames Delta: 0
+	Loss %: 0.600
+	Tx Frame Rate: 0.000
+	Rx Frame Rate: 0.000
+	Tx L1 Rate (bps): 0.000
+	Rx L1 Rate (bps): 0.000
+	Rx Bytes: 30638000
+	Tx Rate (Bps): 0.000
+	Rx Rate (Bps): 0.000
+	Tx Rate (bps): 0.000
+	Rx Rate (bps): 0.000
+	Tx Rate (Kbps): 0.000
+	Rx Rate (Kbps): 0.000
+	Tx Rate (Mbps): 0.000
+	Rx Rate (Mbps): 0.000
+	Store-Forward Avg Latency (ns): 1439
+	Store-Forward Min Latency (ns): 1422
+	Store-Forward Max Latency (ns): 2175
+	First TimeStamp: 00:00:01.113
+	Last TimeStamp: 00:00:03.113
+	Dead Flow: 0

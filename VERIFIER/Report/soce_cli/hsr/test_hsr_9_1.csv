@@ -1,0 +1,4 @@
+PCAP,Description,Frames to analyze,Filter,Expected,Results,PASS/FAIL,PCAP file path
+test_hsr_9_1_captured_IF3.pcap,Total frames in Interlink = 11,*,,11,11,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_9_1/test_hsr_9_1_captured_IF3.pcap
+test_hsr_9_1_captured_IF3.pcap,Broadcast frames,*,eth.dst==FF:FF:FF:FF:FF:FF,11,11,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_9_1/test_hsr_9_1_captured_IF3.pcap
+test_hsr_9_1_captured_IF3.pcap,Wrong HSR ethertype,*,eth.type==0x892e,11,11,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_9_1/test_hsr_9_1_captured_IF3.pcap

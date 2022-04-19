@@ -1,0 +1,269 @@
+#!/bin/bash
+
+# ---------------------------------------------------------------------------------------------------------------
+# AUX functions:
+# ---------------------------------------------------------------------------------------------------------------
+
+function enable_igmp(){
+
+soce_cli << EOF
+igmp set_igmp_snooping_param igmp_snooper_enabled 1
+igmp set_unknown_multicast_frames_behaviour SWITCH $1
+igmp restart
+EOF
+}
+
+function disable_igmp(){
+
+soce_cli << EOF
+igmp set_igmp_snooping_param igmp_snooper_enabled 0
+igmp set_unknown_multicast_frames_behaviour SWITCH $1
+igmp restart
+EOF
+}
+
+function set_forget_time(){
+
+soce_cli << EOF
+igmp set_igmp_snooping_param igmp_snooper_forget_time $1
+igmp restart
+EOF
+}
+
+function ifup(){
+
+        if [[ ! -d /sys/class/net/${1} ]]; then
+                printf 'No such interface: %s\n' "$1" >&2
+                return 1
+        else
+                [[ $(</sys/class/net/${1}/operstate) == up ]]
+        fi
+}
+
+function check_interfaces(){
+
+for IF in "$@"
+do
+	echo -ne "\n${yellowColour}[*]${endColour}${blueColour} Interface${endColour}${purpleColour} $IF${endColour}${blueColour}...${endColour}"
+	if ifup $IF; then
+	    printf " is connected ${greenColour}(V)${endColour}\n"
+	else
+	    printf " is NOT connected ${redColour}(X)${endColour}\n"
+	fi
+done
+}
+
+# ---------------------------------------------------------------------------------------------------------------
+# Test IGMP Snooping.2  IGMP snooping: Unregistered streams flooding behavior
+# ---------------------------------------------------------------------------------------------------------------
+
+function test_igmp_2_1(){
+# clear; check_interfaces $IF1 $IF2
+python3 SW/igmp/multicast_generator.py -m 225.1.2.3 -r 0.001 -i $IF1
+
+}
+
+function test_igmp_2_2(){
+
+clear
+python3 SW/igmp/sniff_multicast.py -m 225.1.2.3 -i $IF2
+
+}
+
+function test_igmp_2_3(){
+
+soce_cli_enable_igmp="enable_igmp"
+sshpass -p $password ssh -t -o StrictHostKeyChecking=no $username@$ip "$(declare -f $soce_cli_enable_igmp); $soce_cli_enable_igmp filter"
+
+}
+
+function test_igmp_2_4(){
+
+soce_cli_enable_igmp="enable_igmp"
+sshpass -p $password ssh -t -o StrictHostKeyChecking=no $username@$ip "$(declare -f $soce_cli_enable_igmp); $soce_cli_enable_igmp forward"
+
+}
+
+function test_igmp_2_5(){
+
+soce_cli_disable_igmp="disable_igmp"
+sshpass -p $password ssh -t -o StrictHostKeyChecking=no $username@$ip "$(declare -f $soce_cli_disable_igmp); $soce_cli_disable_igmp forward"
+
+}
+
+# ---------------------------------------------------------------------------------------------------------------
+# Test IGMP Snooping.3  IGMP snooping stack: IGMPv2 messages
+# ---------------------------------------------------------------------------------------------------------------
+
+function test_igmp_3_1(){
+
+clear; check_interfaces $IF1 $IF2
+soce_cli_enable_igmp="enable_igmp"
+sshpass -p $password ssh -t -o StrictHostKeyChecking=no $username@$ip "$(declare -f $soce_cli_enable_igmp); $soce_cli_enable_igmp filter"
+sleep 1
+python3 SW/igmp/multicast_generator.py -m 225.1.2.3 -r 0.001 -i $IF1
+
+}
+
+function test_igmp_3_2(){
+
+clear
+python3 SW/igmp/sniff_multicast.py -m 225.1.2.3 -i $IF2
+
+}
+
+function test_igmp_3_3(){
+
+clear
+python3 SW/igmp/igmp_generator.py -v 2 -t report -r 1 -i $IF2
+
+}
+
+function test_igmp_3_4(){
+
+clear
+python3 SW/igmp/igmp_generator.py -v 2 -t leave -r 1 -i $IF2
+
+}
+
+
+# ---------------------------------------------------------------------------------------------------------------
+# Test IGMP Snooping.4  IGMP snooping forget time
+# ---------------------------------------------------------------------------------------------------------------
+
+function test_igmp_4_1(){
+
+clear; check_interfaces $IF1 $IF2
+soce_cli_enable_igmp="enable_igmp"
+sshpass -p $password ssh -t -o StrictHostKeyChecking=no $username@$ip "$(declare -f $soce_cli_enable_igmp); $soce_cli_enable_igmp filter"
+soce_cli_set_forget_time="set_forget_time"
+sshpass -p $password ssh -t -o StrictHostKeyChecking=no $username@$ip "$(declare -f $soce_cli_set_forget_time); $soce_cli_set_forget_time 10"
+sleep 1
+python3 SW/igmp/multicast_generator.py -m 225.1.2.3 -r 0.001 -i $IF1
+
+}
+
+function test_igmp_4_2(){
+
+clear
+python3 SW/igmp/sniff_multicast.py -m 225.1.2.3 -i $IF2
+
+}
+
+function test_igmp_4_3(){
+
+clear
+python3 SW/igmp/igmp_generator.py -v 2 -t report -r 1 -i $IF2
+
+}
+
+# ---------------------------------------------------------------------------------------------------------------
+# Test IGMP Snooping.5  IGMP snooping stack: IGMPv3 messages
+# ---------------------------------------------------------------------------------------------------------------
+
+function test_igmp_5_1(){
+
+clear; check_interfaces $IF1 $IF2
+soce_cli_enable_igmp="enable_igmp"
+sshpass -p $password ssh -t -o StrictHostKeyChecking=no $username@$ip "$(declare -f $soce_cli_enable_igmp); $soce_cli_enable_igmp filter"
+sleep 1
+python3 SW/igmp/multicast_generator.py -m 225.1.2.3 -r 0.001 -i $IF1
+
+}
+
+function test_igmp_5_2(){
+
+clear
+python3 SW/igmp/sniff_multicast.py -m 225.1.2.3 -i $IF2
+
+}
+
+function test_igmp_5_3(){
+
+clear
+python3 SW/igmp/igmp_generator.py -v 3 -t mode_is_include -r 1 -i $IF2
+
+}
+
+function test_igmp_5_4(){
+
+clear
+python3 SW/igmp/igmp_generator.py -v 3 -t mode_is_exclude -r 1 -i $IF2
+
+}
+
+function test_igmp_5_5(){
+
+clear
+python3 SW/igmp/igmp_generator.py -v 3 -t change_to_include -r 1 -i $IF2
+
+}
+
+function test_igmp_5_6(){
+
+clear
+python3 SW/igmp/igmp_generator.py -v 3 -t change_to_exclude -r 1 -i $IF2
+
+}
+
+function test_igmp_5_7(){
+
+clear
+python3 SW/igmp/igmp_generator.py -v 3 -t allow_new_sources -r 1 -i $IF2
+
+}
+
+function test_igmp_5_8(){
+
+clear
+python3 SW/igmp/igmp_generator.py -v 3 -t block_old_sources -r 1 -i $IF2
+
+}
+
+# ---------------------------------------------------------------------------------------------------------------
+# Test IGMP Snooping.6: IGMP snooping stack: IGMP querier
+# ---------------------------------------------------------------------------------------------------------------
+
+function set_querier_service(){
+
+soce_cli << EOF
+igmp add_querier service_port
+igmp set_igmp_querier_param service_port ip 0.0.0.0
+igmp set_igmp_querier_param service_port expiry 100
+igmp set_igmp_querier_param service_port interquery_time 10
+igmp restart
+EOF
+}
+
+
+function set_querier_mgmt(){
+
+soce_cli << EOF
+igmp add_querier switch_port
+igmp set_igmp_querier_param switch_port ip 0.0.0.0
+igmp set_igmp_querier_param switch_port expiry 100
+igmp set_igmp_querier_param switch_port interquery_time 10
+igmp restart
+EOF
+}
+
+
+function test_igmp_6_1(){
+
+soce_cli_enable_igmp="enable_igmp"
+sshpass -p $password ssh -t -o StrictHostKeyChecking=no $username@$ip "$(declare -f $soce_cli_enable_igmp); $soce_cli_enable_igmp filter"
+
+soce_cli_set_querier_service="set_querier_service"
+sshpass -p $password ssh -t -o StrictHostKeyChecking=no $username@$ip "$(declare -f $soce_cli_set_querier_service); $soce_cli_set_querier_service"
+
+}
+
+function test_igmp_6_2(){
+
+soce_cli_enable_igmp="enable_igmp"
+sshpass -p $password ssh -t -o StrictHostKeyChecking=no $username@$ip "$(declare -f $soce_cli_enable_igmp); $soce_cli_enable_igmp filter"
+
+soce_cli_set_querier_mgmt="set_querier_mgmt"
+sshpass -p $password ssh -t -o StrictHostKeyChecking=no $username@$ip "$(declare -f $soce_cli_set_querier_mgmt); $soce_cli_set_querier_mgmt"
+
+}

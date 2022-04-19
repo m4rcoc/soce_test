@@ -1,0 +1,7 @@
+PCAP,Description,Frames to analyze,Filter,Expected,Results,PASS/FAIL,PCAP file path
+test_hsr_13_3_captured_IF1.pcap, Total P2P Req messages in IF1,*,(ptp.v2.messageid == 0x2) && (eth.src == ec:46:70:00:7e:a2),0,0,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_13_3/test_hsr_13_3_captured_IF1.pcap
+test_hsr_13_3_captured_IF1.pcap, Total P2P Resp messages in IF1,*,(ptp.v2.messageid == 0x3),0,0,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_13_3/test_hsr_13_3_captured_IF1.pcap
+test_hsr_13_3_captured_IF2.pcap, Total P2P Req messages in IF2,*,(ptp.v2.messageid == 0x2) && (eth.src == ec:46:70:00:7e:a2),0,0,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_13_3/test_hsr_13_3_captured_IF2.pcap
+test_hsr_13_3_captured_IF2.pcap, Total P2P Resp messages in IF2,*,(ptp.v2.messageid == 0x3),0,0,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_13_3/test_hsr_13_3_captured_IF2.pcap
+test_hsr_13_3_captured_IF3.pcap, Total P2P Req messages in IF3,*,(ptp.v2.messageid == 0x2) && (eth.src == ec:46:70:00:7e:a2),10,10,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_13_3/test_hsr_13_3_captured_IF3.pcap
+test_hsr_13_3_captured_IF3.pcap, Total P2P Resp messages in IF3,*,(ptp.v2.messageid == 0x3),10,10,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_13_3/test_hsr_13_3_captured_IF3.pcap

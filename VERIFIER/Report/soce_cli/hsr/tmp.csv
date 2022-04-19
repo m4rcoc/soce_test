@@ -1,0 +1,13 @@
+PCAP file path,Description,Frames to analyze,Filter,Expected,Results,PASS/FAIL,PCAP
+VERIFIER/Report/BIST/post_production/Port_number_J1/test_post_production_1_1_captured_IF1.pcap,Total 20000 frames,*,,20000,20000,PASS,test_post_production_1_1_captured_IF1.pcap
+VERIFIER/Report/BIST/post_production/Port_number_J1/test_post_production_1_1_captured_IF1.pcap,Unicast Frames,*,eth.src==00:bb:bb:bb:bb:bb and eth.dst==00:aa:aa:aa:aa:aa,10000,10000,PASS,test_post_production_1_1_captured_IF1.pcap
+VERIFIER/Report/BIST/post_production/Port_number_J1/test_post_production_1_1_captured_IF1.pcap,Unicast Frames,*,eth.src==00:aa:aa:aa:aa:aa and eth.dst==00:bb:bb:bb:bb:bb,10000,10000,PASS,test_post_production_1_1_captured_IF1.pcap
+VERIFIER/Report/BIST/post_production/Port_number_J1/test_post_production_1_1_captured_IF2.pcap,Total 20000 frames,*,,20000,20000,PASS,test_post_production_1_1_captured_IF2.pcap
+VERIFIER/Report/BIST/post_production/Port_number_J1/test_post_production_1_1_captured_IF2.pcap,Unicast Frames,*,eth.src==00:aa:aa:aa:aa:aa and eth.dst==00:bb:bb:bb:bb:bb,10000,10000,PASS,test_post_production_1_1_captured_IF2.pcap
+VERIFIER/Report/BIST/post_production/Port_number_J1/test_post_production_1_1_captured_IF2.pcap,Unicast Frames,*,eth.src==00:bb:bb:bb:bb:bb and eth.dst==00:aa:aa:aa:aa:aa,10000,10000,PASS,test_post_production_1_1_captured_IF2.pcap
+VERIFIER/Report/BIST/post_production/Port_number_J1/test_post_production_1_1_captured_IF3.pcap,Total 20000 frames,*,,20000,20000,PASS,test_post_production_1_1_captured_IF3.pcap
+VERIFIER/Report/BIST/post_production/Port_number_J1/test_post_production_1_1_captured_IF3.pcap,Unicast Frames,*,eth.src==00:dd:dd:dd:dd:dd and eth.dst==00:cc:cc:cc:cc:cc,10000,10000,PASS,test_post_production_1_1_captured_IF3.pcap
+VERIFIER/Report/BIST/post_production/Port_number_J1/test_post_production_1_1_captured_IF3.pcap,Unicast Frames,*,eth.src==00:cc:cc:cc:cc:cc and eth.dst==00:dd:dd:dd:dd:dd,10000,10000,PASS,test_post_production_1_1_captured_IF3.pcap
+VERIFIER/Report/BIST/post_production/Port_number_J1/test_post_production_1_1_captured_IF4.pcap,Total 20000 frames,*,,20000,20000,PASS,test_post_production_1_1_captured_IF4.pcap
+VERIFIER/Report/BIST/post_production/Port_number_J1/test_post_production_1_1_captured_IF4.pcap,Unicast Frames,*,eth.src==00:cc:cc:cc:cc:cc and eth.dst==00:dd:dd:dd:dd:dd,10000,10000,PASS,test_post_production_1_1_captured_IF4.pcap
+VERIFIER/Report/BIST/post_production/Port_number_J1/test_post_production_1_1_captured_IF4.pcap,Unicast Frames,*,eth.src==00:dd:dd:dd:dd:dd and eth.dst==00:cc:cc:cc:cc:cc,10000   ,10000,FAIL,test_post_production_1_1_captured_IF4.pcap

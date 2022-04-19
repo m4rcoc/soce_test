@@ -1,0 +1,12 @@
+PCAP,Description,Frames to analyze,Filter,Expected,Results,PASS/FAIL,PCAP file path
+test_vlan_1_1_captured_IF2.pcap,Total 4500 frames,*,,4500,4500,PASS,VERIFIER/Report/soce_cli/vlan/test_vlan_1_1_captured_IF2.pcap
+test_vlan_1_1_captured_IF2.pcap,Unicast Frames,*,eth.src==00:aa:aa:aa:aa:aa and eth.dst==00:bb:bb:bb:bb:bb,4500,4500,PASS,VERIFIER/Report/soce_cli/vlan/test_vlan_1_1_captured_IF2.pcap
+test_vlan_1_1_captured_IF2.pcap,First 1500 frames -> VLAN tagged (VID=100 PRI=0 DEI=0),frame.number<=1500,vlan.id==100 && vlan.dei==0 && vlan.priority==0,1500,1500,PASS,VERIFIER/Report/soce_cli/vlan/test_vlan_1_1_captured_IF2.pcap
+test_vlan_1_1_captured_IF2.pcap,First 1500 frames -> MIN size=68,frame.number<=1500,MIN(frame.len)frame.len,68,68,PASS,VERIFIER/Report/soce_cli/vlan/test_vlan_1_1_captured_IF2.pcap
+test_vlan_1_1_captured_IF2.pcap,First 1500 frames -> MAX size=1518,frame.number<=1500,MAX(frame.len)frame.len,1518,1518,PASS,VERIFIER/Report/soce_cli/vlan/test_vlan_1_1_captured_IF2.pcap
+test_vlan_1_1_captured_IF2.pcap,Second 1500 frames -> VLAN tagged (VID=100 PRI=0 DEI=0),frame.number>1500 and frame.number<=3000,vlan.id==100 && vlan.dei==0 && vlan.priority==0,1500,1500,PASS,VERIFIER/Report/soce_cli/vlan/test_vlan_1_1_captured_IF2.pcap
+test_vlan_1_1_captured_IF2.pcap,Second 1500 frames -> MIN size=64,frame.number>1500 and frame.number<=3000,MIN(frame.len)frame.len,64,64,PASS,VERIFIER/Report/soce_cli/vlan/test_vlan_1_1_captured_IF2.pcap
+test_vlan_1_1_captured_IF2.pcap,Second 1500 frames -> MAX size=1514,frame.number>1500 and frame.number<=3000,MAX(frame.len)frame.len,1514,1514,PASS,VERIFIER/Report/soce_cli/vlan/test_vlan_1_1_captured_IF2.pcap
+test_vlan_1_1_captured_IF2.pcap,Last 1500 frames -> VLAN tagged (VID=200 PRI=0 DEI=0),frame.number>3000 and frame.number<=4500,vlan.id==200 && vlan.dei==0 && vlan.priority==0,1500,1500,PASS,VERIFIER/Report/soce_cli/vlan/test_vlan_1_1_captured_IF2.pcap
+test_vlan_1_1_captured_IF2.pcap,Last 1500 frames -> MIN size=64,frame.number>3000 and frame.number<=4500,MIN(frame.len)frame.len,64,64,PASS,VERIFIER/Report/soce_cli/vlan/test_vlan_1_1_captured_IF2.pcap
+test_vlan_1_1_captured_IF2.pcap,Last 1500 frames -> MAX size=1514,frame.number>3000 and frame.number<=4500,MAX(frame.len)frame.len,1514,1514,PASS,VERIFIER/Report/soce_cli/vlan/test_vlan_1_1_captured_IF2.pcap

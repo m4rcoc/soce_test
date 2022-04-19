@@ -1,0 +1,7 @@
+Interface	=eth0
+MAC_DST				=01:80:c2:00:00:00
+MAC_SRC    =00:04:04:04:04:04
+DST_port   =3
+ETHERTYPE			=0xffff
+PAYLOAD				=Hello......................................................................World
+

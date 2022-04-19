@@ -1,0 +1,123 @@
+STATS,Flow Number,Description,Field to verify,Accurancy,Expected,Results,PASS/FAIL,Filename,Flow Group
+port_statistics_template_advanced.stats,1,TBD,Frames Tx.,0.5,111.299,111.111,PASS,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Valid Frames Rx.,0.5,221.722,222.222,PASS,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Frames Tx. Rate,0.5,0,333.333,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Valid Frames Rx. Rate,0.5,0,444.444,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Data Integrity Frames Rx.,0.5,0,555.555,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Data Integrity Errors,0.5,0,666.666,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Bytes Tx.,0.5,0,777.777,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Bytes Rx.,0.5,0,888.888,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Bits Sent,0.5,0,999.999,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Bits Received,0.5,0,1010.1010,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Bytes Tx. Rate,0.5,0,1111.1111,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Tx. Rate (bps),0.5,0,1212.1212,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Tx. Rate (Kbps),0.5,0,1313.1313,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Tx. Rate (Mbps),0.5,0,1414.1414,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Bytes Rx. Rate,0.5,0,1515.1515,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Rx. Rate (bps),0.5,0,1616.1616,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Rx. Rate (Kbps),0.5,0,1717.1717,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Rx. Rate (Mbps),0.5,0,1818.1818,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Scheduled Frames Tx.,0.5,0,1919.1919,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Scheduled Frames Tx. Rate,0.5,0,2020.2020,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Control Frames Tx,0.5,0,2121.2121,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Control Frames Rx,0.5,0,2222.2222,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Ethernet OAM Information PDUs Sent,0.5,0,2323.2323,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Ethernet OAM Information PDUs Received,0.5,0,2424.2424,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Ethernet OAM Event Notification PDUs Received,0.5,0,2525.2525,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Ethernet OAM Loopback Control PDUs Received,0.5,0,2626.2626,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Ethernet OAM Organisation PDUs Received,0.5,0,2727.2727,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Ethernet OAM Variable Request PDUs Received,0.5,0,2828.2828,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Ethernet OAM Variable Response Received,0.5,0,2929.2929,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Ethernet OAM Unsupported PDUs Received,0.5,0,3030.3030,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Rx Pause Priority Group 0 Frames,0.5,0,3131.3131,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Rx Pause Priority Group 1 Frames,0.5,0,3232.3232,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Rx Pause Priority Group 2 Frames,0.5,0,3333.3333,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Rx Pause Priority Group 3 Frames,0.5,0,3434.3434,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Rx Pause Priority Group 4 Frames,0.5,0,3535.3535,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Rx Pause Priority Group 5 Frames,0.5,0,3636.3636,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Rx Pause Priority Group 6 Frames,0.5,0,3737.3737,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Rx Pause Priority Group 7 Frames,0.5,0,3838.3838,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,Misdirected Packet Count,0.5,0,3939.3939,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,1,TBD,CRC Errors,0.5,4040.4040,4040.4040,PASS,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Frames Tx.,0.5,0,4141.4141,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Valid Frames Rx.,0.5,0,4242.4242,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Frames Tx. Rate,0.5,0,4343.4343,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Valid Frames Rx. Rate,0.5,0,4444.4444,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Data Integrity Frames Rx.,0.5,0,4545.4545,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Data Integrity Errors,0.5,0,4646.4646,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Bytes Tx.,0.5,0,4747.4747,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Bytes Rx.,0.5,0,4848.4848,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Bits Sent,0.5,0,4949.4949,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Bits Received,0.5,0,5050.5050,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Bytes Tx. Rate,0.5,0,5151.5151,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Tx. Rate (bps),0.5,0,5252.5252,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Tx. Rate (Kbps),0.5,0,5353.5353,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Tx. Rate (Mbps),0.5,0,5454.5454,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Bytes Rx. Rate,0.5,0,5555.5555,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Rx. Rate (bps),0.5,0,5656.5656,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Rx. Rate (Kbps),0.5,0,5757.5757,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Rx. Rate (Mbps),0.5,0,5858.5858,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Scheduled Frames Tx.,0.5,0,5959.5959,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Scheduled Frames Tx. Rate,0.5,0,6060.6060,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Control Frames Tx,0.5,0,6161.6161,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Control Frames Rx,0.5,0,6262.6262,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Ethernet OAM Information PDUs Sent,0.5,0,6363.6363,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Ethernet OAM Information PDUs Received,0.5,0,6464.6464,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Ethernet OAM Event Notification PDUs Received,0.5,0,6565.6565,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Ethernet OAM Loopback Control PDUs Received,0.5,0,6666.6666,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Ethernet OAM Organisation PDUs Received,0.5,0,6767.6767,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Ethernet OAM Variable Request PDUs Received,0.5,0,6868.6868,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Ethernet OAM Variable Response Received,0.5,0,6969.6969,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Ethernet OAM Unsupported PDUs Received,0.5,0,7070.7070,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Rx Pause Priority Group 0 Frames,0.5,0,7171.7171,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Rx Pause Priority Group 1 Frames,0.5,0,7272.7272,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Rx Pause Priority Group 2 Frames,0.5,0,7373.7373,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Rx Pause Priority Group 3 Frames,0.5,0,7474.7474,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Rx Pause Priority Group 4 Frames,0.5,0,7575.7575,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Rx Pause Priority Group 5 Frames,0.5,0,7676.7676,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Rx Pause Priority Group 6 Frames,0.5,0,7777.7777,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Rx Pause Priority Group 7 Frames,0.5,0,7878.7878,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,Misdirected Packet Count,0.5,0,7979.7979,FAIL,port_statistics_template_advanced.stats,
+port_statistics_template_advanced.stats,2,TBD,CRC Errors,0.5,0,8080.8080,FAIL,port_statistics_template_advanced.stats,
+flow_statistics_template.stats,1,TBD,Tx Frames,0.5,0,30638,FAIL,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,1,TBD,Rx Frames,0.5,0,30638,FAIL,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,1,TBD,Frames Delta,0.5,0,0,PASS,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,1,TBD,Loss %,0.5,0,0.600,FAIL,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,1,TBD,Tx Frame Rate,0.5,0,0.000,PASS,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,1,TBD,Rx Frame Rate,0.5,0,0.000,PASS,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,1,TBD,Tx L1 Rate (bps),0.5,0,0.000,PASS,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,1,TBD,Rx L1 Rate (bps),0.5,0,0.000,PASS,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,1,TBD,Rx Bytes,0.5,0,30638000,FAIL,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,1,TBD,Tx Rate (Bps),0.5,0,0.000,PASS,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,1,TBD,Rx Rate (Bps),0.5,0,0.000,PASS,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,1,TBD,Tx Rate (bps),0.5,0,0.000,PASS,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,1,TBD,Rx Rate (bps),0.5,0,0.000,PASS,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,1,TBD,Tx Rate (Kbps),0.5,0,0.000,PASS,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,1,TBD,Rx Rate (Kbps),0.5,0,0.000,PASS,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,1,TBD,Tx Rate (Mbps),0.5,0,0.000,PASS,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,1,TBD,Rx Rate (Mbps),0.5,0,0.000,PASS,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,1,TBD,Store-Forward Avg Latency (ns),0.5,0,1439,FAIL,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,1,TBD,Store-Forward Min Latency (ns),0.5,0,1422,FAIL,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,1,TBD,Store-Forward Max Latency (ns),0.5,0,2175,FAIL,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,1,TBD,Dead Flow,0.5,0,0,PASS,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,7,TBD,Tx Frames,0.5,0,1111.1111,FAIL,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,7,TBD,Rx Frames,0.5,0,2222.2222,FAIL,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,7,TBD,Frames Delta,0.5,0,3333.3333,FAIL,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,7,TBD,Loss %,0.5,0,4444.4444,FAIL,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,7,TBD,Tx Frame Rate,0.5,0,5555.5555,FAIL,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,7,TBD,Rx Frame Rate,0.5,0,6666.6666,FAIL,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,7,TBD,Tx L1 Rate (bps),0.5,0,7777.7777,FAIL,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,7,TBD,Rx L1 Rate (bps),0.5,0,8888.8888,FAIL,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,7,TBD,Rx Bytes,0.5,0,9999.9999,FAIL,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,7,TBD,Tx Rate (Bps),0.5,0,10101010.10101010,FAIL,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,7,TBD,Rx Rate (Bps),0.5,0,11111111.11111111,FAIL,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,7,TBD,Tx Rate (bps),0.5,0,12121212.12121212,FAIL,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,7,TBD,Rx Rate (bps),0.5,0,13131313.13131313,FAIL,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,7,TBD,Tx Rate (Kbps),0.5,0,14141414.14141414,FAIL,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,7,TBD,Rx Rate (Kbps),0.5,0,15151515.15151515,FAIL,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,7,TBD,Tx Rate (Mbps),0.5,0,16161616.16161616,FAIL,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,7,TBD,Rx Rate (Mbps),0.5,0,17171717.17171717,FAIL,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,7,TBD,Store-Forward Avg Latency (ns),0.5,0,18181818.18181818,FAIL,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,7,TBD,Store-Forward Min Latency (ns),0.5,0,19191919.19191919,FAIL,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,7,TBD,Store-Forward Max Latency (ns),0.5,0,20202020.20202020,FAIL,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001
+flow_statistics_template.stats,7,TBD,Dead Flow,0.5,0,21212121.21212121,FAIL,flow_statistics_template.stats,Traffic Item 1-EndpointSet-4 - Flow Group 0001

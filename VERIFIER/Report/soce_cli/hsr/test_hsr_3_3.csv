@@ -1,0 +1,9 @@
+PCAP,Description,Frames to analyze,Filter,Expected,Results,PASS/FAIL,PCAP file path
+test_hsr_3_3_captured_IF2.pcap,Total frames in Redundant B = 1,*,,1,1,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_3_3/test_hsr_3_3_captured_IF2.pcap
+test_hsr_3_3_captured_IF2.pcap,Multicast frames (192.168.100.100 -> 224.1.2.3),*,ip.src==192.168.100.100 and ip.dst==224.1.2.3,1,1,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_3_3/test_hsr_3_3_captured_IF2.pcap
+test_hsr_3_3_captured_IF2.pcap,HSR tagged with LAN ID=A (0),*,eth.type==0x892f and hsr.laneid==0,1,1,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_3_3/test_hsr_3_3_captured_IF2.pcap
+test_hsr_3_3_captured_IF2.pcap,Frame length=100,*,frame.len==100,1,1,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_3_3/test_hsr_3_3_captured_IF2.pcap
+test_hsr_3_3_captured_IF3.pcap,Total frames in Interlink = 1,*,,1,1,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_3_3/test_hsr_3_3_captured_IF3.pcap
+test_hsr_3_3_captured_IF3.pcap,Multicast frames (192.168.100.100 -> 224.1.2.3),*,ip.src==192.168.100.100 and ip.dst==224.1.2.3,1,1,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_3_3/test_hsr_3_3_captured_IF3.pcap
+test_hsr_3_3_captured_IF3.pcap,Untagged frames,*,eth.type==0x0800,1,1,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_3_3/test_hsr_3_3_captured_IF3.pcap
+test_hsr_3_3_captured_IF3.pcap,Frame length=94,*,frame.len==94,1,1,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_3_3/test_hsr_3_3_captured_IF3.pcap

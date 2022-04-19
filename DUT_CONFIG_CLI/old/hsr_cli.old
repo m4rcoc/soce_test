@@ -1,0 +1,422 @@
+#!/bin/bash
+
+# ---------------------------------------------------------------------------------------------------------------
+# DUT config  functions:
+# ---------------------------------------------------------------------------------------------------------------
+function enable_hsr(){
+#hsr_prp clear_proxy_table HPS
+soce_cli << EOF
+mac_address_table delete_all_dynamic_entries SWITCH
+hsr_prp set_redundancy_protocol HPS HSR mode-h
+hsr_prp disable_supervision_frames_vlan HPS
+EOF
+}
+
+
+function enable_hsr_vlan(){
+#hsr_prp clear_proxy_table HPS
+soce_cli << EOF
+mac_address_table delete_all_dynamic_entries SWITCH
+hsr_prp set_redundancy_protocol HPS HSR mode-h
+hsr_prp enable_supervision_frames_vlan HPS
+EOF
+}
+
+function clear_nodes(){
+#hsr_prp clear_proxy_table HPS
+soce_cli << EOF
+mac_address_table delete_all_dynamic_entries SWITCH
+EOF
+}
+
+#function send_results(){
+
+#}
+
+# ---------------------------------------------------------------------------------------------------------------
+# MAIN functions:
+# ---------------------------------------------------------------------------------------------------------------
+
+function test_hsr_1_1(){
+
+clear; check_interfaces $IF1 $IF2 $IF3
+mkdir -p RESULTS/HSR
+dut_config="enable_hsr"
+sshpass -p $password ssh -t -o StrictHostKeyChecking=no $username@$ip "$(declare -f $dut_config); $dut_config"
+
+cd SW/hsr
+
+parse_HSR_param
+
+python3 hsr.py 1 HSR_param
+
+cd ../..
+
+
+}
+
+function test_hsr_2_1(){
+
+clear; check_interfaces $IF1 $IF2 $IF3
+mkdir -p RESULTS/HSR
+dut_config="enable_hsr"
+sshpass -p $password ssh -t -o StrictHostKeyChecking=no $username@$ip "$(declare -f $dut_config); $dut_config"
+
+cd SW/hsr
+
+report_file="../../RESULTS/HSR/test_2_hsr_report.out"
+rm -f report_file
+report && date >> $report_file
+
+parse_HSR_param 21
+python3 hsr.py 2a HSR_param | capture
+report && ret >> $report_file
+
+clear_nodes="clear_nodes"
+sshpass -p $password ssh -t -o StrictHostKeyChecking=no $username@$ip "$(declare -f $clear_nodes); $clear_nodes" > /dev/null 2>&1
+
+parse_HSR_param 22
+python3 hsr.py 2b HSR_param | capture
+report && ret >> $report_file
+
+cd ../..
+
+
+}
+
+function test_hsr_3_1(){
+
+clear; check_interfaces $IF1 $IF2 $IF3
+mkdir -p RESULTS/HSR
+dut_config="enable_hsr"
+sshpass -p $password ssh -t -o StrictHostKeyChecking=no $username@$ip "$(declare -f $dut_config); $dut_config"
+
+cd SW/hsr
+
+report_file="../../RESULTS/HSR/test_3_hsr_report.out"
+rm -f $report_file
+report && date >> $report_file
+
+parse_HSR_param 31
+python3 hsr.py 3a HSR_param | capture
+report && ret >> $report_file
+
+clear_nodes="clear_nodes"
+sshpass -p $password ssh -t -o StrictHostKeyChecking=no $username@$ip "$(declare -f $clear_nodes); $clear_nodes" > /dev/null 2>&1
+
+parse_HSR_param 32
+python3 hsr.py 3b HSR_param | capture
+report && ret >> $report_file
+
+clear_nodes="clear_nodes"
+sshpass -p $password ssh -t -o StrictHostKeyChecking=no $username@$ip "$(declare -f $clear_nodes); $clear_nodes" > /dev/null 2>&1
+
+parse_HSR_param 33
+python3 hsr.py 3c HSR_param | capture
+report && ret >> $report_file
+
+clear_nodes="clear_nodes"
+sshpass -p $password ssh -t -o StrictHostKeyChecking=no $username@$ip "$(declare -f $clear_nodes); $clear_nodes" > /dev/null 2>&1
+
+parse_HSR_param 34
+python3 hsr.py 3d HSR_param | capture
+report && ret >> $report_file
+
+cd ../..
+
+}
+
+
+function test_hsr_4_1(){
+
+clear; check_interfaces $IF1 $IF2 $IF3
+mkdir -p RESULTS/HSR
+dut_config="enable_hsr"
+sshpass -p $password ssh -t -o StrictHostKeyChecking=no $username@$ip "$(declare -f $dut_config); $dut_config"
+
+cd SW/hsr
+
+report_file="../../RESULTS/HSR/test_4_hsr_report.out"
+rm -f $report_file
+report && date >> $report_file
+
+parse_HSR_param 41
+python3 hsr.py 4a HSR_param | capture
+report && ret >> $report_file
+
+: '
+sleep 5
+pkill python
+pkill python3
+
+clear_nodes="clear_nodes"
+sshpass -p $password ssh -t -o StrictHostKeyChecking=no $username@$ip "$(declare -f $clear_nodes); $clear_nodes" > /dev/null 2>&1
+parse_HSR_param 12
+python3 hsr.py 4b HSR_param | capture
+report && ret >> $report_file
+'
+
+clear_nodes="clear_nodes"
+sshpass -p $password ssh -t -o StrictHostKeyChecking=no $username@$ip "$(declare -f $clear_nodes); $clear_nodes" > /dev/null 2>&1
+parse_HSR_param 43
+python3 hsr.py 4c HSR_param | capture
+report && ret >> $report_file
+
+
+clear_nodes="clear_nodes"
+sshpass -p $password ssh -t -o StrictHostKeyChecking=no $username@$ip "$(declare -f $clear_nodes); $clear_nodes" > /dev/null 2>&1
+parse_HSR_param 44
+python3 hsr.py 4d HSR_param | capture
+report && ret >> $report_file
+
+cd ../..
+
+}
+
+function test_hsr_5_1(){
+
+clear; check_interfaces $IF1 $IF2 $IF3
+mkdir -p RESULTS/HSR
+dut_config="enable_hsr"
+sshpass -p $password ssh -t -o StrictHostKeyChecking=no $username@$ip "$(declare -f $dut_config); $dut_config"
+
+cd SW/hsr
+
+report_file="../../RESULTS/HSR/test_5_hsr_report.out"
+rm -f $report_file
+report && date >> $report_file
+
+parse_HSR_param 51
+python3 hsr.py 5 HSR_param | capture
+report && ret >> $report_file
+
+cd ../..
+
+}
+
+function test_hsr_6_1(){
+
+clear; check_interfaces $IF1 $IF2 $IF3
+mkdir -p RESULTS/HSR
+dut_config="enable_hsr"
+sshpass -p $password ssh -t -o StrictHostKeyChecking=no $username@$ip "$(declare -f $dut_config); $dut_config"
+
+cd SW/hsr
+
+report_file="../../RESULTS/HSR/test_6_hsr_report.out"
+rm -f $report_file
+report && date >> $report_file
+
+parse_HSR_param 61
+python3 hsr.py 6a HSR_param | capture
+report && ret >> $report_file
+
+clear_nodes="clear_nodes"
+sshpass -p $password ssh -t -o StrictHostKeyChecking=no $username@$ip "$(declare -f $clear_nodes); $clear_nodes" > /dev/null 2>&1
+
+python3 hsr.py 6b HSR_param | capture
+report && ret >> $report_file
+
+cd ../..
+
+}
+
+function test_hsr_7_1(){
+
+clear; check_interfaces $IF1 $IF2 $IF3
+mkdir -p RESULTS/HSR
+
+report_file="RESULTS/HSR/test_7_hsr_report.out"
+
+out_a_capture="RESULTS/HSR/test_7_a_hsr_I.pcap"
+out_b_capture="RESULTS/HSR/test_7_b_hsr_I.pcap"
+in_capture="SW/hsr/pcaps/hsr_wrong_ethertype.pcap"
+report_a_diff="RESULTS/HSR/test_7_a_hsr_diff.pcap"
+report_b_diff="RESULTS/HSR/test_7_b_hsr_diff.pcap"
+
+rm -f $report_file $out_a_capture $out_b_capture $report_a_diff $report_b_diff
+
+print_r "echo -e \"Test HSR.7 – Wrong HSR Ethertype\n\nTested by\t\tDate\nMC\t\t$(date)\n\n\"" $report_file
+
+print_r "printf \"Sending $in_capture through Redundant A ($IF1)...\n\n\"" $report_file
+tcpreplay -i $IF1 $in_capture > /dev/null 2>&1 &
+
+print_r "printf \"Capturing Interlink interface (timeout 17 seconds) ...\n\n\"" $report_file
+echo $password | sudo -S timeout 17 tcpdump -i $IF3 ether src f4:f2:6d:3e:ad:bc -w $out_a_capture > /dev/null 2>&1
+#timeout 15 tcpdump -i $IF3 ether src f4:f2:6d:3e:ad:bc -lw - > RESULTS/HSR/test_7_hsr_I.pcap  # OK
+
+print_r "printf \"\nComparing input and output pcap:\n\"" $report_file
+python3 SW/hsr/pcap_compare.py -i $in_capture -i $out_a_capture -o $report_a_diff -l | capture
+report && ret >> $report_file
+
+print_r "printf \"=====================================================\n\"" $report_file
+print_r "printf \"Sending $in_capture through Redundant B ($IF2)...\n\n\"" $report_file
+tcpreplay -i $IF2 $in_capture > /dev/null 2>&1 &
+
+print_r "printf \"Capturing Interlink interface (timeout 17 seconds) ...\n\n\"" $report_file
+echo $password | sudo -S timeout 17 tcpdump -i $IF3 ether src f4:f2:6d:3e:ad:bc -w $out_b_capture > /dev/null 2>&1
+#timeout 15 tcpdump -i $IF3 ether src f4:f2:6d:3e:ad:bc -lw - > RESULTS/HSR/test_7_hsr_I.pcap  # OK
+
+print_r "printf \"\nComparing input and output pcap:\n\"" $report_file
+python3 SW/hsr/pcap_compare.py -i $in_capture -i $out_b_capture -o $report_b_diff -l | capture
+report && ret >> $report_file
+
+}
+
+function test_hsr_8_1(){
+
+clear; check_interfaces $IF1 $IF2 $IF3
+mkdir -p RESULTS/HSR
+
+report_file="RESULTS/HSR/test_8_hsr_report.out"
+
+out_a_capture="RESULTS/HSR/test_8_a_hsr_I.pcap"
+out_b_capture="RESULTS/HSR/test_8_b_hsr_I.pcap"
+in_capture="SW/hsr/pcaps/hsr_wrong_lsdu.pcap"
+report_a_diff="RESULTS/HSR/test_8_a_hsr_diff.pcap"
+report_b_diff="RESULTS/HSR/test_8_b_hsr_diff.pcap"
+
+rm -f $report_file $out_a_capture $out_b_capture $report_a_diff $report_b_diff
+
+print_r "echo -e \"Test HSR.8 – Wrong LSDU Size\n\nTested by\t\tDate\nMC\t\t$(date)\n\n\"" $report_file
+
+print_r "printf \"Sending $in_capture through Redundant A ($IF1)...\n\n\"" $report_file
+tcpreplay -i $IF1 $in_capture > /dev/null 2>&1 &
+
+print_r "printf \"Capturing Interlink interface (timeout 17 seconds) ...\n\n\"" $report_file
+echo $password | sudo -S timeout 17 tcpdump -i $IF3 ether src f4:f2:6d:3e:ad:bc -w $out_a_capture > /dev/null 2>&1
+#timeout 15 tcpdump -i $IF3 ether src f4:f2:6d:3e:ad:bc -lw - > RESULTS/HSR/test_7_hsr_I.pcap  # OK
+
+print_r "printf \"\nComparing input and output pcap:\n\"" $report_file
+python3 SW/hsr/pcap_compare.py -i $in_capture -i $out_a_capture -o $report_a_diff -l | capture
+report && ret >> $report_file
+
+print_r "printf \"=====================================================\n\"" $report_file
+print_r "printf \"Sending $in_capture through Redundant B ($IF2)...\n\n\"" $report_file
+tcpreplay -i $IF2 $in_capture > /dev/null 2>&1 &
+
+print_r "printf \"Capturing Interlink interface (timeout 17 seconds) ...\n\n\"" $report_file
+echo $password | sudo -S timeout 17 tcpdump -i $IF3 ether src f4:f2:6d:3e:ad:bc -w $out_b_capture > /dev/null 2>&1
+#timeout 15 tcpdump -i $IF3 ether src f4:f2:6d:3e:ad:bc -lw - > RESULTS/HSR/test_7_hsr_I.pcap  # OK
+
+print_r "printf \"\nComparing input and output pcap:\n\"" $report_file
+python3 SW/hsr/pcap_compare.py -i $in_capture -i $out_b_capture -o $report_b_diff -l | capture
+report && ret >> $report_file
+
+
+}
+
+
+function test_hsr_9_1(){
+
+clear; check_interfaces $IF1 $IF2 $IF3
+mkdir -p RESULTS/HSR
+
+report_file="RESULTS/HSR/test_9_hsr_report.out"
+
+out_a_capture="RESULTS/HSR/test_9_a_hsr_I.pcap"
+out_b_capture="RESULTS/HSR/test_9_b_hsr_I.pcap"
+in_a_capture="SW/hsr/pcaps/hsr_wrong_lan_a.pcap"
+in_b_capture="SW/hsr/pcaps/hsr_wrong_lan_b.pcap"
+report_a_diff="RESULTS/HSR/test_9_a_hsr_diff.pcap"
+report_b_diff="RESULTS/HSR/test_9_b_hsr_diff.pcap"
+
+rm -f $report_file $out_a_capture $out_b_capture $report_a_diff $report_b_diff
+
+print_r "echo -e \"Test HSR.9 – Wrong LAN ID\n\nTested by\t\tDate\nMC\t\t$(date)\n\n\"" $report_file
+
+print_r "printf \"Sending $in_b_capture through Redundant A ($IF1)...\n\n\"" $report_file
+tcpreplay -i $IF1 $in_b_capture > /dev/null 2>&1 &
+
+print_r "printf \"Capturing Interlink interface (timeout 17 seconds) ...\n\n\"" $report_file
+echo $password | sudo -S timeout 17 tcpdump -i $IF3 ether src f4:f2:6d:3e:ad:bc -w $out_a_capture > /dev/null 2>&1
+#timeout 15 tcpdump -i $IF3 ether src f4:f2:6d:3e:ad:bc -lw - > RESULTS/HSR/test_7_hsr_I.pcap  # OK
+
+print_r "printf \"\nComparing input and output pcap:\n\"" $report_file
+python3 SW/hsr/pcap_compare.py -i $in_b_capture -i $out_a_capture -o $report_a_diff -l | capture
+report && ret >> $report_file
+
+print_r "printf \"=====================================================\n\"" $report_file
+print_r "printf \"Sending $in_a_capture through Redundant B ($IF2)...\n\n\"" $report_file
+tcpreplay -i $IF2 $in_a_capture > /dev/null 2>&1 &
+
+print_r "printf \"Capturing Interlink interface (timeout 17 seconds) ...\n\n\"" $report_file
+echo $password | sudo -S timeout 17 tcpdump -i $IF3 ether src f4:f2:6d:3e:ad:bc -w $out_b_capture > /dev/null 2>&1
+#timeout 15 tcpdump -i $IF3 ether src f4:f2:6d:3e:ad:bc -lw - > RESULTS/HSR/test_7_hsr_I.pcap  # OK
+
+print_r "printf \"\nComparing input and output pcap:\n\"" $report_file
+python3 SW/hsr/pcap_compare.py -i $in_a_capture -i $out_b_capture -o $report_b_diff -l | capture
+report && ret >> $report_file
+
+
+}
+
+function test_hsr_12_1(){
+
+clear; check_interfaces $IF1 $IF2 $IF3
+mkdir -p RESULTS/HSR
+dut_config="enable_hsr"
+sshpass -p $password ssh -t -o StrictHostKeyChecking=no $username@$ip "$(declare -f $dut_config); $dut_config"
+
+}
+
+# ---------------------------------------------------------------------------------------------------------------
+# AUX functions:
+# ---------------------------------------------------------------------------------------------------------------
+
+function ifup(){
+
+        if [[ ! -d /sys/class/net/${1} ]]; then
+                printf 'No such interface: %s\n' "$1" >&2
+                return 1
+        else
+                [[ $(</sys/class/net/${1}/operstate) == up ]]
+        fi
+}
+
+function check_interfaces(){
+
+for IF in "$@"
+do
+        echo -ne "\n${yellowColour}[*]${endColour}${blueColour} Interface${endColour}${purpleColour} $IF${endColour}${blueColour}...${endColour}"
+        if ifup $IF; then
+            printf " is connected ${greenColour}(V)${endColour}\n"
+        else
+            printf " is NOT connected ${redColour}(X)${endColour}\n"
+        fi
+done
+}
+
+
+function parse_HSR_param(){
+
+MAC_1="00:AA:AA:AA:AA:$1"
+MAC_2="00:BB:BB:BB:BB:$1"
+
+printf "\n$MAC_1    $MAC_2\n"
+
+sed -i HSR_param -e "2s/.*/interface(I)        =$IF3/"
+sed -i HSR_param -e "3s/.*/interface(A)        =$IF1/"
+sed -i HSR_param -e "4s/.*/interface(B)        =$IF2/"
+sed -i HSR_param -e "5s/.*/MAC_1               =$MAC_1/"
+sed -i HSR_param -e "6s/.*/MAC_2               =$MAC_2/"
+sed -i HSR_param -e "14s/.*/ProxyTableSize      =$ProxyTableSize/"
+sed -i HSR_param -e "15s/.*/JumboEnabled        =$JumboEnabled/"
+}
+
+
+function print_r(){     # $1: command to execute  $2: report_file
+
+eval $1 | capture
+report && ret >> $2
+}
+
+report () [[ -v REPORT ]]
+
+function capture(){
+tee /tmp/capture.out
+}
+
+function ret(){
+cat /tmp/capture.out
+}

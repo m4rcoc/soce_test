@@ -1,0 +1,10 @@
+
+MST.IntraMSTIRootID001
+
+MST.InterMSTIRootID001
+
+MST.IntraMSTI001PathCost_00030D40
+
+MST.IntraMSTI001RemainingHops_13
+
+MST.IntraMSTI001RemainingHops_02

@@ -1,0 +1,228 @@
+|********************************************************************************|
+| Tested by	:	Marco Condori
+| Date		:	mar 18 ene 2022 17:07:09 CET
+|********************************************************************************|
+| Serial number  :  0123456789                                                   |
+| Product model  :  RELY_TSN_PCIE                                                |
+| Product version  :  21.1.0beta1                                                |
+| Device name  :  RELY_TSN_PCIe                                                  |
+| Device location  :  Relyum                                                     |
+| Contact info  :  support@relyum.com                                            |
+|--------------------------------------------------------------------------------|
+| HPS:
+| SWITCH:
+| Core version  :  21.01.1100                                                    |
+|--------------------------------------------------------------------------------|
+|
+|
+|
+[+] Info: 	Connecting to DUT Netconf Server (192.168.5.190)
+	cmd=[netconf-console2 --port 830 --host 192.168.5.190 -u sys-admin -p sys-admin --db=running --get-config]
+
+ 
+<?xml version='1.0' encoding='UTF-8'?>
+<data xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <netconf-server xmlns="urn:ietf:params:xml:ns:yang:ietf-netconf-server">
+    <listen>
+      <endpoint>
+        <name>default-ssh</name>
+        <ssh>
+          <tcp-server-parameters>
+            <local-address>0.0.0.0</local-address>
+            <keepalives>
+              <idle-time>1</idle-time>
+              <max-probes>10</max-probes>
+              <probe-interval>5</probe-interval>
+            </keepalives>
+          </tcp-server-parameters>
+          <ssh-server-parameters>
+            <server-identity>
+              <host-key>
+                <name>default-key</name>
+                <public-key>
+                  <keystore-reference>genkey</keystore-reference>
+                </public-key>
+              </host-key>
+            </server-identity>
+            <client-authentication>
+              <supported-authentication-methods>
+                <publickey/>
+                <passsword/>
+                <other>interactive</other>
+              </supported-authentication-methods>
+              <users/>
+            </client-authentication>
+          </ssh-server-parameters>
+        </ssh>
+      </endpoint>
+    </listen>
+  </netconf-server>
+  <keystore xmlns="urn:ietf:params:xml:ns:yang:ietf-keystore">
+    <asymmetric-keys>
+      <asymmetric-key>
+        <name>genkey</name>
+        <algorithm>rsa2048</algorithm>
+        <public-key>MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5UBOKBk9VFdTKsE4EUGG
+AIlMdhyhzqMfuAXxZf6JJQ82Pc5zJOdUE7vj4Dgt13y1PPo76E7+YcbVpIdqBK7W
+YPcK7wM11fNejPOe5vskj2BAoAyTOGVxEP3mnAUQiUkmpuOO4TcinJvIpmHg7lUX
+D2KZpp6+iEywpRu+g5POg2VOICKTzT62DmZHc0FoqVclhBVFaZd34BKJfcIWPO0t
+4dkwRdGw84mPieYyumfOEzLh6OGg1igLEcTOvcozIsmIzPTb0TRk7xt/c0wk7i3F
+BoXY5dsmqukvw6ZNWyYRpZQoceVYKuxvPTHEnLAbkc/puPeBxWbh2kWcekKyEINJ
+4QIDAQAB</public-key>
+        <private-key>MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDlQE4oGT1UV1Mq
+wTgRQYYAiUx2HKHOox+4BfFl/oklDzY9znMk51QTu+PgOC3XfLU8+jvoTv5hxtWk
+h2oErtZg9wrvAzXV816M857m+ySPYECgDJM4ZXEQ/eacBRCJSSam447hNyKcm8im
+YeDuVRcPYpmmnr6ITLClG76Dk86DZU4gIpPNPrYOZkdzQWipVyWEFUVpl3fgEol9
+whY87S3h2TBF0bDziY+J5jK6Z84TMuHo4aDWKAsRxM69yjMiyYjM9NvRNGTvG39z
+TCTuLcUGhdjl2yaq6S/Dpk1bJhGllChx5Vgq7G89McScsBuRz+m494HFZuHaRZx6
+QrIQg0nhAgMBAAECggEAds64sndCHW+UHlg8YlT+yVBeW+fCw4AudARAcodTM+2K
+QsW3TqzEGeYJ1q3GtCJhGtTkLyShGLMfDUFQZFTnrSDafbvALr0NhybKdxI4hEVx
+uIBL27JWwmOTG9BUHZHXgi30YitcuKTTe8bF9z4J0WNcFcm3HJQCB881EKONJvJh
+99wgidwrjbY9oQR4yE5JIqqLPBye2O3/wTWGYSGiaptLy9x+ir92Xgqw+tFbzden
+JWLZATpxrQ7Fyj4amwWEErybNJUm46V61rmCZA2pE0IJj7JjQUHOXOLx7yaqF25u
+V+5Me98Jv+lm+GqTsn82aa8djMeNUEncsdtBM4OVcQKBgQD/FE+wnYn2/uWW743M
+dNsv0bXgWAl8f2VOLKviOjUFNt95ZGWZqE/1aAiOEClKZrTyXfwgNWDqNx3IVheF
+1Si025+vdypIQRJq3lgHVGXHQRHwpci5Oh/ZL6jiUtYBYxSKxLV60h7F84+dQy03
+r11Ev3LOJ9Qz5y0wDN1uRJkO2wKBgQDmFCEXqWodkLXRacmLpaSABAzccNvGkvW0
+w+L7bhT2b9bX5pNblp0tffb56qf86UcOWPvitDp9JUylMfjjkGDjMkzG62sESGYD
+RkK1B7x+7NW0zVK224IJjkgjOwUSeZukQu9fH9q75dhAHm/GRQPWgPBPq6T+oYwK
+LAgcGU2Q8wKBgQCy5f/uEs+MV8GWVnTRDLQdmatBqP0eQAtBBLuYctJ00cNyVCOd
+3RoXN9uoJ1WORPJredc2j7llCzrsItVkm9ds4Qvh+GXDP0A3i7GZkmu/j7eRW/Sn
+VEi5/l8oPIizeFYT7VqKxYunsebrmQ3BnFCBwvQ1+mEt9dkPdjZm+92NOQKBgEoe
+5/5QdMArk3dwZh6X8WPQajhGH3dcds2SYbhwYU52/za0sHpMDjzOnNcscov2tw53
+OkZxm3ofnw6FB9J/+8aVuMhIpURO8pZRd0IMyPv23m4Ny3zfQIhFjxXSeLLX/H0x
+lx4FDBmGVWFqrMWqDC95gHGaMWBauNu6Da7HtAZjAoGAXq+Y+kETM54rf4+4pbDW
+4UGOUEYhbltcD+JHSEgzldA6HDz48uRKWE2emV03Ha/U9rbE3Jao6tG3HyfhNK89
+iQXFDN/AS0DvNhUbz3fwZ70MjbCASKJMNtBQD9sjB85Aj7xcdXhc6p3tVUBtLchz
+PLY0mxHidHObCDWAPS53R3E=</private-key>
+      </asymmetric-key>
+    </asymmetric-keys>
+  </keystore>
+  <nacm xmlns="urn:ietf:params:xml:ns:yang:ietf-netconf-acm">
+    <enable-nacm>false</enable-nacm>
+  </nacm>
+  <interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+    <interface>
+      <name>PORT_0</name>
+      <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      <bridge-port xmlns="urn:ieee:std:802.1Q:yang:ieee802-dot1q-bridge">
+        <bridge-name>SWITCH</bridge-name>
+        <component-name>SWITCH</component-name>
+        <gate-parameter-table xmlns="urn:ieee:std:802.1Q:yang:ieee802-dot1q-sched">
+          <supported-list-max>256</supported-list-max>
+          <supported-interval-max>999999999</supported-interval-max>
+          <supported-cycle-max>
+            <numerator>999999999</numerator>
+            <denominator>1000000000</denominator>
+          </supported-cycle-max>
+          <admin-cycle-time>
+            <numerator>100000</numerator>
+            <denominator>1000000000</denominator>
+          </admin-cycle-time>
+          <admin-control-list>
+            <gate-control-entry>
+              <index>0</index>
+              <operation-name>set-gate-states</operation-name>
+              <time-interval-value>100000</time-interval-value>
+              <gate-states-value>255</gate-states-value>
+            </gate-control-entry>
+          </admin-control-list>
+          <gate-enabled>false</gate-enabled>
+          <admin-gate-states>255</admin-gate-states>
+          <admin-base-time>
+            <seconds>0</seconds>
+            <nanoseconds>0</nanoseconds>
+          </admin-base-time>
+          <admin-cycle-time-extension>8</admin-cycle-time-extension>
+          <config-change>false</config-change>
+        </gate-parameter-table>
+      </bridge-port>
+    </interface>
+    <interface>
+      <name>PORT_1</name>
+      <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      <bridge-port xmlns="urn:ieee:std:802.1Q:yang:ieee802-dot1q-bridge">
+        <bridge-name>SWITCH</bridge-name>
+        <component-name>SWITCH</component-name>
+        <gate-parameter-table xmlns="urn:ieee:std:802.1Q:yang:ieee802-dot1q-sched">
+          <supported-list-max>256</supported-list-max>
+          <supported-interval-max>999999999</supported-interval-max>
+          <supported-cycle-max>
+            <numerator>999999999</numerator>
+            <denominator>1000000000</denominator>
+          </supported-cycle-max>
+          <admin-cycle-time>
+            <numerator>100000</numerator>
+            <denominator>1000000000</denominator>
+          </admin-cycle-time>
+          <admin-control-list>
+            <gate-control-entry>
+              <index>0</index>
+              <operation-name>set-gate-states</operation-name>
+              <time-interval-value>100000</time-interval-value>
+              <gate-states-value>255</gate-states-value>
+            </gate-control-entry>
+          </admin-control-list>
+          <gate-enabled>false</gate-enabled>
+          <admin-gate-states>255</admin-gate-states>
+          <admin-base-time>
+            <seconds>0</seconds>
+            <nanoseconds>0</nanoseconds>
+          </admin-base-time>
+          <admin-cycle-time-extension>8</admin-cycle-time-extension>
+          <config-change>false</config-change>
+        </gate-parameter-table>
+      </bridge-port>
+    </interface>
+    <interface>
+      <name>PORT_PCIe</name>
+      <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      <bridge-port xmlns="urn:ieee:std:802.1Q:yang:ieee802-dot1q-bridge">
+        <bridge-name>SWITCH</bridge-name>
+        <component-name>SWITCH</component-name>
+        <gate-parameter-table xmlns="urn:ieee:std:802.1Q:yang:ieee802-dot1q-sched">
+          <supported-list-max>256</supported-list-max>
+          <supported-interval-max>999999999</supported-interval-max>
+          <supported-cycle-max>
+            <numerator>999999999</numerator>
+            <denominator>1000000000</denominator>
+          </supported-cycle-max>
+          <admin-cycle-time>
+            <numerator>100000</numerator>
+            <denominator>1000000000</denominator>
+          </admin-cycle-time>
+          <admin-control-list>
+            <gate-control-entry>
+              <index>0</index>
+              <operation-name>set-gate-states</operation-name>
+              <time-interval-value>100000</time-interval-value>
+              <gate-states-value>255</gate-states-value>
+            </gate-control-entry>
+          </admin-control-list>
+          <gate-enabled>false</gate-enabled>
+          <admin-gate-states>255</admin-gate-states>
+          <admin-base-time>
+            <seconds>0</seconds>
+            <nanoseconds>0</nanoseconds>
+          </admin-base-time>
+          <admin-cycle-time-extension>8</admin-cycle-time-extension>
+          <config-change>false</config-change>
+        </gate-parameter-table>
+      </bridge-port>
+    </interface>
+  </interfaces>
+  <bridges xmlns="urn:ieee:std:802.1Q:yang:ieee802-dot1q-bridge">
+    <bridge>
+      <name>SWITCH</name>
+      <address>70-F8-E7-D0-00-01</address>
+      <bridge-type>customer-vlan-bridge</bridge-type>
+      <component>
+        <name>SWITCH</name>
+        <id>1</id>
+        <type>c-vlan-component</type>
+        <address>70-F8-E7-D0-00-01</address>
+        <traffic-class-enabled>true</traffic-class-enabled>
+      </component>
+    </bridge>
+  </bridges>
+</data>

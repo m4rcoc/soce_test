@@ -1,0 +1,62 @@
+MakeRootPortConfig
+
+The receiving Port transitions to the RootPortRole and sets sendRSTP ->
+FALSE.
+
+Interface		=Ethernet 3
+Duration(s)		=1
+Interval(frames/s)	=1
+MAC_dst 		=01:80:C2:00:00:00
+MAC_src			=D0:37:45:02:AC:6E
+Length/Type		=0x0026
+LLC			=0x424203
+Protocol ID(2)		=0x0000
+VersionID(1)		=0x00
+BPDU type(1)		=0x00
+(*)BPDU Flags(1) 	=0-0-0-0-0-0-0
+(**)RootID(8)	  	=7000-00:BF:CB:FC:BF:C0
+Cost Path(4)		=0x00030D40
+(**)BridgeID(8)	  	=F000-00:BF:CB:FC:BF:C1
+PortID(2)		=0x8001
+Message age(2)		=0x0100
+Max age(2)		=0x1400
+Hello time(2)		=0x0200
+Forward delay(2)	=0x0f00
+Version One Length	=0x00
+
+----------------------------------------
+(*)NOTE:
+
+"BPDU_flags" format: T-A-F-L-PR-P-TC
+		  example -> 0-0-0-0-11-1-0
+
+	T-  (1)Topology Change Ack
+	A-  (1)Agreement
+	F-  (1)Forwarding
+	L-  (1)Learning
+	PR- (2)Port Role
+	P-  (1)Proposal
+	TC- (1)Topology Change
+	
+		(1) -> 1:Yes  / 0:No
+		(2) Port Role:
+			11 : Designed
+			10 : Root
+			01 : Alternate
+			00 : Unknown
+	
+----------------------------------------	
+(**)NOTE:
+
+"RootID" format: Priority-RootMAC
+	     example-> 8001-00:19:06:ea:b8:80
+		 
+		 8001 -> 32769 (default)
+		 
+		 
+"BridgeID" format: Priority-BridgeMAC
+	     example-> 8001-00:19:06:ea:b8:80
+		 
+		 8001 -> 32769 (default)
+		 		 
+

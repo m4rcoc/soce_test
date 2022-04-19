@@ -1,0 +1,25 @@
+|****************************SOCE_TEST REPORT************************************|
+| Tested by	:	Marco Condori
+| Date		:	mar 15 feb 2022 10:27:17 CET
+|********************************************************************************|
+| Serial number  :  12345                                                        |
+| Product model  :  RELY_PCIe_LP                                                 |
+| Product version  :  22.1.0beta1                                                |
+| Device name  :  RELY_PCIe                                                      |
+| Device location  :  Relyum                                                     |
+| Contact info  :  support@relyum.com                                            |
+|--------------------------------------------------------------------------------|
+| HPS:
+| SWITCH:
+| Core version  :  21.01.1400                                                    |
+|--------------------------------------------------------------------------------|
+|
+|****************************SOCE_TEST REPORT************************************|
+PCAP                           Description                          Filter                                                    Expected Results PASS/FAIL
+test_prp_7_2_captured_IF1.pcap Total frames in Redundant A = 0      -                                                         0        0       PASS
+test_prp_7_2_captured_IF3.pcap Total frames in Interlink = 6        -                                                         6        7       FAIL
+test_prp_7_2_captured_IF3.pcap Untagged frames                      !prp                                                      6        0       FAIL
+test_prp_7_2_captured_IF3.pcap Unicast frames (flow 350ms~2.857fps) eth.src==00:AA:AA:AA:AA:01 and eth.dst==00:BB:BB:BB:BB:01 1        1       PASS
+test_prp_7_2_captured_IF3.pcap Unicast frames (flow 390ms~2.564fps) eth.src==00:AA:AA:AA:AA:02 and eth.dst==00:BB:BB:BB:BB:02 1        2       FAIL
+test_prp_7_2_captured_IF3.pcap Unicast frames (flow 410ms~2.439fps) eth.src==00:AA:AA:AA:AA:03 and eth.dst==00:BB:BB:BB:BB:03 2        2       PASS
+test_prp_7_2_captured_IF3.pcap Unicast frames (flow 450ms~2.222fps) eth.src==00:AA:AA:AA:AA:04 and eth.dst==00:BB:BB:BB:BB:04 2        2       PASS

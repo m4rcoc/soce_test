@@ -1,0 +1,9 @@
+
+
+
+Multicast:
+(eth.dst[0]&1) && !(eth.dst == ff:ff:ff:ff:ff:ff)
+
+
+
+ip.checksum.status == "Unverified"

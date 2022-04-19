@@ -1,0 +1,274 @@
+#!/bin/bash
+
+function qos_reset(){
+
+cat <<-EOF > cmds/${test_function}_dut_config_restore.cmd
+echo $password | sudo -S cp /etc/soce_design/factory_config/SWITCH/priorities.json /etc/soce_configs/current/SWITCH/priorities.json
+soce_cli
+priorities reload_configuration SWITCH
+EOF
+}
+
+#-----------------------------------------------------------------------------------------------------------------------------------------
+#  Test QoS.2  Handling Frame Priorities  PCP Based Weighted Round Robin Priority
+#-----------------------------------------------------------------------------------------------------------------------------------------
+# 2 QUEUES
+function test_qos_2_1(){
+
+cat <<-EOF > cmds/${test_function}_dut_config.cmd
+soce_cli
+raw_ip_conf write SWITCH:prior_port_selector 0
+raw_ip_conf write SWITCH:prior_priority_mode_reg 4
+raw_ip_conf write SWITCH:prior_port_selector 1
+raw_ip_conf write SWITCH:prior_priority_mode_reg 4
+raw_ip_conf write SWITCH:prior_port_selector 2
+raw_ip_conf write SWITCH:prior_priority_mode_reg 2
+raw_ip_conf write SWITCH:prior_protocol_priority_mapping_0_reg 0x1ffff
+EOF
+}
+
+#-----------------------------------------------------------------------------------------------------------------------------------------
+#  Test QoS.3  Protocol Based Priorities
+#-----------------------------------------------------------------------------------------------------------------------------------------
+
+: '
+# 2 QUEUES
+function test_qos_3_1(){
+
+cat <<-EOF > cmds/${test_function}_dut_config.cmd
+soce_cli
+raw_ip_conf write SWITCH:prior_port_selector 0
+raw_ip_conf write SWITCH:prior_priority_mode_reg 4
+raw_ip_conf write SWITCH:prior_port_selector 1
+raw_ip_conf write SWITCH:prior_priority_mode_reg 4
+raw_ip_conf write SWITCH:prior_port_selector 2
+raw_ip_conf write SWITCH:prior_priority_mode_reg 2
+raw_ip_conf write SWITCH:prior_protocol_priority_mapping_0_reg 0x1ffff
+raw_ip_conf write SWITCH:prior_port_selector 3
+raw_ip_conf write SWITCH:prior_priority_mode_reg 4
+EOF
+}
+
+# 8 QUEUES (revisar)
+function test_qos_3_1_8q(){
+
+cat <<-EOF > cmds/${test_function}_dut_config.cmd
+soce_cli
+raw_ip_conf write SWITCH:prior_port_selector 0
+raw_ip_conf write SWITCH:prior_priority_mode_reg 4
+raw_ip_conf write SWITCH:prior_port_selector 1
+raw_ip_conf write SWITCH:prior_priority_mode_reg 4
+raw_ip_conf write SWITCH:prior_port_selector 2
+raw_ip_conf write SWITCH:prior_priority_mode_reg 2
+raw_ip_conf write SWITCH:prior_protocol_priority_mapping_0_reg 0x6ffff
+raw_ip_conf write SWITCH:prior_protocol_priority_mapping_0_reg 0x7fff1
+raw_ip_conf write SWITCH:prior_port_selector 3
+raw_ip_conf write SWITCH:prior_priority_mode_reg 4
+EOF
+}
+'
+
+#----------------------------------------------------------------------------------------------------
+#  Test QoS.4  Handling Frame Priorities  DSCP Based Strict Priority Test Setup
+#----------------------------------------------------------------------------------------------------
+
+# 2 QUEUES
+
+: '
+function test_qos_4_1(){
+
+cat <<-EOF > cmds/${test_function}_dut_config.cmd
+soce_cli
+raw_ip_conf write SWITCH:prior_port_selector 0
+raw_ip_conf write SWITCH:prior_priority_mode_reg 8
+raw_ip_conf write SWITCH:prior_port_selector 1
+raw_ip_conf write SWITCH:prior_priority_mode_reg 8
+raw_ip_conf write SWITCH:prior_port_selector 2
+raw_ip_conf write SWITCH:prior_priority_mode_reg 0
+raw_ip_conf write SWITCH:prior_port_selector 3
+raw_ip_conf write SWITCH:prior_priority_mode_reg 0
+EOF
+}
+
+'
+
+
+#----------------------------------------------------------------------------------------------------
+# Test QoS.5  Handling Frame Priorities  PCP Based Priority Mapping
+#----------------------------------------------------------------------------------------------------
+# 2 QUEUES
+: '
+function test_qos_5_1(){
+
+cat <<-EOF > cmds/${test_function}_dut_config.cmd
+soce_cli
+raw_ip_conf write SWITCH:prior_port_selector 0
+raw_ip_conf write SWITCH:prior_priority_mode_reg 4
+raw_ip_conf write SWITCH:prior_pcp_queue_mapping_0 1
+raw_ip_conf write SWITCH:prior_pcp_queue_mapping_1 0
+raw_ip_conf write SWITCH:prior_pcp_queue_mapping_2 0
+raw_ip_conf write SWITCH:prior_pcp_queue_mapping_3 0
+raw_ip_conf write SWITCH:prior_pcp_queue_mapping_4 1
+raw_ip_conf write SWITCH:prior_pcp_queue_mapping_5 1
+raw_ip_conf write SWITCH:prior_pcp_queue_mapping_6 1
+raw_ip_conf write SWITCH:prior_pcp_queue_mapping_7 0
+raw_ip_conf write SWITCH:prior_port_selector 1
+raw_ip_conf write SWITCH:prior_priority_mode_reg 4
+raw_ip_conf write SWITCH:prior_pcp_queue_mapping_0 1
+raw_ip_conf write SWITCH:prior_pcp_queue_mapping_1 0
+raw_ip_conf write SWITCH:prior_pcp_queue_mapping_2 0
+raw_ip_conf write SWITCH:prior_pcp_queue_mapping_3 0
+raw_ip_conf write SWITCH:prior_pcp_queue_mapping_4 1
+raw_ip_conf write SWITCH:prior_pcp_queue_mapping_5 1
+raw_ip_conf write SWITCH:prior_pcp_queue_mapping_6 1
+raw_ip_conf write SWITCH:prior_pcp_queue_mapping_7 0
+raw_ip_conf write SWITCH:prior_port_selector 2
+raw_ip_conf write SWITCH:prior_priority_mode_reg 0
+raw_ip_conf write SWITCH:prior_port_selector 3
+raw_ip_conf write SWITCH:prior_priority_mode_reg 0
+EOF
+}
+'
+
+# # 4 QUEUES
+# function test_qos_5_1(){
+
+# cat <<-EOF > cmds/${test_function}_dut_config.cmd
+# soce_cli
+# raw_ip_conf write SWITCH:prior_port_selector 0
+# raw_ip_conf write SWITCH:prior_priority_mode_reg 4
+# raw_ip_conf write SWITCH:prior_pcp_queue_mapping_0 3
+# raw_ip_conf write SWITCH:prior_pcp_queue_mapping_1 0
+# raw_ip_conf write SWITCH:prior_pcp_queue_mapping_2 1
+# raw_ip_conf write SWITCH:prior_pcp_queue_mapping_3 1
+# raw_ip_conf write SWITCH:prior_pcp_queue_mapping_4 2
+# raw_ip_conf write SWITCH:prior_pcp_queue_mapping_5 2
+# raw_ip_conf write SWITCH:prior_pcp_queue_mapping_6 3
+# raw_ip_conf write SWITCH:prior_pcp_queue_mapping_7 0
+# raw_ip_conf write SWITCH:prior_port_selector 1
+# raw_ip_conf write SWITCH:prior_priority_mode_reg 4
+# raw_ip_conf write SWITCH:prior_pcp_queue_mapping_0 3
+# raw_ip_conf write SWITCH:prior_pcp_queue_mapping_1 0
+# raw_ip_conf write SWITCH:prior_pcp_queue_mapping_2 1
+# raw_ip_conf write SWITCH:prior_pcp_queue_mapping_3 1
+# raw_ip_conf write SWITCH:prior_pcp_queue_mapping_4 2
+# raw_ip_conf write SWITCH:prior_pcp_queue_mapping_5 2
+# raw_ip_conf write SWITCH:prior_pcp_queue_mapping_6 3
+# raw_ip_conf write SWITCH:prior_pcp_queue_mapping_7 0
+# raw_ip_conf write SWITCH:prior_port_selector 2
+# raw_ip_conf write SWITCH:prior_priority_mode_reg 0
+# raw_ip_conf write SWITCH:prior_port_selector 3
+# raw_ip_conf write SWITCH:prior_priority_mode_reg 0
+# EOF
+# }
+
+# 8 QUEUES
+function test_qos_5_1(){
+
+cat <<-EOF > cmds/${test_function}_dut_config.cmd
+soce_cli
+raw_ip_conf write SWITCH:prior_port_selector 0
+raw_ip_conf write SWITCH:prior_priority_mode_reg 4
+raw_ip_conf write SWITCH:prior_pcp_queue_mapping_0 7
+raw_ip_conf write SWITCH:prior_pcp_queue_mapping_1 1
+raw_ip_conf write SWITCH:prior_pcp_queue_mapping_2 2
+raw_ip_conf write SWITCH:prior_pcp_queue_mapping_3 3
+raw_ip_conf write SWITCH:prior_pcp_queue_mapping_4 4
+raw_ip_conf write SWITCH:prior_pcp_queue_mapping_5 5
+raw_ip_conf write SWITCH:prior_pcp_queue_mapping_6 6
+raw_ip_conf write SWITCH:prior_pcp_queue_mapping_7 0
+raw_ip_conf write SWITCH:prior_port_selector 1
+raw_ip_conf write SWITCH:prior_priority_mode_reg 4
+raw_ip_conf write SWITCH:prior_pcp_queue_mapping_0 7
+raw_ip_conf write SWITCH:prior_pcp_queue_mapping_1 1
+raw_ip_conf write SWITCH:prior_pcp_queue_mapping_2 2
+raw_ip_conf write SWITCH:prior_pcp_queue_mapping_3 3
+raw_ip_conf write SWITCH:prior_pcp_queue_mapping_4 4
+raw_ip_conf write SWITCH:prior_pcp_queue_mapping_5 5
+raw_ip_conf write SWITCH:prior_pcp_queue_mapping_6 6
+raw_ip_conf write SWITCH:prior_pcp_queue_mapping_7 0
+raw_ip_conf write SWITCH:prior_port_selector 2
+raw_ip_conf write SWITCH:prior_priority_mode_reg 0
+raw_ip_conf write SWITCH:prior_port_selector 3
+raw_ip_conf write SWITCH:prior_priority_mode_reg 0
+EOF
+}
+
+function test_qos_5_1_reset(){
+
+cat <<-EOF > cmds/${test_function}_dut_config.cmd
+soce_cli
+raw_ip_conf write SWITCH:prior_port_selector 0
+raw_ip_conf write SWITCH:prior_priority_mode_reg 0
+raw_ip_conf write SWITCH:prior_port_selector 1
+raw_ip_conf write SWITCH:prior_priority_mode_reg 0
+raw_ip_conf write SWITCH:prior_port_selector 2
+raw_ip_conf write SWITCH:prior_priority_mode_reg 0
+raw_ip_conf write SWITCH:prior_port_selector 3
+raw_ip_conf write SWITCH:prior_priority_mode_reg 0
+EOF
+}
+
+#----------------------------------------------------------------------------------------------------
+# Test QoS.6  Handling Frame Priorities  DSCP Based Priority Mapping
+#----------------------------------------------------------------------------------------------------
+# 2 QUEUES
+: '
+function test_qos_6_1(){
+
+cat <<-EOF > cmds/${test_function}_dut_config.cmd
+soce_cli
+raw_ip_conf write SWITCH:prior_port_selector 0
+raw_ip_conf write SWITCH:prior_priority_mode_reg 8
+raw_ip_conf write SWITCH:prior_dscp_queue_mapping_0 1
+raw_ip_conf write SWITCH:prior_dscp_queue_mapping_56 0
+raw_ip_conf write SWITCH:prior_port_selector 1
+raw_ip_conf write SWITCH:prior_priority_mode_reg 8
+raw_ip_conf write SWITCH:prior_dscp_queue_mapping_0 1
+raw_ip_conf write SWITCH:prior_dscp_queue_mapping_56 0
+raw_ip_conf write SWITCH:prior_port_selector 2
+raw_ip_conf write SWITCH:prior_priority_mode_reg 0
+raw_ip_conf write SWITCH:prior_port_selector 3
+raw_ip_conf write SWITCH:prior_priority_mode_reg 0
+EOF
+}
+'
+# 4 QUEUES
+function test_qos_6_1(){
+
+cat <<-EOF > cmds/${test_function}_dut_config.cmd
+soce_cli
+raw_ip_conf write SWITCH:prior_port_selector 0
+raw_ip_conf write SWITCH:prior_priority_mode_reg 8
+raw_ip_conf write SWITCH:prior_dscp_queue_mapping_0 3
+raw_ip_conf write SWITCH:prior_dscp_queue_mapping_56 0
+raw_ip_conf write SWITCH:prior_port_selector 1
+raw_ip_conf write SWITCH:prior_priority_mode_reg 8
+raw_ip_conf write SWITCH:prior_dscp_queue_mapping_0 3
+raw_ip_conf write SWITCH:prior_dscp_queue_mapping_56 0
+raw_ip_conf write SWITCH:prior_port_selector 2
+raw_ip_conf write SWITCH:prior_priority_mode_reg 0
+raw_ip_conf write SWITCH:prior_port_selector 3
+raw_ip_conf write SWITCH:prior_priority_mode_reg 0
+EOF
+}
+
+#----------------------------------------------------------------------------------------------------
+# Test QoS.7  Handling Frame Priorities  Port Based Strict Priority
+#----------------------------------------------------------------------------------------------------
+# 2 QUEUES
+function test_qos_7_1(){
+
+cat <<-EOF > cmds/${test_function}_dut_config.cmd
+soce_cli
+raw_ip_conf write SWITCH:prior_port_selector 0
+raw_ip_conf write SWITCH:prior_priority_mode_reg 1
+raw_ip_conf write SWITCH:prior_port_selector 1
+raw_ip_conf write SWITCH:prior_priority_mode_reg 1
+raw_ip_conf write SWITCH:prior_port_queue_mapping 1
+raw_ip_conf write SWITCH:prior_port_selector 2
+raw_ip_conf write SWITCH:prior_priority_mode_reg 0
+raw_ip_conf write SWITCH:prior_port_selector 3
+raw_ip_conf write SWITCH:prior_priority_mode_reg 0
+EOF
+}

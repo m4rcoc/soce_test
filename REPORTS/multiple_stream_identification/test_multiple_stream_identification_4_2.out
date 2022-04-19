@@ -1,0 +1,126 @@
+|****************************SOCE_TEST REPORT************************************|
+| Tested by	:	Marco Condori
+| Date		:	mar 08 mar 2022 13:59:08 CET
+|********************************************************************************|
+| Serial number  :  54321                                                        |
+| Product model  :  12xPort_MTSN_KIT                                             |
+| Product version  :  21.3.2                                                     |
+| Device name  :  12xPortMtsnKit                                                 |
+| Device location  :  soc-e                                                      |
+| Contact info  :  support@soc-e.com                                             |
+|--------------------------------------------------------------------------------|
+| HPS:
+| SWITCH:
+| Core version  :  21.02.0100                                                    |
+|--------------------------------------------------------------------------------|
+|
+|****************************SOCE_TEST REPORT************************************|
+[+] Info: 	Reading Stream Identification statistics: 
+soce_cli# stream_identification get_per_port_per_stream_statistics PORT_0 0
+|--------------------------------------------------------------------------------|
+| tsnCpsSidInputPackets  :  1500                                                 |
+| tsnCpSidOutputPackets  :  0                                                    |
+|--------------------------------------------------------------------------------|
+soce_cli# stream_identification get_per_port_per_stream_statistics PORT_0 1
+|--------------------------------------------------------------------------------|
+| tsnCpsSidInputPackets  :  1501                                                 |
+| tsnCpSidOutputPackets  :  0                                                    |
+|--------------------------------------------------------------------------------|
+soce_cli# stream_identification get_per_port_per_stream_statistics PORT_0 2
+|--------------------------------------------------------------------------------|
+| tsnCpsSidInputPackets  :  1502                                                 |
+| tsnCpSidOutputPackets  :  0                                                    |
+|--------------------------------------------------------------------------------|
+soce_cli# stream_identification get_per_port_per_stream_statistics PORT_0 3
+|--------------------------------------------------------------------------------|
+| tsnCpsSidInputPackets  :  1503                                                 |
+| tsnCpSidOutputPackets  :  0                                                    |
+|--------------------------------------------------------------------------------|
+soce_cli# stream_identification get_per_port_per_stream_statistics PORT_0 4
+|--------------------------------------------------------------------------------|
+| tsnCpsSidInputPackets  :  1504                                                 |
+| tsnCpSidOutputPackets  :  0                                                    |
+|--------------------------------------------------------------------------------|
+soce_cli# stream_identification get_per_port_per_stream_statistics PORT_0 5
+|--------------------------------------------------------------------------------|
+| tsnCpsSidInputPackets  :  1505                                                 |
+| tsnCpSidOutputPackets  :  0                                                    |
+|--------------------------------------------------------------------------------|
+soce_cli# stream_identification get_per_port_per_stream_statistics PORT_0 6
+|--------------------------------------------------------------------------------|
+| tsnCpsSidInputPackets  :  1506                                                 |
+| tsnCpSidOutputPackets  :  0                                                    |
+|--------------------------------------------------------------------------------|
+soce_cli# stream_identification get_per_port_per_stream_statistics PORT_0 7
+|--------------------------------------------------------------------------------|
+| tsnCpsSidInputPackets  :  1507                                                 |
+| tsnCpSidOutputPackets  :  0                                                    |
+|--------------------------------------------------------------------------------|
+soce_cli# stream_identification get_per_port_statistics PORT_0
+|--------------------------------------------------------------------------------|
+| tsnCpSidInputPackets  :  12028                                                 |
+| tsnCpSidOutputPackets  :  0                                                    |
+|--------------------------------------------------------------------------------|
+soce_cli# 
+[+] Info: 	Clear Table 0 (Null) and Table 2 (Active) 
+soce_cli# stream_identification clear_stream_id_list SWITCH 0
+|--------------------------------------------------------------------------------|
+| Operation successful                                                           |
+|--------------------------------------------------------------------------------|
+soce_cli# stream_identification clear_stream_id_list SWITCH 2
+|--------------------------------------------------------------------------------|
+| Operation successful                                                           |
+|--------------------------------------------------------------------------------|
+soce_cli# stream_identification reset_port_statistics PORT_0
+|--------------------------------------------------------------------------------|
+| Operation successful                                                           |
+|--------------------------------------------------------------------------------|
+soce_cli# 
+[+] Info: 	Reading Stream Identification statistics: 
+soce_cli# stream_identification get_per_port_per_stream_statistics PORT_0 0
+|--------------------------------------------------------------------------------|
+| tsnCpsSidInputPackets  :  0                                                    |
+| tsnCpSidOutputPackets  :  0                                                    |
+|--------------------------------------------------------------------------------|
+soce_cli# stream_identification get_per_port_per_stream_statistics PORT_0 1
+|--------------------------------------------------------------------------------|
+| tsnCpsSidInputPackets  :  0                                                    |
+| tsnCpSidOutputPackets  :  0                                                    |
+|--------------------------------------------------------------------------------|
+soce_cli# stream_identification get_per_port_per_stream_statistics PORT_0 2
+|--------------------------------------------------------------------------------|
+| tsnCpsSidInputPackets  :  1502                                                 |
+| tsnCpSidOutputPackets  :  0                                                    |
+|--------------------------------------------------------------------------------|
+soce_cli# stream_identification get_per_port_per_stream_statistics PORT_0 3
+|--------------------------------------------------------------------------------|
+| tsnCpsSidInputPackets  :  1503                                                 |
+| tsnCpSidOutputPackets  :  0                                                    |
+|--------------------------------------------------------------------------------|
+soce_cli# stream_identification get_per_port_per_stream_statistics PORT_0 4
+|--------------------------------------------------------------------------------|
+| tsnCpsSidInputPackets  :  0                                                    |
+| tsnCpSidOutputPackets  :  0                                                    |
+|--------------------------------------------------------------------------------|
+soce_cli# stream_identification get_per_port_per_stream_statistics PORT_0 5
+|--------------------------------------------------------------------------------|
+| tsnCpsSidInputPackets  :  0                                                    |
+| tsnCpSidOutputPackets  :  0                                                    |
+|--------------------------------------------------------------------------------|
+soce_cli# stream_identification get_per_port_per_stream_statistics PORT_0 6
+|--------------------------------------------------------------------------------|
+| tsnCpsSidInputPackets  :  1506                                                 |
+| tsnCpSidOutputPackets  :  0                                                    |
+|--------------------------------------------------------------------------------|
+soce_cli# stream_identification get_per_port_per_stream_statistics PORT_0 7
+|--------------------------------------------------------------------------------|
+| tsnCpsSidInputPackets  :  1507                                                 |
+| tsnCpSidOutputPackets  :  0                                                    |
+|--------------------------------------------------------------------------------|
+soce_cli# stream_identification get_per_port_statistics PORT_0
+|--------------------------------------------------------------------------------|
+| tsnCpSidInputPackets  :  6018                                                  |
+| tsnCpSidOutputPackets  :  0                                                    |
+|--------------------------------------------------------------------------------|
+soce_cli# 
+

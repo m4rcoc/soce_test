@@ -1,0 +1,10 @@
+IF1                 =enx28ee52115655
+IF2                 =enxd0374502ac6e
+IF3                 =enxd0374505d74e
+IP_multicast        =225.1.1.4
+MAC_src             =00:11:00:00:00:00
+inter_multicast     =0.1
+inter_report        =2
+
+
+*inter -> interval between TX frames in seconds

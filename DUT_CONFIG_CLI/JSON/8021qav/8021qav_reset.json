@@ -1,0 +1,208 @@
+{
+	"cbsPorts" : [
+		{
+			"portName":"PORT_0",
+			"cbsConfig" : [
+				{
+				"queueNumber" : 0,
+				"enable" : false,
+				"idleSlope" : 100
+				},
+				{
+				"queueNumber" : 1,
+				"enable" : false,
+				"idleSlope" : 100
+				}
+				,
+				{
+				"queueNumber" : 2,
+				"enable" : false,
+				"idleSlope" : 100
+				}
+				,
+				{
+				"queueNumber" : 3,
+				"enable" : false,
+				"idleSlope" : 100
+				}
+				,
+				{
+				"queueNumber" : 4,
+				"enable" : false,
+				"idleSlope" : 100
+				}
+				,
+				{
+				"queueNumber" : 5,
+				"enable" : false,
+				"idleSlope" : 100
+				}
+				,
+				{
+				"queueNumber" : 6,
+				"enable" : false,
+				"idleSlope" : 100
+				}
+				,
+				{
+				"queueNumber" : 7,
+				"enable" : false,
+				"idleSlope" : 100
+				}
+			]
+		},
+		{
+			"portName":"PORT_1",
+			"cbsConfig" : [
+				{
+				"queueNumber" : 0,
+				"enable" : false,
+				"idleSlope" : 100
+				},
+				{
+				"queueNumber" : 1,
+				"enable" : false,
+				"idleSlope" : 100
+				}
+				,
+				{
+				"queueNumber" : 2,
+				"enable" : false,
+				"idleSlope" : 100
+				}
+				,
+				{
+				"queueNumber" : 3,
+				"enable" : false,
+				"idleSlope" : 100
+				}
+				,
+				{
+				"queueNumber" : 4,
+				"enable" : false,
+				"idleSlope" : 100
+				}
+				,
+				{
+				"queueNumber" : 5,
+				"enable" : false,
+				"idleSlope" : 100
+				}
+				,
+				{
+				"queueNumber" : 6,
+				"enable" : false,
+				"idleSlope" : 100
+				}
+				,
+				{
+				"queueNumber" : 7,
+				"enable" : false,
+				"idleSlope" : 100
+				}
+			]
+		},
+		{
+			"portName":"PORT_2",
+			"cbsConfig" : [
+				{
+				"queueNumber" : 0,
+				"enable" : false,
+				"idleSlope" : 100
+				},
+				{
+				"queueNumber" : 1,
+				"enable" : false,
+				"idleSlope" : 100
+				}
+				,
+				{
+				"queueNumber" : 2,
+				"enable" : false,
+				"idleSlope" : 100
+				}
+				,
+				{
+				"queueNumber" : 3,
+				"enable" : false,
+				"idleSlope" : 100
+				}
+				,
+				{
+				"queueNumber" : 4,
+				"enable" : false,
+				"idleSlope" : 100
+				}
+				,
+				{
+				"queueNumber" : 5,
+				"enable" : false,
+				"idleSlope" : 100
+				}
+				,
+				{
+				"queueNumber" : 6,
+				"enable" : false,
+				"idleSlope" : 100
+				}
+				,
+				{
+				"queueNumber" : 7,
+				"enable" : false,
+				"idleSlope" : 100
+				}
+			]
+		},
+		{
+			"portName":"PORT_3",
+			"cbsConfig" : [
+				{
+				"queueNumber" : 0,
+				"enable" : false,
+				"idleSlope" : 100
+				},
+				{
+				"queueNumber" : 1,
+				"enable" : false,
+				"idleSlope" : 100
+				}
+				,
+				{
+				"queueNumber" : 2,
+				"enable" : false,
+				"idleSlope" : 100
+				}
+				,
+				{
+				"queueNumber" : 3,
+				"enable" : false,
+				"idleSlope" : 100
+				}
+				,
+				{
+				"queueNumber" : 4,
+				"enable" : false,
+				"idleSlope" : 100
+				}
+				,
+				{
+				"queueNumber" : 5,
+				"enable" : false,
+				"idleSlope" : 100
+				}
+				,
+				{
+				"queueNumber" : 6,
+				"enable" : false,
+				"idleSlope" : 100
+				}
+				,
+				{
+				"queueNumber" : 7,
+				"enable" : false,
+				"idleSlope" : 100
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,24 @@
+|****************************SOCE_TEST REPORT************************************|
+| Tested by	:	Marco Condori
+| Date		:	mar 15 feb 2022 10:26:04 CET
+|********************************************************************************|
+| Serial number  :  12345                                                        |
+| Product model  :  RELY_PCIe_LP                                                 |
+| Product version  :  22.1.0beta1                                                |
+| Device name  :  RELY_PCIe                                                      |
+| Device location  :  Relyum                                                     |
+| Contact info  :  support@relyum.com                                            |
+|--------------------------------------------------------------------------------|
+| HPS:
+| SWITCH:
+| Core version  :  21.01.1400                                                    |
+|--------------------------------------------------------------------------------|
+|
+|****************************SOCE_TEST REPORT************************************|
+PCAP                           Description                      Filter                                            Expected Results PASS/FAIL
+test_prp_5_3_captured_IF2.pcap Total frames in Redundant B = 0  -                                                 0        0       PASS
+test_prp_5_3_captured_IF3.pcap Total frames in Interlink = 1500 -                                                 1500     1500    PASS
+test_prp_5_3_captured_IF3.pcap Multicast frames                 (eth.dst[0]&1) && !(eth.dst == ff:ff:ff:ff:ff:ff) 1500     1500    PASS
+test_prp_5_3_captured_IF3.pcap Untagged frames                  !prp                                              1500     1500    PASS
+test_prp_5_3_captured_IF3.pcap MIN size=60                      MIN(frame.len)frame.len                           60       60      PASS
+test_prp_5_3_captured_IF3.pcap MAX size=1514                    MAX(frame.len)frame.len                           1514     1514    PASS

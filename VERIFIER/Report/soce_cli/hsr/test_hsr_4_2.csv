@@ -1,0 +1,7 @@
+PCAP,Description,Frames to analyze,Filter,Expected,Results,PASS/FAIL,PCAP file path
+test_hsr_4_2_captured_IF1.pcap,Total frames in Redundant A = 0,*,,0,0,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_4_2/test_hsr_4_2_captured_IF1.pcap
+test_hsr_4_2_captured_IF3.pcap,Total frames in Interlink = 1500,*,,1500,1500,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_4_2/test_hsr_4_2_captured_IF3.pcap
+test_hsr_4_2_captured_IF3.pcap,Unicast frames,*,eth.dst==00:CC:CC:CC:CC:CC and eth.src==00:DD:DD:DD:DD:DD,1500,1500,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_4_2/test_hsr_4_2_captured_IF3.pcap
+test_hsr_4_2_captured_IF3.pcap,Untagged frames,*,eth.type==0xffff,1500,1500,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_4_2/test_hsr_4_2_captured_IF3.pcap
+test_hsr_4_2_captured_IF3.pcap,MIN size=60,*,MIN(frame.len)frame.len,60,60,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_4_2/test_hsr_4_2_captured_IF3.pcap
+test_hsr_4_2_captured_IF3.pcap,MAX size=1508,*,MAX(frame.len)frame.len,1508,1508,PASS,VERIFIER/Report/soce_cli/hsr/test_hsr_4_2/test_hsr_4_2_captured_IF3.pcap

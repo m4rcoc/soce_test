@@ -1,0 +1,28 @@
+|****************************SOCE_TEST REPORT************************************|
+| Tested by	:	Marco Condori
+| Date		:	lun 07 feb 2022 15:46:37 CET
+|********************************************************************************|
+| Serial number  :  123456                                                       |
+| Product model  :  S3534                                                        |
+| Product version  :  22.1.beta1                                                 |
+| Device name  :  S3534                                                          |
+| Device location  :  soc-e                                                      |
+| Contact info  :  support@relyum.com                                            |
+|--------------------------------------------------------------------------------|
+| HPS:
+| Core version  :  21.01.1300                                                    |
+|--------------------------------------------------------------------------------|
+| SWITCH:
+| Core version  :  21.11.0600                                                    |
+|--------------------------------------------------------------------------------|
+|
+|****************************SOCE_TEST REPORT************************************|
+PCAP                           Description                                     Filter                                        Expected Results PASS/FAIL
+test_hsr_3_4_captured_IF1.pcap Total frames in Redundant B = 1                 -                                             1        1       PASS
+test_hsr_3_4_captured_IF1.pcap Multicast frames (192.168.100.100 -> 224.1.2.3) ip.src==192.168.100.100 and ip.dst==224.1.2.3 1        1       PASS
+test_hsr_3_4_captured_IF1.pcap HSR tagged with LAN ID=B (1)                    eth.type==0x892f and hsr.laneid==1            1        1       PASS
+test_hsr_3_4_captured_IF1.pcap Frame length=100                                frame.len==100                                1        1       PASS
+test_hsr_3_4_captured_IF3.pcap Total frames in Interlink = 1                   -                                             1        1       PASS
+test_hsr_3_4_captured_IF3.pcap Multicast frames (192.168.100.100 -> 224.1.2.3) ip.src==192.168.100.100 and ip.dst==224.1.2.3 1        1       PASS
+test_hsr_3_4_captured_IF3.pcap Untagged frames                                 eth.type==0x0800                              1        1       PASS
+test_hsr_3_4_captured_IF3.pcap Frame length=94                                 frame.len==94                                 1        1       PASS

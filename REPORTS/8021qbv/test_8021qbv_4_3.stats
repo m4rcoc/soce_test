@@ -1,0 +1,305 @@
+|********************************************************************************|
+| Tested by	:	Marco Condori
+| Date		:	mar 18 ene 2022 23:42:50 CET
+|********************************************************************************|
+| Serial number  :  0123456789                                                   |
+| Product model  :  RELY_TSN_PCIE                                                |
+| Product version  :  21.1.0beta1                                                |
+| Device name  :  RELY_TSN_PCIe                                                  |
+| Device location  :  Relyum                                                     |
+| Contact info  :  support@relyum.com                                            |
+|--------------------------------------------------------------------------------|
+| HPS:
+| SWITCH:
+| Core version  :  21.01.1100                                                    |
+|--------------------------------------------------------------------------------|
+| 
+|
+|
+|********************************************************************************|
+| Tested by	:	Marco Condori
+| Date		:	mar 18 ene 2022 23:40:08 CET
+|********************************************************************************|
+| Serial number  :  0123456789                                                   |
+| Product model  :  RELY_TSN_PCIE                                                |
+| Product version  :  21.1.0beta1                                                |
+| Device name  :  RELY_TSN_PCIe                                                  |
+| Device location  :  Relyum                                                     |
+| Contact info  :  support@relyum.com                                            |
+|--------------------------------------------------------------------------------|
+| HPS:
+| SWITCH:
+| Core version  :  21.01.1100                                                    |
+|--------------------------------------------------------------------------------|
+|
+|
+|
+|********************************************************************************|
+| Tested by	:	Marco Condori
+| Date		:	mar 18 ene 2022 23:38:38 CET
+|********************************************************************************|
+| Serial number  :  0123456789                                                   |
+| Product model  :  RELY_TSN_PCIE                                                |
+| Product version  :  21.1.0beta1                                                |
+| Device name  :  RELY_TSN_PCIe                                                  |
+| Device location  :  Relyum                                                     |
+| Contact info  :  support@relyum.com                                            |
+|--------------------------------------------------------------------------------|
+| HPS:
+| SWITCH:
+| Core version  :  21.01.1100                                                    |
+|--------------------------------------------------------------------------------|
+|
+|
+|
+|********************************************************************************|
+| Tested by	:	Marco Condori
+| Date		:	lun 17 ene 2022 23:17:00 CET
+|********************************************************************************|
+| Serial number  :  12345                                                        |
+| Product model  :  12xPort_MTSN_KIT                                             |
+| Product version  :  21.3.0                                                     |
+| Device name  :  12xPortMtsnKit                                                 |
+| Device location  :  soc-e                                                      |
+| Contact info  :  support@soc-e.com                                             |
+|--------------------------------------------------------------------------------|
+| HPS:
+| SWITCH:
+| Core version  :  21.02.0100                                                    |
+|--------------------------------------------------------------------------------|
+|
+|
+|
+Row:0  View:Flow Statistics  Sampled:2022-01-17 22:17:53.611299 UTC
+	Tx Port: Port_0
+	Rx Port: Port_1
+	Traffic Item: Traffic Item 1
+	VLAN:VLAN Priority: 0
+	Flow Group: Traffic Item 1-EndpointSet-4 - Flow Group 0001
+	Tx Frames: 30638
+	Rx Frames: 0
+	Frames Delta: 30638
+	Loss %: 100.000
+	Tx Frame Rate: 0.000
+	Rx Frame Rate: 0.000
+	Tx L1 Rate (bps): 0.000
+	Rx L1 Rate (bps): 0.000
+	Rx Bytes: 0
+	Tx Rate (Bps): 0.000
+	Rx Rate (Bps): 0.000
+	Tx Rate (bps): 0.000
+	Rx Rate (bps): 0.000
+	Tx Rate (Kbps): 0.000
+	Rx Rate (Kbps): 0.000
+	Tx Rate (Mbps): 0.000
+	Rx Rate (Mbps): 0.000
+	Store-Forward Avg Latency (ns): 
+	Store-Forward Min Latency (ns): 
+	Store-Forward Max Latency (ns): 
+	First TimeStamp: 
+	Last TimeStamp: 
+	Dead Flow: 0
+Row:1  View:Flow Statistics  Sampled:2022-01-17 22:17:53.611299 UTC
+	Tx Port: Port_0
+	Rx Port: Port_1
+	Traffic Item: Traffic Item 1
+	VLAN:VLAN Priority: 1
+	Flow Group: Traffic Item 1-EndpointSet-4 - Flow Group 0001
+	Tx Frames: 30638
+	Rx Frames: 0
+	Frames Delta: 30638
+	Loss %: 100.000
+	Tx Frame Rate: 0.000
+	Rx Frame Rate: 0.000
+	Tx L1 Rate (bps): 0.000
+	Rx L1 Rate (bps): 0.000
+	Rx Bytes: 0
+	Tx Rate (Bps): 0.000
+	Rx Rate (Bps): 0.000
+	Tx Rate (bps): 0.000
+	Rx Rate (bps): 0.000
+	Tx Rate (Kbps): 0.000
+	Rx Rate (Kbps): 0.000
+	Tx Rate (Mbps): 0.000
+	Rx Rate (Mbps): 0.000
+	Store-Forward Avg Latency (ns): 
+	Store-Forward Min Latency (ns): 
+	Store-Forward Max Latency (ns): 
+	First TimeStamp: 
+	Last TimeStamp: 
+	Dead Flow: 0
+Row:2  View:Flow Statistics  Sampled:2022-01-17 22:17:53.611299 UTC
+	Tx Port: Port_0
+	Rx Port: Port_1
+	Traffic Item: Traffic Item 1
+	VLAN:VLAN Priority: 2
+	Flow Group: Traffic Item 1-EndpointSet-4 - Flow Group 0001
+	Tx Frames: 30637
+	Rx Frames: 30637
+	Frames Delta: 0
+	Loss %: 0.000
+	Tx Frame Rate: 0.000
+	Rx Frame Rate: 0.000
+	Tx L1 Rate (bps): 0.000
+	Rx L1 Rate (bps): 0.000
+	Rx Bytes: 30637000
+	Tx Rate (Bps): 0.000
+	Rx Rate (Bps): 0.000
+	Tx Rate (bps): 0.000
+	Rx Rate (bps): 0.000
+	Tx Rate (Kbps): 0.000
+	Rx Rate (Kbps): 0.000
+	Tx Rate (Mbps): 0.000
+	Rx Rate (Mbps): 0.000
+	Store-Forward Avg Latency (ns): 2354
+	Store-Forward Min Latency (ns): 2325
+	Store-Forward Max Latency (ns): 2380
+	First TimeStamp: 00:00:01.088
+	Last TimeStamp: 00:00:03.088
+	Dead Flow: 0
+Row:3  View:Flow Statistics  Sampled:2022-01-17 22:17:53.611299 UTC
+	Tx Port: Port_0
+	Rx Port: Port_1
+	Traffic Item: Traffic Item 1
+	VLAN:VLAN Priority: 3
+	Flow Group: Traffic Item 1-EndpointSet-4 - Flow Group 0001
+	Tx Frames: 30637
+	Rx Frames: 0
+	Frames Delta: 30637
+	Loss %: 100.000
+	Tx Frame Rate: 0.000
+	Rx Frame Rate: 0.000
+	Tx L1 Rate (bps): 0.000
+	Rx L1 Rate (bps): 0.000
+	Rx Bytes: 0
+	Tx Rate (Bps): 0.000
+	Rx Rate (Bps): 0.000
+	Tx Rate (bps): 0.000
+	Rx Rate (bps): 0.000
+	Tx Rate (Kbps): 0.000
+	Rx Rate (Kbps): 0.000
+	Tx Rate (Mbps): 0.000
+	Rx Rate (Mbps): 0.000
+	Store-Forward Avg Latency (ns): 
+	Store-Forward Min Latency (ns): 
+	Store-Forward Max Latency (ns): 
+	First TimeStamp: 
+	Last TimeStamp: 
+	Dead Flow: 0
+Row:4  View:Flow Statistics  Sampled:2022-01-17 22:17:53.611299 UTC
+	Tx Port: Port_0
+	Rx Port: Port_1
+	Traffic Item: Traffic Item 1
+	VLAN:VLAN Priority: 4
+	Flow Group: Traffic Item 1-EndpointSet-4 - Flow Group 0001
+	Tx Frames: 30637
+	Rx Frames: 0
+	Frames Delta: 30637
+	Loss %: 100.000
+	Tx Frame Rate: 0.000
+	Rx Frame Rate: 0.000
+	Tx L1 Rate (bps): 0.000
+	Rx L1 Rate (bps): 0.000
+	Rx Bytes: 0
+	Tx Rate (Bps): 0.000
+	Rx Rate (Bps): 0.000
+	Tx Rate (bps): 0.000
+	Rx Rate (bps): 0.000
+	Tx Rate (Kbps): 0.000
+	Rx Rate (Kbps): 0.000
+	Tx Rate (Mbps): 0.000
+	Rx Rate (Mbps): 0.000
+	Store-Forward Avg Latency (ns): 
+	Store-Forward Min Latency (ns): 
+	Store-Forward Max Latency (ns): 
+	First TimeStamp: 
+	Last TimeStamp: 
+	Dead Flow: 0
+Row:5  View:Flow Statistics  Sampled:2022-01-17 22:17:53.611299 UTC
+	Tx Port: Port_0
+	Rx Port: Port_1
+	Traffic Item: Traffic Item 1
+	VLAN:VLAN Priority: 5
+	Flow Group: Traffic Item 1-EndpointSet-4 - Flow Group 0001
+	Tx Frames: 30637
+	Rx Frames: 0
+	Frames Delta: 30637
+	Loss %: 100.000
+	Tx Frame Rate: 0.000
+	Rx Frame Rate: 0.000
+	Tx L1 Rate (bps): 0.000
+	Rx L1 Rate (bps): 0.000
+	Rx Bytes: 0
+	Tx Rate (Bps): 0.000
+	Rx Rate (Bps): 0.000
+	Tx Rate (bps): 0.000
+	Rx Rate (bps): 0.000
+	Tx Rate (Kbps): 0.000
+	Rx Rate (Kbps): 0.000
+	Tx Rate (Mbps): 0.000
+	Rx Rate (Mbps): 0.000
+	Store-Forward Avg Latency (ns): 
+	Store-Forward Min Latency (ns): 
+	Store-Forward Max Latency (ns): 
+	First TimeStamp: 
+	Last TimeStamp: 
+	Dead Flow: 0
+Row:6  View:Flow Statistics  Sampled:2022-01-17 22:17:53.611299 UTC
+	Tx Port: Port_0
+	Rx Port: Port_1
+	Traffic Item: Traffic Item 1
+	VLAN:VLAN Priority: 6
+	Flow Group: Traffic Item 1-EndpointSet-4 - Flow Group 0001
+	Tx Frames: 30637
+	Rx Frames: 0
+	Frames Delta: 30637
+	Loss %: 100.000
+	Tx Frame Rate: 0.000
+	Rx Frame Rate: 0.000
+	Tx L1 Rate (bps): 0.000
+	Rx L1 Rate (bps): 0.000
+	Rx Bytes: 0
+	Tx Rate (Bps): 0.000
+	Rx Rate (Bps): 0.000
+	Tx Rate (bps): 0.000
+	Rx Rate (bps): 0.000
+	Tx Rate (Kbps): 0.000
+	Rx Rate (Kbps): 0.000
+	Tx Rate (Mbps): 0.000
+	Rx Rate (Mbps): 0.000
+	Store-Forward Avg Latency (ns): 
+	Store-Forward Min Latency (ns): 
+	Store-Forward Max Latency (ns): 
+	First TimeStamp: 
+	Last TimeStamp: 
+	Dead Flow: 0
+Row:7  View:Flow Statistics  Sampled:2022-01-17 22:17:53.611299 UTC
+	Tx Port: Port_0
+	Rx Port: Port_1
+	Traffic Item: Traffic Item 1
+	VLAN:VLAN Priority: 7
+	Flow Group: Traffic Item 1-EndpointSet-4 - Flow Group 0001
+	Tx Frames: 30637
+	Rx Frames: 0
+	Frames Delta: 30637
+	Loss %: 100.000
+	Tx Frame Rate: 0.000
+	Rx Frame Rate: 0.000
+	Tx L1 Rate (bps): 0.000
+	Rx L1 Rate (bps): 0.000
+	Rx Bytes: 0
+	Tx Rate (Bps): 0.000
+	Rx Rate (Bps): 0.000
+	Tx Rate (bps): 0.000
+	Rx Rate (bps): 0.000
+	Tx Rate (Kbps): 0.000
+	Rx Rate (Kbps): 0.000
+	Tx Rate (Mbps): 0.000
+	Rx Rate (Mbps): 0.000
+	Store-Forward Avg Latency (ns): 
+	Store-Forward Min Latency (ns): 
+	Store-Forward Max Latency (ns): 
+	First TimeStamp: 
+	Last TimeStamp: 
+	Dead Flow: 0
+

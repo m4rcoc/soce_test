@@ -1,0 +1,26 @@
+|****************************SOCE_TEST REPORT************************************|
+| Tested by	:	Marco Condori
+| Date		:	lun 07 feb 2022 15:47:14 CET
+|********************************************************************************|
+| Serial number  :  123456                                                       |
+| Product model  :  S3534                                                        |
+| Product version  :  22.1.beta1                                                 |
+| Device name  :  S3534                                                          |
+| Device location  :  soc-e                                                      |
+| Contact info  :  support@relyum.com                                            |
+|--------------------------------------------------------------------------------|
+| HPS:
+| Core version  :  21.01.1300                                                    |
+|--------------------------------------------------------------------------------|
+| SWITCH:
+| Core version  :  21.11.0600                                                    |
+|--------------------------------------------------------------------------------|
+|
+|****************************SOCE_TEST REPORT************************************|
+PCAP                           Description                      Filter                                                    Expected Results PASS/FAIL
+test_hsr_4_2_captured_IF1.pcap Total frames in Redundant A = 0  -                                                         0        0       PASS
+test_hsr_4_2_captured_IF3.pcap Total frames in Interlink = 1500 -                                                         1500     1500    PASS
+test_hsr_4_2_captured_IF3.pcap Unicast frames                   eth.dst==00:CC:CC:CC:CC:CC and eth.src==00:DD:DD:DD:DD:DD 1500     1500    PASS
+test_hsr_4_2_captured_IF3.pcap Untagged frames                  eth.type==0xffff                                          1500     1500    PASS
+test_hsr_4_2_captured_IF3.pcap MIN size=60                      MIN(frame.len)frame.len                                   60       60      PASS
+test_hsr_4_2_captured_IF3.pcap MAX size=1508                    MAX(frame.len)frame.len                                   1508     1508    PASS

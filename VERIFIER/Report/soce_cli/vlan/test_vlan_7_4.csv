@@ -1,0 +1,6 @@
+Type,Condition,Description,Frames to analyze,Filter,Expected,Results,PASS/FAIL
+PCAP,1,Total 1500 frames,*,,1500,1500,PASS
+PCAP,2,Unicast Frames,*,eth.src==00:aa:aa:aa:aa:aa and eth.dst==00:00:00:00:00:01,1500,1500,PASS
+PCAP,3,Untagged frames,frame.number<=1500,!(vlan),1500,1500,PASS
+PCAP,4,MIN size=60,frame.number<=1500,MIN(frame.len)frame.len,60,60,PASS
+PCAP,5,MAX size=1510,frame.number<=1500,MAX(frame.len)frame.len,1510,1510,PASS

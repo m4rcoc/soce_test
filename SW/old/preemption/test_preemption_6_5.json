@@ -1,0 +1,21 @@
+{
+	"gateEnabled" : true,
+	"gateStates" : 255,
+	"cycleTimeNumerator" : 12500,
+	"cycleTimeDenominator" : 1000000000,
+	"cycleTimeExtension" : 8,
+	"baseTimeSeconds" : 0,
+	"baseTimeNanoseconds" : 0,
+	"gateControlList" : [
+		{
+			"gateStates" : 1,
+			"operationName" : "set-and-release-mac",
+			"timeInterval" : 10000
+		},
+		{
+			"gateStates" : 129,
+			"operationName" : "set-and-hold-mac",
+			"timeInterval" : 2500
+		}
+	]
+}

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+802.1Qbv config example:
+-->
+<rpc xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="">
+  <edit-config>
+    <target>
+      <running/>
+    </target>
+    <config>
+		<interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+			<interface>
+				<name>PORT_0</name>
+				<type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+				<bridge-port xmlns="urn:ieee:std:802.1Q:yang:ieee802-dot1q-bridge">
+				<bridge-name>SWITCH</bridge-name>
+				<component-name>SWITCH</component-name>
+				<gate-parameter-table xmlns="urn:ieee:std:802.1Q:yang:ieee802-dot1q-sched">
+					<supported-list-max>256</supported-list-max>
+					<supported-interval-max>999999999</supported-interval-max>
+					<supported-cycle-max>
+					<numerator>999999999</numerator>
+					<denominator>1000000000</denominator>
+					</supported-cycle-max>
+					<admin-cycle-time>
+					<numerator>100000</numerator>
+					<denominator>1000000000</denominator>
+					</admin-cycle-time>
+					<admin-control-list>
+					<gate-control-entry>
+						<index>0</index>
+						<operation-name>set-gate-states</operation-name>
+						<time-interval-value>100000</time-interval-value>
+						<gate-states-value>255</gate-states-value>
+					</gate-control-entry>
+					</admin-control-list>
+					<gate-enabled>true</gate-enabled>
+					<admin-gate-states>255</admin-gate-states>
+					<admin-base-time>
+					<seconds>0</seconds>
+					<nanoseconds>0</nanoseconds>
+					</admin-base-time>
+					<admin-cycle-time-extension>8</admin-cycle-time-extension>
+					<config-change>true</config-change>
+				</gate-parameter-table>
+				</bridge-port>
+			</interface>
+			<interface>
+				<name>PORT_1</name>
+				<type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+				<bridge-port xmlns="urn:ieee:std:802.1Q:yang:ieee802-dot1q-bridge">
+				<bridge-name>SWITCH</bridge-name>
+				<component-name>SWITCH</component-name>
+				<gate-parameter-table xmlns="urn:ieee:std:802.1Q:yang:ieee802-dot1q-sched">
+					<supported-list-max>256</supported-list-max>
+					<supported-interval-max>999999999</supported-interval-max>
+					<supported-cycle-max>
+					<numerator>999999999</numerator>
+					<denominator>1000000000</denominator>
+					</supported-cycle-max>
+					<admin-cycle-time>
+					<numerator>100000</numerator>
+					<denominator>1000000000</denominator>
+					</admin-cycle-time>
+					<admin-control-list>
+					<gate-control-entry>
+						<index>0</index>
+						<operation-name>set-gate-states</operation-name>
+						<time-interval-value>100000</time-interval-value>
+						<gate-states-value>255</gate-states-value>
+					</gate-control-entry>
+					</admin-control-list>
+					<gate-enabled>false</gate-enabled>
+					<admin-gate-states>255</admin-gate-states>
+					<admin-base-time>
+					<seconds>0</seconds>
+					<nanoseconds>0</nanoseconds>
+					</admin-base-time>
+					<admin-cycle-time-extension>8</admin-cycle-time-extension>
+					<config-change>true</config-change>
+				</gate-parameter-table>
+				</bridge-port>
+			</interface>
+			<interface>
+				<name>PORT_2</name>
+				<type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+				<bridge-port xmlns="urn:ieee:std:802.1Q:yang:ieee802-dot1q-bridge">
+				<bridge-name>SWITCH</bridge-name>
+				<component-name>SWITCH</component-name>
+				<gate-parameter-table xmlns="urn:ieee:std:802.1Q:yang:ieee802-dot1q-sched">
+					<supported-list-max>256</supported-list-max>
+					<supported-interval-max>999999999</supported-interval-max>
+					<supported-cycle-max>
+					<numerator>999999999</numerator>
+					<denominator>1000000000</denominator>
+					</supported-cycle-max>
+					<admin-cycle-time>
+					<numerator>100000</numerator>
+					<denominator>1000000000</denominator>
+					</admin-cycle-time>
+					<admin-control-list>
+					<gate-control-entry>
+						<index>0</index>
+						<operation-name>set-gate-states</operation-name>
+						<time-interval-value>100000</time-interval-value>
+						<gate-states-value>255</gate-states-value>
+					</gate-control-entry>
+					</admin-control-list>
+					<gate-enabled>true</gate-enabled>
+					<admin-gate-states>255</admin-gate-states>
+					<admin-base-time>
+					<seconds>0</seconds>
+					<nanoseconds>0</nanoseconds>
+					</admin-base-time>
+					<admin-cycle-time-extension>8</admin-cycle-time-extension>
+					<config-change>true</config-change>
+				</gate-parameter-table>
+				</bridge-port>
+			</interface>
+			<interface>
+				<name>PORT_3</name>
+				<type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+				<bridge-port xmlns="urn:ieee:std:802.1Q:yang:ieee802-dot1q-bridge">
+				<bridge-name>SWITCH</bridge-name>
+				<component-name>SWITCH</component-name>
+				<gate-parameter-table xmlns="urn:ieee:std:802.1Q:yang:ieee802-dot1q-sched">
+					<supported-list-max>256</supported-list-max>
+					<supported-interval-max>999999999</supported-interval-max>
+					<supported-cycle-max>
+					<numerator>999999999</numerator>
+					<denominator>1000000000</denominator>
+					</supported-cycle-max>
+					<admin-cycle-time>
+					<numerator>100000</numerator>
+					<denominator>1000000000</denominator>
+					</admin-cycle-time>
+					<admin-control-list>
+					<gate-control-entry>
+						<index>0</index>
+						<operation-name>set-gate-states</operation-name>
+						<time-interval-value>100000</time-interval-value>
+						<gate-states-value>255</gate-states-value>
+					</gate-control-entry>
+					</admin-control-list>
+					<gate-enabled>false</gate-enabled>
+					<admin-gate-states>255</admin-gate-states>
+					<admin-base-time>
+					<seconds>0</seconds>
+					<nanoseconds>0</nanoseconds>
+					</admin-base-time>
+					<admin-cycle-time-extension>8</admin-cycle-time-extension>
+					<config-change>true</config-change>
+				</gate-parameter-table>
+				</bridge-port>
+			</interface>
+		</interfaces>
+    </config>
+  </edit-config>
+</rpc>
+

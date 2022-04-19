@@ -1,0 +1,24 @@
+|****************************SOCE_TEST REPORT************************************|
+| Tested by	:	Marco Condori
+| Date		:	vie 18 feb 2022 16:07:02 CET
+|********************************************************************************|
+| Serial number  :  12345                                                        |
+| Product model  :  RELY_PCIe_LP                                                 |
+| Product version  :  22.1.0beta3                                                |
+| Device name  :  RELY_PCIe                                                      |
+| Device location  :  Relyum                                                     |
+| Contact info  :  support@relyum.com                                            |
+|--------------------------------------------------------------------------------|
+| HPS:
+| SWITCH:
+| Core version  :  21.01.1500                                                    |
+|--------------------------------------------------------------------------------|
+|
+|****************************SOCE_TEST REPORT************************************|
+PCAP                           Description                                                              Filter                                                    Expected Results PASS/FAIL
+test_prp_1_1_captured_IF1.pcap Total Supervision frames associated source MAC 00:aa::01 -> 60s/2fps=30f hsr_prp_supervision.source_mac_address==00:aa:aa:aa:aa:01 30       30      PASS
+test_prp_1_1_captured_IF1.pcap Total Supervision frames associated source MAC 00:aa::3f -> 60s/2fps=30f hsr_prp_supervision.source_mac_address==00:aa:aa:aa:aa:3f 30       0       FAIL
+test_prp_1_1_captured_IF1.pcap PRP tagged with LAN ID=A (10)                                            eth.type==0x88fb and prp.trailer.prp_lan == 10            1918     1918    PASS
+test_prp_1_1_captured_IF2.pcap Total Supervision frames associated source MAC 00:aa::01 -> 60s/2fps=30f hsr_prp_supervision.source_mac_address==00:aa:aa:aa:aa:01 30       30      PASS
+test_prp_1_1_captured_IF2.pcap Total Supervision frames associated source MAC 00:aa::3f -> 60s/2fps=30f hsr_prp_supervision.source_mac_address==00:aa:aa:aa:aa:3f 30       0       FAIL
+test_prp_1_1_captured_IF2.pcap PRP tagged with LAN ID=B (11)                                            eth.type==0x88fb and prp.trailer.prp_lan == 11            1918     1918    PASS

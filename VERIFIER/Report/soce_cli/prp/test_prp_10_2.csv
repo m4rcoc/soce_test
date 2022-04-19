@@ -1,0 +1,5 @@
+PCAP,Description,Frames to analyze,Filter,Expected,Results,PASS/FAIL,PCAP file path
+test_prp_10_2_captured_IF3.pcap,Total frames in Interlink = 10,*,,10,10,PASS,VERIFIER/Report/soce_cli/prp/test_prp_10_2/test_prp_10_2_captured_IF3.pcap
+test_prp_10_2_captured_IF3.pcap,Broadcast frames,*,eth.dst==FF:FF:FF:FF:FF:FF,10,10,PASS,VERIFIER/Report/soce_cli/prp/test_prp_10_2/test_prp_10_2_captured_IF3.pcap
+test_prp_10_2_captured_IF3.pcap,PRP tagged frames,*,prp,10,10,PASS,VERIFIER/Report/soce_cli/prp/test_prp_10_2/test_prp_10_2_captured_IF3.pcap
+test_prp_10_2_captured_IF3.pcap,Wrong LSDU size(204),*,prp.trailer.prp_size == 204,10,10,PASS,VERIFIER/Report/soce_cli/prp/test_prp_10_2/test_prp_10_2_captured_IF3.pcap

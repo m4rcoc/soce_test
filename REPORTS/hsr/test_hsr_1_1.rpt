@@ -1,0 +1,26 @@
+|****************************SOCE_TEST REPORT************************************|
+| Tested by	:	Marco Condori
+| Date		:	lun 07 feb 2022 15:42:34 CET
+|********************************************************************************|
+| Serial number  :  123456                                                       |
+| Product model  :  S3534                                                        |
+| Product version  :  22.1.beta1                                                 |
+| Device name  :  S3534                                                          |
+| Device location  :  soc-e                                                      |
+| Contact info  :  support@relyum.com                                            |
+|--------------------------------------------------------------------------------|
+| HPS:
+| Core version  :  21.01.1300                                                    |
+|--------------------------------------------------------------------------------|
+| SWITCH:
+| Core version  :  21.11.0600                                                    |
+|--------------------------------------------------------------------------------|
+|
+|****************************SOCE_TEST REPORT************************************|
+PCAP                           Description                                                              Filter                                                    Expected Results PASS/FAIL
+test_hsr_1_1_captured_IF1.pcap Total Supervision frames associated source MAC 00:aa::01 -> 60s/2fps=30f hsr_prp_supervision.source_mac_address==00:aa:aa:aa:aa:01 30       29      FAIL
+test_hsr_1_1_captured_IF1.pcap Total Supervision frames associated source MAC 00:aa::3f -> 60s/2fps=30f hsr_prp_supervision.source_mac_address==00:aa:aa:aa:aa:3f 30       29      FAIL
+test_hsr_1_1_captured_IF1.pcap HSR tagged with LAN ID=A (0)                                             eth.type==0x892f and hsr.laneid==0                        1952     1952    PASS
+test_hsr_1_1_captured_IF2.pcap Total Supervision frames associated source MAC 00:aa::01 -> 60s/2fps=30f hsr_prp_supervision.source_mac_address==00:aa:aa:aa:aa:01 30       29      FAIL
+test_hsr_1_1_captured_IF2.pcap Total Supervision frames associated source MAC 00:aa::3f -> 60s/2fps=30f hsr_prp_supervision.source_mac_address==00:aa:aa:aa:aa:3f 30       29      FAIL
+test_hsr_1_1_captured_IF2.pcap HSR tagged with LAN ID=B (1)                                             eth.type==0x892f and hsr.laneid==1                        1952     1952    PASS

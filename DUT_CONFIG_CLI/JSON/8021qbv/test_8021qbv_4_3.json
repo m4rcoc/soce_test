@@ -1,0 +1,16 @@
+{
+	"gateEnabled" : true,
+	"gateStates" : 255,
+	"cycleTimeNumerator" : 1000000,
+	"cycleTimeDenominator" : 1000000000,
+	"cycleTimeExtension" : 8,
+	"baseTimeSeconds" : 0,
+	"baseTimeNanoseconds" : 0,
+	"gateControlList" : [
+		{
+			"gateStates" : 4,
+			"operationName" : "set-gate-states",
+			"timeInterval" : 1000000
+		}
+	]
+}

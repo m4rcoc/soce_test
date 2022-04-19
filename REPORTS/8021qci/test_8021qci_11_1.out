@@ -1,0 +1,38 @@
+|****************************SOCE_TEST REPORT************************************|
+| Tested by	:	Marco Condori
+| Date		:	Wed 09 Mar 2022 11:40:05 PM CET
+|********************************************************************************|
+| Serial number  :  54321                                                        |
+| Product model  :  12xPort_MTSN_KIT                                             |
+| Product version  :  21.3.2                                                     |
+| Device name  :  12xPortMtsnKit                                                 |
+| Device location  :  soc-e                                                      |
+| Contact info  :  support@soc-e.com                                             |
+|--------------------------------------------------------------------------------|
+| HPS:
+| SWITCH:
+| Core version  :  21.02.0100                                                    |
+|--------------------------------------------------------------------------------|
+|
+|****************************SOCE_TEST REPORT************************************|
+[+] Info: 	Reading PSFP Statistics from Filter ID 0 and 1 
+soce_cli# ieee8021qci get_psfp_statistics SWITCH 0
+|--------------------------------------------------------------------------------|
+| Matching Frames  :  10001                                                      |
+| Gate Passing Frames  :  10001                                                  |
+| Gate Not Passing Frames  :  0                                                  |
+| SDU Passing Frames  :  10001                                                   |
+| SDU Not Passing Frames  :  0                                                   |
+| Red Frames  :  0                                                               |
+|--------------------------------------------------------------------------------|
+soce_cli# ieee8021qci get_psfp_statistics SWITCH 1
+|--------------------------------------------------------------------------------|
+| Matching Frames  :  0                                                          |
+| Gate Passing Frames  :  0                                                      |
+| Gate Not Passing Frames  :  0                                                  |
+| SDU Passing Frames  :  0                                                       |
+| SDU Not Passing Frames  :  0                                                   |
+| Red Frames  :  0                                                               |
+|--------------------------------------------------------------------------------|
+soce_cli# 
+

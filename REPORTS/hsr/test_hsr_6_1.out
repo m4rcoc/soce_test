@@ -1,0 +1,256 @@
+|********************************************************************************|
+| Tested by	:	Marco Condori
+| Date		:	lun 22 nov 2021 15:15:35 CET
+|********************************************************************************|
+| Serial number  :  1234-567A                                                    |
+| Product model  :  S3508                                                        |
+| Product version  :  21.2.beta3                                                 |
+| Device name  :  S3508                                                          |
+| Device location  :  soc-e                                                      |
+| Contact info  :  support@relyum.com                                            |
+|--------------------------------------------------------------------------------|
+| HPS:
+| Core version  :  21.01.1200                                                    |
+|--------------------------------------------------------------------------------|
+| SWITCH:
+| Core version  :  21.11.0500                                                    |
+|--------------------------------------------------------------------------------|
+|
+|
+|
+[+] Info: 	Network Nodes Table: 
+soce_cli# hsr_prp_node_tabsoce_cli# hsr_prp_node_table reset_counle reset_counters
+ters
+|--------------------------------------------------------------------------------|
+| Operation successful                                                           |
+|--------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------|
+| Operation successful                                                           |
+|--------------------------------------------------------------------------------|
+soce_cli# hsr_prp_node_tasoce_cli# hsr_prp_node_table rble read
+ead
+|--------------------------------------------------------------------------------|
+| DAN MAC  :  70-F8-E7-D0-07-23                                                  |
+| Redbox MAC  :  00-00-00-00-00-00                                               |
+|--------------------------------------------------------------------------------|
+| DAN MAC  :  70-F8-E7-D0-07-23                                                  |
+| Redbox MAC  :  00-00-00-00-00-00                                               |
+| Node type  :  DAN                                                              |
+| Operation mode  :  HSR_NORMAL_MODE                                             |
+| Node status  :  RECV_A_B                                                       |
+| Last sequence A  :  1032                                                       |
+| Sequence A ts  :  "2021-11-22 14:15:10"                                        |
+| Last sequence B  :  1032                                                       |
+| Sequence B ts  :  "2021-11-22 14:15:10"                                        |
+| Wrong LAN counter  :  0                                                        |
+|--------------------------------------------------------------------------------|
+| DAN MAC  :  70-F8-E7-D0-07-22                                                  |
+| Redbox MAC  :  70-F8-E7-D0-07-23                                               |
+| Node type  :  VDAN                                                             |
+| Operation mode  :  HSR_NORMAL_MODE                                             |
+| Node status  :  RECV_A_B                                                       |
+| Last sequence A  :  1032                                                       |
+| Sequence A ts  :  "2021-11-22 14:15:10"                                        |
+| Last sequence B  :  1032                                                       |
+| Sequence B ts  :  "2021-11-22 14:15:10"                                        |
+| Wrong LAN counter  :  0                                                        |
+|--------------------------------------------------------------------------------|
+| DAN MAC  :  00-12-01-00-00-01                                                  |
+| Node type  :  DAN                                                              |
+| Operation mode  :  HSR_NORMAL_MODE                                             |
+| Node status  :  RECV_A_B                                                       |
+| Last sequence A  :  1032                                                       |
+| Sequence A ts  :  "2021-11-22 14:15:10"                                        |
+| Last sequence B  :  1032                                                       |
+| Sequence B ts  :  "2021-11-22 14:15:10"                                        |
+| Wrong LAN counter  :  0                                                        |
+|--------------------------------------------------------------------------------|
+| DAN MAC  :  70-F8-E7-D0-07-22                                                  |
+| Redbox MAC  :  70-F8-E7-D0-07-23                                               |
+| Node type  :  VDAN                                                             |
+| Operation mode  :  HSR_NORMAL_MODE                                             |
+| Node status  :  RECV_A_B                                                       |
+| Last sequence A  :  1032                                                       |
+| Sequence A ts  :  "2021-11-22 14:15:10"                                        |
+| Last sequence B  :  1032                                                       |
+| Sequence B ts  :  "2021-11-22 14:15:10"                                        |
+| Wrong LAN counter  :  0                                                        |
+|--------------------------------------------------------------------------------|
+| DAN MAC  :  00-12-01-00-00-01                                                  |
+| Redbox MAC  :  70-F8-E7-D0-07-23                                               |
+| Node type  :  VDAN                                                             |
+| Operation mode  :  HSR_NORMAL_MODE                                             |
+| Node status  :  RECV_NONE                                                      |
+| Last sequence A  :  29                                                         |
+| Sequence A ts  :  "2021-11-22 14:14:27"                                        |
+| Last sequence B  :  29                                                         |
+| Sequence B ts  :  "2021-11-22 14:14:27"                                        |
+| Wrong LAN counter  :  0                                                        |
+|--------------------------------------------------------------------------------|
+| DAN MAC  :  70-F8-E7-D0-07-1E                                                  |
+| Redbox MAC  :  70-F8-E7-D0-07-23                                               |
+| Node type  :  VDAN                                                             |
+| Operation mode  :  HSR_NORMAL_MODE                                             |
+| Node status  :  RECV_NONE                                                      |
+| Last sequence A  :  29                                                         |
+| Sequence A ts  :  "2021-11-22 14:14:27"                                        |
+| Last sequence B  :  29                                                         |
+| Sequence B ts  :  "2021-11-22 14:14:27"                                        |
+| Wrong LAN counter  :  0                                                        |
+|--------------------------------------------------------------------------------|
+| DAN MAC  :  70-F8-E7-D0-07-1E                                                  |
+| Redbox MAC  :  70-F8-E7-D0-07-23                                               |
+| Node type  :  VDAN                                                             |
+| Operation mode  :  HSR_NORMAL_MODE                                             |
+| Redbox MAC  :  70-F8-E7-D0-07-23                                               |
+| Node type  :  VDAN                                                             |
+| Operation mode  :  HSR_NORMAL_MODE                                             |
+| Node status  :  RECV_NONE                                                      |
+| Last sequence A  :  30                                                         |
+| Node status  :  RECV_NONE                                                      |
+| Last sequence A  :  30                                                         |
+| Sequence A ts  :  "2021-11-22 14:14:29"                                        |
+| Last sequence B  :  30                                                         |
+| Sequence B ts  :  "2021-11-22 14:14:29"                                        |
+| Sequence A ts  :  "2021-11-22 14:14:29"                                        |
+| Last sequence B  :  30                                                         |
+| Sequence B ts  :  "2021-11-22 14:14:29"                                        |
+| Wrong LAN counter  :  0                                                        |
+|--------------------------------------------------------------------------------|
+| Wrong LAN counter  :  0                                                        |
+|--------------------------------------------------------------------------------|
+| DAN MAC  :  7C-C2-C6-1F-0A-49                                                  |
+| Redbox MAC  :  70-F8-E7-D0-07-23                                               |
+| DAN MAC  :  7C-C2-C6-1F-0A-49                                                  |
+| Redbox MAC  :  70-F8-E7-D0-07-23                                               |
+| Node type  :  VDAN                                                             |
+| Operation mode  :  HSR_NORMAL_MODE                                             |
+| Node type  :  VDAN                                                             |
+| Operation mode  :  HSR_NORMAL_MODE                                             |
+| Node status  :  RECV_A_B                                                       |
+| Last sequence A  :  28                                                         |
+| Node status  :  RECV_A_B                                                       |
+| Last sequence A  :  28                                                         |
+| Sequence A ts  :  "2021-11-22 14:15:10"                                        |
+| Last sequence B  :  28                                                         |
+| Sequence B ts  :  "2021-11-22 14:15:10"                                        |
+| Sequence A ts  :  "2021-11-22 14:15:10"                                        |
+| Last sequence B  :  28                                                         |
+| Sequence B ts  :  "2021-11-22 14:15:10"                                        |
+| Wrong LAN counter  :  0                                                        |
+|--------------------------------------------------------------------------------|
+| Wrong LAN counter  :  0                                                        |
+|--------------------------------------------------------------------------------|
+| DAN MAC  :  00-CC-CC-CC-CC-01                                                  |
+| DAN MAC  :  00-CC-CC-CC-CC-01                                                  |
+| Redbox MAC  :  70-F8-E7-D0-07-23                                               |
+| Node type  :  VDAN                                                             |
+| Redbox MAC  :  70-F8-E7-D0-07-23                                               |
+| Node type  :  VDAN                                                             |
+| Operation mode  :  HSR_NORMAL_MODE                                             |
+| Node status  :  RECV_A_B                                                       |
+| Operation mode  :  HSR_NORMAL_MODE                                             |
+| Node status  :  RECV_A_B                                                       |
+| Last sequence A  :  1                                                          |
+| Sequence A ts  :  "2021-11-22 14:15:10"                                        |
+| Last sequence A  :  1                                                          |
+| Sequence A ts  :  "2021-11-22 14:15:10"                                        |
+| Last sequence B  :  1                                                          |
+| Sequence B ts  :  "2021-11-22 14:15:10"                                        |
+| Wrong LAN counter  :  0                                                        |
+|--------------------------------------------------------------------------------|
+| Last sequence B  :  1                                                          |
+| Sequence B ts  :  "2021-11-22 14:15:10"                                        |
+| Wrong LAN counter  :  0                                                        |
+|--------------------------------------------------------------------------------|
+| DAN MAC  :  00-CC-CC-CC-CC-02                                                  |
+| DAN MAC  :  00-CC-CC-CC-CC-02                                                  |
+| Redbox MAC  :  70-F8-E7-D0-07-23                                               |
+| Node type  :  VDAN                                                             |
+| Operation mode  :  HSR_NORMAL_MODE                                             |
+| Node status  :  RECV_A_B                                                       |
+| Redbox MAC  :  70-F8-E7-D0-07-23                                               |
+| Node type  :  VDAN                                                             |
+| Operation mode  :  HSR_NORMAL_MODE                                             |
+| Node status  :  RECV_A_B                                                       |
+| Last sequence A  :  1                                                          |
+| Sequence A ts  :  "2021-11-22 14:15:10"                                        |
+| Last sequence A  :  1                                                          |
+| Sequence A ts  :  "2021-11-22 14:15:10"                                        |
+| Last sequence B  :  1                                                          |
+| Sequence B ts  :  "2021-11-22 14:15:10"                                        |
+| Wrong LAN counter  :  0                                                        |
+|--------------------------------------------------------------------------------|
+| Last sequence B  :  1                                                          |
+| Sequence B ts  :  "2021-11-22 14:15:10"                                        |
+| Wrong LAN counter  :  0                                                        |
+|--------------------------------------------------------------------------------|
+| DAN MAC  :  00-CC-CC-CC-CC-03                                                  |
+| Redbox MAC  :  70-F8-E7-D0-07-23                                               |
+| DAN MAC  :  00-CC-CC-CC-CC-03                                                  |
+| Redbox MAC  :  70-F8-E7-D0-07-23                                               |
+| Node type  :  VDAN                                                             |
+| Operation mode  :  HSR_NORMAL_MODE                                             |
+| Node status  :  RECV_A_B                                                       |
+| Node type  :  VDAN                                                             |
+| Operation mode  :  HSR_NORMAL_MODE                                             |
+| Node status  :  RECV_A_B                                                       |
+| Last sequence A  :  1                                                          |
+| Sequence A ts  :  "2021-11-22 14:15:10"                                        |
+| Last sequence B  :  1                                                          |
+| Sequence B ts  :  "2021-11-22 14:15:10"                                        |
+| Last sequence A  :  1                                                          |
+| Sequence A ts  :  "2021-11-22 14:15:10"                                        |
+| Last sequence B  :  1                                                          |
+| Sequence B ts  :  "2021-11-22 14:15:10"                                        |
+| Wrong LAN counter  :  0                                                        |
+|--------------------------------------------------------------------------------|
+| Wrong LAN counter  :  0                                                        |
+|--------------------------------------------------------------------------------|
+| DAN MAC  :  00-CC-CC-CC-CC-04                                                  |
+| Redbox MAC  :  70-F8-E7-D0-07-23                                               |
+| DAN MAC  :  00-CC-CC-CC-CC-04                                                  |
+| Redbox MAC  :  70-F8-E7-D0-07-23                                               |
+| Node type  :  VDAN                                                             |
+| Operation mode  :  HSR_NORMAL_MODE                                             |
+| Node status  :  RECV_A_B                                                       |
+| Node type  :  VDAN                                                             |
+| Operation mode  :  HSR_NORMAL_MODE                                             |
+| Node status  :  RECV_A_B                                                       |
+| Last sequence A  :  1                                                          |
+| Sequence A ts  :  "2021-11-22 14:15:10"                                        |
+| Last sequence B  :  1                                                          |
+| Last sequence A  :  1                                                          |
+| Sequence A ts  :  "2021-11-22 14:15:10"                                        |
+| Last sequence B  :  1                                                          |
+| Sequence B ts  :  "2021-11-22 14:15:10"                                        |
+| Wrong LAN counter  :  0                                                        |
+| Sequence B ts  :  "2021-11-22 14:15:10"                                        |
+| Wrong LAN counter  :  0                                                        |
+|--------------------------------------------------------------------------------|
+| DAN MAC  :  00-CC-CC-CC-CC-05                                                  |
+|--------------------------------------------------------------------------------|
+| DAN MAC  :  00-CC-CC-CC-CC-05                                                  |
+| Redbox MAC  :  70-F8-E7-D0-07-23                                               |
+| Node type  :  VDAN                                                             |
+| Operation mode  :  HSR_NORMAL_MODE                                             |
+| Redbox MAC  :  70-F8-E7-D0-07-23                                               |
+| Node type  :  VDAN                                                             |
+| Operation mode  :  HSR_NORMAL_MODE                                             |
+| Node status  :  RECV_A_B                                                       |
+| Last sequence A  :  1                                                          |
+| Sequence A ts  :  "2021-11-22 14:15:10"                                        |
+| Node status  :  RECV_A_B                                                       |
+| Last sequence A  :  1                                                          |
+| Sequence A ts  :  "2021-11-22 14:15:10"                                        |
+| Last sequence B  :  1                                                          |
+| Sequence B ts  :  "2021-11-22 14:15:10"                                        |
+| Wrong LAN counter  :  0                                                        |
+|--------------------------------------------------------------------------------|
+| Last sequence B  :  1                                                          |
+| Sequence B ts  :  "2021-11-22 14:15:10"                                        |
+| Wrong LAN counter  :  0                                                        |
+|--------------------------------------------------------------------------------|
+soce_cli# soce_cli# 
+
+

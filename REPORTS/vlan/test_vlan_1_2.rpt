@@ -1,0 +1,6 @@
+PCAP                            Description                       Filter                                                    Expected Results PASS/FAIL
+test_vlan_1_2_captured_IF2.pcap Total 1500 frames                 -                                                         1500     1500    PASS
+test_vlan_1_2_captured_IF2.pcap Unicast Frames                    eth.src==00:aa:aa:aa:aa:aa and eth.dst==00:bb:bb:bb:bb:bb 1500     1500    PASS
+test_vlan_1_2_captured_IF2.pcap VLAN tagged (VID=200 PRI=0 DEI=0) vlan.id==200 && vlan.dei==0 && vlan.priority==0           1500     1500    PASS
+test_vlan_1_2_captured_IF2.pcap MIN size=64                       MIN(frame.len)frame.len                                   64       64      PASS
+test_vlan_1_2_captured_IF2.pcap MAX size=1514                     MAX(frame.len)frame.len                                   1514     1514    PASS

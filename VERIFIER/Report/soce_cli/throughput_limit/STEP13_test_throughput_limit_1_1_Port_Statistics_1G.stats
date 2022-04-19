@@ -1,0 +1,90 @@
+Row:0  View:Port Statistics  Sampled:2022-02-23 09:02:27.162547 UTC
+	Stat Name: 192.168.2.138/Card01/Port01
+	Port Name: Ethernet - 001
+	Line Speed: 1000 Mbps
+	Link State: Link Up
+	Frames Tx.: 27475968
+	Valid Frames Rx.: 0
+	Frames Tx. Rate: 1487946
+	Valid Frames Rx. Rate: 0
+	Data Integrity Frames Rx.: 0
+	Data Integrity Errors: 0
+	Bytes Tx.: 1758461988
+	Bytes Rx.: 0
+	Bits Sent: 14067695904
+	Bits Received: 0
+	Bytes Tx. Rate: 95228571
+	Tx. Rate (bps): 761828568.000
+	Tx. Rate (Kbps): 761828.568
+	Tx. Rate (Mbps): 761.829
+	Bytes Rx. Rate: 0
+	Rx. Rate (bps): 0.000
+	Rx. Rate (Kbps): 0.000
+	Rx. Rate (Mbps): 0.000
+	Scheduled Frames Tx.: 27475968
+	Scheduled Frames Tx. Rate: 1487946
+	Control Frames Tx: 0
+	Control Frames Rx: 0
+	Ethernet OAM Information PDUs Sent: 0
+	Ethernet OAM Information PDUs Received: 0
+	Ethernet OAM Event Notification PDUs Received: 0
+	Ethernet OAM Loopback Control PDUs Received: 0
+	Ethernet OAM Organisation PDUs Received: 0
+	Ethernet OAM Variable Request PDUs Received: 0
+	Ethernet OAM Variable Response Received: 0
+	Ethernet OAM Unsupported PDUs Received: 0
+	Rx Pause Priority Group 0 Frames: 0
+	Rx Pause Priority Group 1 Frames: 0
+	Rx Pause Priority Group 2 Frames: 0
+	Rx Pause Priority Group 3 Frames: 0
+	Rx Pause Priority Group 4 Frames: 0
+	Rx Pause Priority Group 5 Frames: 0
+	Rx Pause Priority Group 6 Frames: 0
+	Rx Pause Priority Group 7 Frames: 0
+	Misdirected Packet Count: 0
+	CRC Errors: 0
+Row:1  View:Port Statistics  Sampled:2022-02-23 09:02:27.162547 UTC
+	Stat Name: 192.168.2.138/Card01/Port02
+	Port Name: Ethernet - 002
+	Line Speed: 1000 Mbps
+	Link State: Link Up
+	Frames Tx.: 0
+	Valid Frames Rx.: 27496801
+	Frames Tx. Rate: 0
+	Valid Frames Rx. Rate: 1487945
+	Data Integrity Frames Rx.: 27496800
+	Data Integrity Errors: 0
+	Bytes Tx.: 0
+	Bytes Rx.: 1759795296
+	Bits Sent: 0
+	Bits Received: 14078362368
+	Bytes Tx. Rate: 0
+	Tx. Rate (bps): 0.000
+	Tx. Rate (Kbps): 0.000
+	Tx. Rate (Mbps): 0.000
+	Bytes Rx. Rate: 95228562
+	Rx. Rate (bps): 761828496.000
+	Rx. Rate (Kbps): 761828.496
+	Rx. Rate (Mbps): 761.828
+	Scheduled Frames Tx.: 0
+	Scheduled Frames Tx. Rate: 0
+	Control Frames Tx: 0
+	Control Frames Rx: 0
+	Ethernet OAM Information PDUs Sent: 0
+	Ethernet OAM Information PDUs Received: 0
+	Ethernet OAM Event Notification PDUs Received: 0
+	Ethernet OAM Loopback Control PDUs Received: 0
+	Ethernet OAM Organisation PDUs Received: 0
+	Ethernet OAM Variable Request PDUs Received: 0
+	Ethernet OAM Variable Response Received: 0
+	Ethernet OAM Unsupported PDUs Received: 0
+	Rx Pause Priority Group 0 Frames: 0
+	Rx Pause Priority Group 1 Frames: 0
+	Rx Pause Priority Group 2 Frames: 0
+	Rx Pause Priority Group 3 Frames: 0
+	Rx Pause Priority Group 4 Frames: 0
+	Rx Pause Priority Group 5 Frames: 0
+	Rx Pause Priority Group 6 Frames: 0
+	Rx Pause Priority Group 7 Frames: 0
+	Misdirected Packet Count: 0
+	CRC Errors: 0

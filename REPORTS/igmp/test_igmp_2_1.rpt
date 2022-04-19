@@ -1,0 +1,21 @@
+|****************************SOCE_TEST REPORT************************************|
+| Tested by	:	Marco Condori
+| Date		:	mar 08 feb 2022 16:52:08 CET
+|********************************************************************************|
+| Serial number  :  123456                                                       |
+| Product model  :  S3534                                                        |
+| Product version  :  22.1.beta1                                                 |
+| Device name  :  S3534                                                          |
+| Device location  :  soc-e                                                      |
+| Contact info  :  support@relyum.com                                            |
+|--------------------------------------------------------------------------------|
+| HPS:
+| Core version  :  21.01.1300                                                    |
+|--------------------------------------------------------------------------------|
+| SWITCH:
+| Core version  :  21.11.0600                                                    |
+|--------------------------------------------------------------------------------|
+|
+|****************************SOCE_TEST REPORT************************************|
+PCAP                            Description    Filter Expected Results PASS/FAIL
+test_igmp_2_1_captured_IF2.pcap Total 0 frames -      0        0       PASS

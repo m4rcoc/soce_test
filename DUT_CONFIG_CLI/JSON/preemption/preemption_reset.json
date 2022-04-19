@@ -1,0 +1,28 @@
+{
+    "preemptionPorts" : [
+            {
+                    "portName" : "PORT_0",
+                    "enablePreemption" : false,
+                    "releaseAndHoldEnable" : false,
+                    "statusTable" : [ true, true, true, true, true, true, true, true ]
+            },
+            { 
+                    "portName" : "PORT_1",
+                    "enablePreemption" : false,
+                    "releaseAndHoldEnable" : false,
+                    "statusTable" : [ true, true, true, true, true, true, true, true ]
+            },
+            { 
+                    "portName" : "PORT_2",
+                    "enablePreemption" : false,
+                    "releaseAndHoldEnable" : false,
+                    "statusTable" : [ true, true, true, true, true, true, true, true ]
+            },
+            { 
+                    "portName" : "PORT_3",
+                    "enablePreemption" : false,
+                    "releaseAndHoldEnable" : false,
+                    "statusTable" : [ true, true, true, true, true, true, true, true ]
+            }
+    ]
+}

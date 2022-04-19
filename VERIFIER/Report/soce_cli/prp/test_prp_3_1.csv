@@ -1,0 +1,7 @@
+PCAP,Description,Frames to analyze,Filter,Expected,Results,PASS/FAIL,PCAP file path
+test_prp_3_1_captured_IF2.pcap,Total frames in Redundant B = 0,*,,0,0,PASS,VERIFIER/Report/soce_cli/prp/test_prp_3_1/test_prp_3_1_captured_IF2.pcap
+test_prp_3_1_captured_IF3.pcap,Total frames in Interlink = 1500,*,,1500,1500,PASS,VERIFIER/Report/soce_cli/prp/test_prp_3_1/test_prp_3_1_captured_IF3.pcap
+test_prp_3_1_captured_IF3.pcap,Unicast frames,*,eth.src==00:AA:AA:AA:AA:AA and eth.dst==00:BB:BB:BB:BB:BB,1500,1500,PASS,VERIFIER/Report/soce_cli/prp/test_prp_3_1/test_prp_3_1_captured_IF3.pcap
+test_prp_3_1_captured_IF3.pcap,Untagged frames,*,!prp,1500,0,FAIL,VERIFIER/Report/soce_cli/prp/test_prp_3_1/test_prp_3_1_captured_IF3.pcap
+test_prp_3_1_captured_IF3.pcap,MIN size=60,*,MIN(frame.len)frame.len,60,66,FAIL,VERIFIER/Report/soce_cli/prp/test_prp_3_1/test_prp_3_1_captured_IF3.pcap
+test_prp_3_1_captured_IF3.pcap,MAX size=1508,*,MAX(frame.len)frame.len,1508,1514,FAIL,VERIFIER/Report/soce_cli/prp/test_prp_3_1/test_prp_3_1_captured_IF3.pcap

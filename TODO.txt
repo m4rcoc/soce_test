@@ -1,0 +1,31 @@
+
+* Improve the "./soce_test.sh init" process to set appropiate permissions to all SOCE_TEST files
+
+* Results/Reports management --> Define a dedicated folder for .RPT, .STATS, .PCAP, ...
+
+* Reconsider the PRE-CONFIG existence
+
+* Establish generic platform.vars (fixed variables)
+
+* Include Selenium Webdriver dependencies (NodeJS), automatic installer, automatic checker
+
+* Include NTP server installation and configuration
+
+* Improve Selenium Webdriver compatibility (fix Known Issue -> launch script as non-root user)
+
+* Isolate Netconf configuration management (soce_test.sh) as new functionalities are added for Netconf configuration
+
+* Review/update automated_tests.sh
+
+* Move logs/ folder to REPORTS or VERIFIER
+
+* Test Plan Docu integration:
+    - Create a function that automatically summarizes the Traffic Flows developed with soce_generator
+    - Define a dedicated section to insert a brief description of DUT_CONFIG, SG_FLOWS (using the previous new feature)
+    - Create a function that export "Test Configuration Files" associated for each test
+
+* Create a new "functionality" -> "develop" for test develop
+    - When test is completed, copy all associated files and rename them with corresponding bash function/script names (./soce_test.sh init process included)
+    For example:
+        ./soce_test.sh export_develop_test <funcionality_test_part>
+        ./soce_test.sh export_develop_test 8021qci_11_1

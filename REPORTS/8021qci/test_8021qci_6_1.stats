@@ -1,0 +1,130 @@
+|****************************SOCE_TEST REPORT************************************|
+| Tested by	:	Marco Condori
+| Date		:	mié 09 mar 2022 11:14:14 CET
+|********************************************************************************|
+| Serial number  :  54321                                                        |
+| Product model  :  12xPort_MTSN_KIT                                             |
+| Product version  :  21.3.2                                                     |
+| Device name  :  12xPortMtsnKit                                                 |
+| Device location  :  soc-e                                                      |
+| Contact info  :  support@soc-e.com                                             |
+|--------------------------------------------------------------------------------|
+| HPS:
+| SWITCH:
+| Core version  :  21.02.0100                                                    |
+|--------------------------------------------------------------------------------|
+|
+|****************************SOCE_TEST REPORT************************************|
+Row:0  View:Flow Statistics  Sampled:2022-03-09 10:15:07.868198 UTC
+	Tx Port: Port_0
+	Rx Port: Port_1
+	Traffic Item: Traffic Item 1 2
+	Flow Group: Stream handle 0 (DEI=0)
+	Tx Frames: 1219106
+	Rx Frames: 9968
+	Frames Delta: 1209138
+	Loss %: 99.182
+	Tx Frame Rate: 122549.000
+	Rx Frame Rate: 1001.000
+	Tx L1 Rate (bps): 999999840.000
+	Rx L1 Rate (bps): 8168160.000
+	Rx Bytes: 9968000
+	Tx Rate (Bps): 122549000.000
+	Rx Rate (Bps): 1001000.000
+	Tx Rate (bps): 980392000.000
+	Rx Rate (bps): 8008000.000
+	Tx Rate (Kbps): 980392.000
+	Rx Rate (Kbps): 8008.000
+	Tx Rate (Mbps): 980.392
+	Rx Rate (Mbps): 8.008
+	Store-Forward Avg Latency (ns): 2351
+	Store-Forward Min Latency (ns): 2295
+	Store-Forward Max Latency (ns): 18590
+	First TimeStamp: 00:00:01.155
+	Last TimeStamp: 00:00:11.103
+	Dead Flow: 0
+Row:1  View:Flow Statistics  Sampled:2022-03-09 10:15:07.868198 UTC
+	Tx Port: Port_2
+	Rx Port: Port_3
+	Traffic Item: Traffic Item 1 1
+	Flow Group: Stream handle 1 (DEI=0)
+	Tx Frames: 1219106
+	Rx Frames: 9968
+	Frames Delta: 1209138
+	Loss %: 99.182
+	Tx Frame Rate: 122549.000
+	Rx Frame Rate: 1001.000
+	Tx L1 Rate (bps): 999999840.000
+	Rx L1 Rate (bps): 8168160.000
+	Rx Bytes: 9968000
+	Tx Rate (Bps): 122549000.000
+	Rx Rate (Bps): 1001000.000
+	Tx Rate (bps): 980392000.000
+	Rx Rate (bps): 8008000.000
+	Tx Rate (Kbps): 980392.000
+	Rx Rate (Kbps): 8008.000
+	Tx Rate (Mbps): 980.392
+	Rx Rate (Mbps): 8.008
+	Store-Forward Avg Latency (ns): 2319
+	Store-Forward Min Latency (ns): 2260
+	Store-Forward Max Latency (ns): 18587
+	First TimeStamp: 00:00:01.155
+	Last TimeStamp: 00:00:11.103
+	Dead Flow: 0
+Row:2  View:Flow Statistics  Sampled:2022-03-09 10:15:07.868198 UTC
+	Tx Port: Port_3
+	Rx Port: Port_2
+	Traffic Item: Traffic Item 1 3
+	Flow Group: Learning flow (Port 3)
+	Tx Frames: 12192
+	Rx Frames: 12192
+	Frames Delta: 0
+	Loss %: 0.000
+	Tx Frame Rate: 1225.500
+	Rx Frame Rate: 1225.500
+	Tx L1 Rate (bps): 10000080.000
+	Rx L1 Rate (bps): 10000080.000
+	Rx Bytes: 12192000
+	Tx Rate (Bps): 1225500.000
+	Rx Rate (Bps): 1225500.000
+	Tx Rate (bps): 9804000.000
+	Rx Rate (bps): 9804000.000
+	Tx Rate (Kbps): 9804.000
+	Rx Rate (Kbps): 9804.000
+	Tx Rate (Mbps): 9.804
+	Rx Rate (Mbps): 9.804
+	Store-Forward Avg Latency (ns): 2382
+	Store-Forward Min Latency (ns): 2350
+	Store-Forward Max Latency (ns): 19702
+	First TimeStamp: 00:00:01.155
+	Last TimeStamp: 00:00:11.103
+	Dead Flow: 0
+Row:3  View:Flow Statistics  Sampled:2022-03-09 10:15:07.868198 UTC
+	Tx Port: Port_1
+	Rx Port: Port_0
+	Traffic Item: Traffic Item 1 4
+	Flow Group: Learning flow (Port 1)
+	Tx Frames: 12192
+	Rx Frames: 12192
+	Frames Delta: 0
+	Loss %: 0.000
+	Tx Frame Rate: 1225.500
+	Rx Frame Rate: 1225.500
+	Tx L1 Rate (bps): 10000080.000
+	Rx L1 Rate (bps): 10000080.000
+	Rx Bytes: 12192000
+	Tx Rate (Bps): 1225500.000
+	Rx Rate (Bps): 1225500.000
+	Tx Rate (bps): 9804000.000
+	Rx Rate (bps): 9804000.000
+	Tx Rate (Kbps): 9804.000
+	Rx Rate (Kbps): 9804.000
+	Tx Rate (Mbps): 9.804
+	Rx Rate (Mbps): 9.804
+	Store-Forward Avg Latency (ns): 2351
+	Store-Forward Min Latency (ns): 2317
+	Store-Forward Max Latency (ns): 10470
+	First TimeStamp: 00:00:01.155
+	Last TimeStamp: 00:00:11.103
+	Dead Flow: 0
+

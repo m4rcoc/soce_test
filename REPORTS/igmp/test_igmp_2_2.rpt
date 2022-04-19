@@ -1,0 +1,24 @@
+|****************************SOCE_TEST REPORT************************************|
+| Tested by	:	Marco Condori
+| Date		:	mar 08 feb 2022 16:52:51 CET
+|********************************************************************************|
+| Serial number  :  123456                                                       |
+| Product model  :  S3534                                                        |
+| Product version  :  22.1.beta1                                                 |
+| Device name  :  S3534                                                          |
+| Device location  :  soc-e                                                      |
+| Contact info  :  support@relyum.com                                            |
+|--------------------------------------------------------------------------------|
+| HPS:
+| Core version  :  21.01.1300                                                    |
+|--------------------------------------------------------------------------------|
+| SWITCH:
+| Core version  :  21.11.0600                                                    |
+|--------------------------------------------------------------------------------|
+|
+|****************************SOCE_TEST REPORT************************************|
+PCAP                            Description       Filter                                                    Expected Results PASS/FAIL
+test_igmp_2_2_captured_IF2.pcap Total 1500 frames -                                                         1500     1500    PASS
+test_igmp_2_2_captured_IF2.pcap Multicast Frames  eth.src==00:aa:aa:aa:aa:aa and eth.dst==01:00:5E:01:02:03 1500     1500    PASS
+test_igmp_2_2_captured_IF2.pcap MIN size=64       MIN(frame.len)frame.len                                   64       64      PASS
+test_igmp_2_2_captured_IF2.pcap MAX size=1514     MAX(frame.len)frame.len                                   1514     1514    PASS

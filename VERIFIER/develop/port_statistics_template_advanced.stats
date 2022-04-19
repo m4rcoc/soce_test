@@ -1,0 +1,90 @@
+Row:0  View:Port Statistics  Sampled:2022-02-23 09:02:27.162547 UTC
+	Stat Name: 192.168.2.138/Card01/Port01
+	Port Name: Ethernet - 001
+	Line Speed: 1000 Mbps
+	Link State: Link Up
+	Frames Tx.: 111.111
+	Valid Frames Rx.: 222.222
+	Frames Tx. Rate: 333.333
+	Valid Frames Rx. Rate: 444.444
+	Data Integrity Frames Rx.: 555.555
+	Data Integrity Errors: 666.666
+	Bytes Tx.: 777.777
+	Bytes Rx.: 888.888
+	Bits Sent: 999.999
+	Bits Received: 1010.1010
+	Bytes Tx. Rate: 1111.1111
+	Tx. Rate bps: 1212.1212
+	Tx. Rate Kbps: 1313.1313
+	Tx. Rate Mbps: 1414.1414
+	Bytes Rx. Rate: 1515.1515
+	Rx. Rate bps: 1616.1616
+	Rx. Rate Kbps: 1717.1717
+	Rx. Rate Mbps: 1818.1818
+	Scheduled Frames Tx.: 1919.1919
+	Scheduled Frames Tx. Rate: 2020.2020
+	Control Frames Tx: 2121.2121
+	Control Frames Rx: 2222.2222
+	Ethernet OAM Information PDUs Sent: 2323.2323
+	Ethernet OAM Information PDUs Received: 2424.2424
+	Ethernet OAM Event Notification PDUs Received: 2525.2525
+	Ethernet OAM Loopback Control PDUs Received: 2626.2626
+	Ethernet OAM Organisation PDUs Received: 2727.2727
+	Ethernet OAM Variable Request PDUs Received: 2828.2828
+	Ethernet OAM Variable Response Received: 2929.2929
+	Ethernet OAM Unsupported PDUs Received: 3030.3030
+	Rx Pause Priority Group 0 Frames: 3131.3131
+	Rx Pause Priority Group 1 Frames: 3232.3232
+	Rx Pause Priority Group 2 Frames: 3333.3333
+	Rx Pause Priority Group 3 Frames: 3434.3434
+	Rx Pause Priority Group 4 Frames: 3535.3535
+	Rx Pause Priority Group 5 Frames: 3636.3636
+	Rx Pause Priority Group 6 Frames: 3737.3737
+	Rx Pause Priority Group 7 Frames: 3838.3838
+	Misdirected Packet Count: 3939.3939
+	CRC Errors: 4040.4040
+Row:1  View:Port Statistics  Sampled:2022-02-23 09:02:27.162547 UTC
+	Stat Name: 192.168.2.138/Card01/Port02
+	Port Name: Ethernet - 002
+	Line Speed: 1000 Mbps
+	Link State: Link Up
+	Frames Tx.: 4141.4141
+	Valid Frames Rx.: 4242.4242
+	Frames Tx. Rate: 4343.4343
+	Valid Frames Rx. Rate: 4444.4444
+	Data Integrity Frames Rx.: 4545.4545
+	Data Integrity Errors: 4646.4646
+	Bytes Tx.: 4747.4747
+	Bytes Rx.: 4848.4848
+	Bits Sent: 4949.4949
+	Bits Received: 5050.5050
+	Bytes Tx. Rate: 5151.5151
+	Tx. Rate bps: 5252.5252
+	Tx. Rate Kbps: 5353.5353
+	Tx. Rate Mbps: 5454.5454
+	Bytes Rx. Rate: 5555.5555
+	Rx. Rate bps: 5656.5656
+	Rx. Rate Kbps: 5757.5757
+	Rx. Rate Mbps: 5858.5858
+	Scheduled Frames Tx.: 5959.5959
+	Scheduled Frames Tx. Rate: 6060.6060
+	Control Frames Tx: 6161.6161
+	Control Frames Rx: 6262.6262
+	Ethernet OAM Information PDUs Sent: 6363.6363
+	Ethernet OAM Information PDUs Received: 6464.6464
+	Ethernet OAM Event Notification PDUs Received: 6565.6565
+	Ethernet OAM Loopback Control PDUs Received: 6666.6666
+	Ethernet OAM Organisation PDUs Received: 6767.6767
+	Ethernet OAM Variable Request PDUs Received: 6868.6868
+	Ethernet OAM Variable Response Received: 6969.6969
+	Ethernet OAM Unsupported PDUs Received: 7070.7070
+	Rx Pause Priority Group 0 Frames: 7171.7171
+	Rx Pause Priority Group 1 Frames: 7272.7272
+	Rx Pause Priority Group 2 Frames: 7373.7373
+	Rx Pause Priority Group 3 Frames: 7474.7474
+	Rx Pause Priority Group 4 Frames: 7575.7575
+	Rx Pause Priority Group 5 Frames: 7676.7676
+	Rx Pause Priority Group 6 Frames: 7777.7777
+	Rx Pause Priority Group 7 Frames: 7878.7878
+	Misdirected Packet Count: 7979.7979
+	CRC Errors: 8080.8080

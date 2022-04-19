@@ -1,0 +1,118 @@
+{
+    "__TRANSMISSION_CONFIG__": "______________________________________________________________________________________________________________________________________________",
+
+    "transmission": "stop_after",
+    "config_transmission": 
+        {
+            "stop_after": 10,
+            "timeout": 3,
+            "continuous": "True"
+            
+        },
+    "frame_rate": "mbps",
+    "config_frame_rate":
+        {
+            "fps": 1000,
+            "mbps": 5  
+        },
+
+    "__LAYER_2_HEADER__": "______________________________________________________________________________________________________________________________________________",    
+    
+    "mac_dst": "BB:BB:BB:BB:BB:BB",
+    "mac_src": "00:05:01:AA:10:33",
+    "ethertype": "default",
+
+    "ethertype_protocol": 
+        {
+            "default": "0xffff",
+            "ipv4": "0x0800",
+            "ipv6": "0x86dd"
+        },
+
+    "__PAYLOAD_CONFIG__": "______________________________________________________________________________________________________________________________________________",
+    
+    "payload": "pattern",
+    "config_payload":
+        {
+            "random": "True",
+            "pattern": "SOCE_"
+        },
+    "payload_seq_number": "True",
+
+
+    "frame_size": "increment",
+    "config_frame_size": 
+        {
+            "fixed": 100,
+            "random":{"min": 64, "max": 1518},
+            "increment": {"start": 64, "max": 1514, "step": 1},
+            "__NOTE__": "_____[This PC supports 64 to 1514 frame sizes]_____"
+        },
+
+
+    "__LAYER_2_TAGS__": "_________________________________________________________________________________________________________________________________________",
+    
+    "vlan": 
+        {"enabled": "False",
+            "tpid": "0x8100", "pcp": 0, "dei": 0, "vid": 10 },
+
+    "hsr":
+        {"enabled": "False",
+            "lan_id": "A",
+            "seq_number": "increment",
+                "config_seq_number":
+                {
+                    "fixed": 1,
+                    "increment": {"start": 1, "max": 65534, "step": 1}
+                }
+        },
+    "prp":
+        {"enabled": "False",
+            "lan_id": "A",
+            "seq_number": "increment",
+                "config_seq_number":
+                {
+                    "fixed": 1,
+                    "increment": {"start": 1, "max": 65534, "step": 1}
+                }
+        },        
+
+    "__LAYER_3__": "______________________________________________________________________________________________________________________________________________",
+    
+    "ipv4":
+        {
+            "src": "3.3.3.3", "dst": "2.2.2.2", "version": 4, "ihl": 5, "tos": 0, "id": 1, "flags": 0, "frag":0, "ttl": 64, "proto": 143, "chksum": 0, "options": []
+        },      
+    "ipv6":
+        {
+            "src":"::", "dst": "::", "version": 6, "tc": 0, "fl": 0 , "nh": 59, "hlim": 64
+        },
+
+    "__LAYER_4__": "______________________________________________________________________________________________________________________________________________",
+    
+    "udp":
+        {
+            "sport": 9000, "dport": 100, "chksum": 0
+        },
+    "tcp":
+        {
+            "sport": 20, "dport": 80, "seq": 0, "ack": 0, "dataofs": 5, "reserved": 0, "flags": 0, "window": 8192, "chksum": 0, "urgptr": 0, "options": []
+        },
+        
+    "__CUSTOM__": "______________________________________________________________________________________________________________________________________________",
+    
+    "custom":
+    {
+        "enabled": "False",
+
+        "bytes": {"begin": 11 , "end": 12},
+        "ctype": "increment",
+        "config_ctype":
+            {
+                "increment": {"start": 0, "max": 64, "step": 1},
+                "decrement": {"start": 64, "min": 0, "step": 1},
+                "list": [0,11,22,22,22,50,0,1,8,9]
+                
+            }          
+    }
+}

@@ -1,0 +1,6 @@
+Interface   =PORT.3
+MAC_dst    =00:04:04:04:04:04
+Position_N   =3
+Value_X				=0x5C
+EtherType			=0xffff
+

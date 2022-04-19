@@ -1,0 +1,47 @@
+{
+    "tagUsedForPriority" : 0,
+    "ptpFramesPriority" : 6,
+    "protocolToQueueMap" : [ { "ethertype" : 65520, "queue" : 0 },{ "ethertype" : 65521, "queue" : 4 },{ "ethertype" : 65522, "queue" : 7 }],
+    "priorityPorts" : [
+            {
+                            "portName" : "PORT_0",
+                            "enabledPriorityModes" : [ false, true, false, false ],
+                            "wrrQueueConfigModes" : [1, 1, 1, 1, 1, 1, 1, 1 ],
+                            "wrrWeights" : [ 1, 1, 1, 1, 1, 1, 1, 1 ],
+                            "portPriorityQueue" : 0,
+                            "pcpToQueueMap" : [ 0, 1, 2, 3, 4, 5, 6, 7 ],
+                            "dscpToQueueMap" : [ 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 7, 7, 7 ],
+                            "capacityConfiguration" : [ 12, 12, 12, 12, 12, 12, 12, 12 ]
+            },
+            {
+                            "portName" : "PORT_1",
+                            "enabledPriorityModes" : [ false, true, false, false ],
+                            "wrrQueueConfigModes" : [1, 1, 1, 1, 1, 1, 1, 1 ],
+                            "wrrWeights" : [ 1, 1, 1, 1, 1, 1, 1, 1 ],
+                            "portPriorityQueue" : 0,
+                            "pcpToQueueMap" : [ 0, 1, 2, 3, 4, 5, 6, 7 ],
+                            "dscpToQueueMap" : [ 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 7, 7, 7 ],
+                            "capacityConfiguration" : [ 12, 12, 12, 12, 12, 12, 12, 12 ]
+            },
+            {
+                            "portName" : "PORT_2",
+                            "enabledPriorityModes" : [ false, true, false, false ],
+                            "wrrQueueConfigModes" : [1, 1, 1, 1, 1, 1, 1, 1 ],
+                            "wrrWeights" : [ 1, 1, 1, 1, 1, 1, 1, 1 ],
+                            "portPriorityQueue" : 0,
+                            "pcpToQueueMap" : [ 0, 1, 2, 3, 4, 5, 6, 7 ],
+                            "dscpToQueueMap" : [ 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 7, 7, 7 ],
+                            "capacityConfiguration" : [ 12, 12, 12, 12, 12, 12, 12, 12 ]
+            },
+            {
+                            "portName" : "PORT_3",
+                            "enabledPriorityModes" : [ false, true, false, false ],
+                            "wrrQueueConfigModes" : [1, 1, 1, 1, 1, 1, 1, 1 ],
+                            "wrrWeights" : [ 1, 1, 1, 1, 1, 1, 1, 1 ],
+                            "portPriorityQueue" : 0,
+                            "pcpToQueueMap" : [ 0, 1, 2, 3, 4, 5, 6, 7 ],
+                            "dscpToQueueMap" : [ 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 7, 7, 7 ],
+                            "capacityConfiguration" : [ 12, 12, 12, 12, 12, 12, 12, 12 ]
+            }
+    ]
+}

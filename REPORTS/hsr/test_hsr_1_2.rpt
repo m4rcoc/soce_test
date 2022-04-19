@@ -1,0 +1,30 @@
+|****************************SOCE_TEST REPORT************************************|
+| Tested by	:	Marco Condori
+| Date		:	lun 07 feb 2022 15:43:52 CET
+|********************************************************************************|
+| Serial number  :  123456                                                       |
+| Product model  :  S3534                                                        |
+| Product version  :  22.1.beta1                                                 |
+| Device name  :  S3534                                                          |
+| Device location  :  soc-e                                                      |
+| Contact info  :  support@relyum.com                                            |
+|--------------------------------------------------------------------------------|
+| HPS:
+| Core version  :  21.01.1300                                                    |
+|--------------------------------------------------------------------------------|
+| SWITCH:
+| Core version  :  21.11.0600                                                    |
+|--------------------------------------------------------------------------------|
+|
+|****************************SOCE_TEST REPORT************************************|
+PCAP                           Description                                                              Filter                                                    Expected Results PASS/FAIL
+test_hsr_1_2_captured_IF1.pcap Total Supervision frames associated source MAC 00:aa::01 -> 60s/2fps=30f hsr_prp_supervision.source_mac_address==00:aa:aa:aa:aa:01 30       29      FAIL
+test_hsr_1_2_captured_IF1.pcap Total Supervision frames associated source MAC 00:aa::3f -> 60s/2fps=30f hsr_prp_supervision.source_mac_address==00:aa:aa:aa:aa:3f 30       29      FAIL
+test_hsr_1_2_captured_IF1.pcap Double tagged -> VLAN + HSR                                              eth.type==0x8100 and vlan.etype==0x892f                   1952     1952    PASS
+test_hsr_1_2_captured_IF1.pcap VLAN tagged (VLAN ID=1 DEI=0 PCP=0)                                      vlan.id==1 and vlan.dei==0 and vlan.priority==0           1952     1952    PASS
+test_hsr_1_2_captured_IF1.pcap LAN ID=A (0)                                                             hsr.laneid==0                                             1952     1952    PASS
+test_hsr_1_2_captured_IF2.pcap Total Supervision frames associated source MAC 00:aa::01 -> 60s/2fps=30f hsr_prp_supervision.source_mac_address==00:aa:aa:aa:aa:01 30       29      FAIL
+test_hsr_1_2_captured_IF2.pcap Total Supervision frames associated source MAC 00:aa::3f -> 60s/2fps=30f hsr_prp_supervision.source_mac_address==00:aa:aa:aa:aa:3f 30       29      FAIL
+test_hsr_1_2_captured_IF2.pcap Double tagged -> VLAN + HSR                                              eth.type==0x8100 and vlan.etype==0x892f                   1952     1952    PASS
+test_hsr_1_2_captured_IF2.pcap VLAN tagged (VLAN ID=1 DEI=0 PCP=0)                                      vlan.id==1 and vlan.dei==0 and vlan.priority==0           1952     1952    PASS
+test_hsr_1_2_captured_IF2.pcap LAN ID=B (1)                                                             hsr.laneid==1                                             1952     1952    PASS

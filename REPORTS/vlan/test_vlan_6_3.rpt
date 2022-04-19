@@ -1,0 +1,6 @@
+PCAP                            Description       Frames to analyze  Expected Results PASS/FAIL
+test_vlan_6_3_captured_IF2.pcap Total 1500 frames *                  1500     1500    PASS
+test_vlan_6_3_captured_IF2.pcap Unicast Frames    *                  1500     1500    PASS
+test_vlan_6_3_captured_IF2.pcap Untagged frames   frame.number<=1500 1500     1500    PASS
+test_vlan_6_3_captured_IF2.pcap MIN size=60       frame.number<=1500 60       60      PASS
+test_vlan_6_3_captured_IF2.pcap MAX size=1510     frame.number<=1500 1510     1510    PASS

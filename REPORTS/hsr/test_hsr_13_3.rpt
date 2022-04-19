@@ -1,0 +1,26 @@
+|****************************SOCE_TEST REPORT************************************|
+| Tested by	:	Marco Condori
+| Date		:	vie 11 feb 2022 12:18:01 CET
+|********************************************************************************|
+| Serial number  :  123456                                                       |
+| Product model  :  S3534                                                        |
+| Product version  :  22.1.beta1                                                 |
+| Device name  :  S3534                                                          |
+| Device location  :  soc-e                                                      |
+| Contact info  :  support@relyum.com                                            |
+|--------------------------------------------------------------------------------|
+| HPS:
+| Core version  :  21.01.1300                                                    |
+|--------------------------------------------------------------------------------|
+| SWITCH:
+| Core version  :  21.11.0600                                                    |
+|--------------------------------------------------------------------------------|
+|
+|****************************SOCE_TEST REPORT************************************|
+PCAP                            Description                     Filter                                                      Expected Results PASS/FAIL
+test_hsr_13_3_captured_IF1.pcap  Total P2P Req messages in IF1  (ptp.v2.messageid == 0x2) && (eth.src == ec:46:70:00:7e:a2) 0        0       PASS
+test_hsr_13_3_captured_IF1.pcap  Total P2P Resp messages in IF1 (ptp.v2.messageid == 0x3)                                   0        0       PASS
+test_hsr_13_3_captured_IF2.pcap  Total P2P Req messages in IF2  (ptp.v2.messageid == 0x2) && (eth.src == ec:46:70:00:7e:a2) 0        0       PASS
+test_hsr_13_3_captured_IF2.pcap  Total P2P Resp messages in IF2 (ptp.v2.messageid == 0x3)                                   0        0       PASS
+test_hsr_13_3_captured_IF3.pcap  Total P2P Req messages in IF3  (ptp.v2.messageid == 0x2) && (eth.src == ec:46:70:00:7e:a2) 10       10      PASS
+test_hsr_13_3_captured_IF3.pcap  Total P2P Resp messages in IF3 (ptp.v2.messageid == 0x3)                                   10       10      PASS

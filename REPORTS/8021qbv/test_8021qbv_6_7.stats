@@ -1,0 +1,47 @@
+|********************************************************************************|
+| Tested by	:	Marco Condori
+| Date		:	mar 18 ene 2022 14:47:06 CET
+|********************************************************************************|
+| Serial number  :  0123456789                                                   |
+| Product model  :  RELY_TSN_PCIE                                                |
+| Product version  :  21.1.0beta1                                                |
+| Device name  :  RELY_TSN_PCIe                                                  |
+| Device location  :  Relyum                                                     |
+| Contact info  :  support@relyum.com                                            |
+|--------------------------------------------------------------------------------|
+| HPS:
+| SWITCH:
+| Core version  :  21.01.1100                                                    |
+|--------------------------------------------------------------------------------|
+|
+|
+|
+Row:0  View:Flow Statistics  Sampled:2022-01-18 13:48:02.296984 UTC
+	Tx Port: Port_0
+	Rx Port: Port_1
+	Traffic Item: Traffic Item 1
+	Flow Group: Traffic Item 1-EndpointSet-3 - Flow Group 0001
+	Tx Frames: 11876856
+	Rx Frames: 319
+	Frames Delta: 11876537
+	Loss %: 99.997
+	Tx Frame Rate: 1488095.500
+	Rx Frame Rate: 40.000
+	Tx L1 Rate (bps): 1000000176.000
+	Rx L1 Rate (bps): 26880.000
+	Rx Bytes: 20416
+	Tx Rate (Bps): 95238112.000
+	Rx Rate (Bps): 2560.000
+	Tx Rate (bps): 761904896.000
+	Rx Rate (bps): 20480.000
+	Tx Rate (Kbps): 761904.896
+	Rx Rate (Kbps): 20.480
+	Tx Rate (Mbps): 761.905
+	Rx Rate (Mbps): 0.020
+	Store-Forward Avg Latency (ns): 3994492204
+	Store-Forward Min Latency (ns): 19283390
+	Store-Forward Max Latency (ns): 7969702975
+	First TimeStamp: 00:00:01.125
+	Last TimeStamp: 00:00:09.075
+	Dead Flow: 0
+

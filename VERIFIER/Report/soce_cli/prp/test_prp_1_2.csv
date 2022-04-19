@@ -1,0 +1,11 @@
+PCAP,Description,Frames to analyze,Filter,Expected,Results,PASS/FAIL,PCAP file path
+test_prp_1_2_captured_IF1.pcap,Total Supervision frames associated source MAC 00:aa::01 -> 60s/2fps=30f,*,hsr_prp_supervision.source_mac_address==00:aa:aa:aa:aa:01,30,29,FAIL,VERIFIER/Report/soce_cli/prp/test_prp_1_2/test_prp_1_2_captured_IF1.pcap
+test_prp_1_2_captured_IF1.pcap,Total Supervision frames associated source MAC 00:aa::3f -> 60s/2fps=30f,*,hsr_prp_supervision.source_mac_address==00:aa:aa:aa:aa:3f,30,29,FAIL,VERIFIER/Report/soce_cli/prp/test_prp_1_2/test_prp_1_2_captured_IF1.pcap
+test_prp_1_2_captured_IF1.pcap,Double tagged -> VLAN + PRP,*,eth.type==0x8100 and vlan.etype==0x88fb,1911,1911,PASS,VERIFIER/Report/soce_cli/prp/test_prp_1_2/test_prp_1_2_captured_IF1.pcap
+test_prp_1_2_captured_IF1.pcap,VLAN tagged (VLAN ID=1 DEI=0 PCP=0),*,vlan.id==1 and vlan.dei==0 and vlan.priority==0,1911,1911,PASS,VERIFIER/Report/soce_cli/prp/test_prp_1_2/test_prp_1_2_captured_IF1.pcap
+test_prp_1_2_captured_IF1.pcap,LAN ID=A (10),*,prp.trailer.prp_lan == 10,1911,1911,PASS,VERIFIER/Report/soce_cli/prp/test_prp_1_2/test_prp_1_2_captured_IF1.pcap
+test_prp_1_2_captured_IF2.pcap,Total Supervision frames associated source MAC 00:aa::01 -> 60s/2fps=30f,*,hsr_prp_supervision.source_mac_address==00:aa:aa:aa:aa:01,30,29,FAIL,VERIFIER/Report/soce_cli/prp/test_prp_1_2/test_prp_1_2_captured_IF2.pcap
+test_prp_1_2_captured_IF2.pcap,Total Supervision frames associated source MAC 00:aa::3f -> 60s/2fps=30f,*,hsr_prp_supervision.source_mac_address==00:aa:aa:aa:aa:3f,30,29,FAIL,VERIFIER/Report/soce_cli/prp/test_prp_1_2/test_prp_1_2_captured_IF2.pcap
+test_prp_1_2_captured_IF2.pcap,Double tagged -> VLAN + HSR,*,eth.type==0x8100 and vlan.etype==0x88fb,1911,1911,PASS,VERIFIER/Report/soce_cli/prp/test_prp_1_2/test_prp_1_2_captured_IF2.pcap
+test_prp_1_2_captured_IF2.pcap,VLAN tagged (VLAN ID=1 DEI=0 PCP=0),*,vlan.id==1 and vlan.dei==0 and vlan.priority==0,1911,1911,PASS,VERIFIER/Report/soce_cli/prp/test_prp_1_2/test_prp_1_2_captured_IF2.pcap
+test_prp_1_2_captured_IF2.pcap,LAN ID=B (11),*,prp.trailer.prp_lan == 11,1911,1911,PASS,VERIFIER/Report/soce_cli/prp/test_prp_1_2/test_prp_1_2_captured_IF2.pcap

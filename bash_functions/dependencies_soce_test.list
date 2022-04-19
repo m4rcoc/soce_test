@@ -1,0 +1,12 @@
+INSTALLER,COMMAND,PACKAGE
+apt,sshpass,sshpass
+apt,pip3,python3-pip
+pip3,scapy,scapy
+apt,tcpdump,tcpdump
+apt,tcpreplay,tcpreplay
+apt,ifconfig,net-tools
+apt,xterm,xterm
+pip,netconf-console,netconf-console
+apt,mlr,miller
+apt,tshark,tshark
+

@@ -1,0 +1,51 @@
+{
+	"gateEnabled" : true,
+	"gateStates" : 255,
+	"cycleTimeNumerator" : 100000,
+	"cycleTimeDenominator" : 1000000000,
+	"cycleTimeExtension" : 8,
+	"baseTimeSeconds" : 0,
+	"baseTimeNanoseconds" : 0,
+	"gateControlList" : [
+		{
+			"gateStates" : 128,
+			"operationName" : "set-gate-states",
+			"timeInterval" : 12500
+		},
+		{
+			"gateStates" : 64,
+			"operationName" : "set-gate-states",
+			"timeInterval" : 12500
+		},
+		{
+			"gateStates" : 32,
+			"operationName" : "set-gate-states",
+			"timeInterval" : 12500
+		},
+		{
+			"gateStates" : 16,
+			"operationName" : "set-gate-states",
+			"timeInterval" : 12500
+		},
+		{
+			"gateStates" : 8,
+			"operationName" : "set-gate-states",
+			"timeInterval" : 12500
+		},
+		{
+			"gateStates" : 4,
+			"operationName" : "set-gate-states",
+			"timeInterval" : 12500
+		},
+		{
+			"gateStates" : 2,
+			"operationName" : "set-gate-states",
+			"timeInterval" : 12500
+		},
+		{
+			"gateStates" : 1,
+			"operationName" : "set-gate-states",
+			"timeInterval" : 12500
+		}
+	]
+}

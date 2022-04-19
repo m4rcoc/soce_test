@@ -1,0 +1,22 @@
+{
+	"nullStreamIdentityList" : [
+	],
+	"sourceStreamIdentityList" : [
+	],
+	"activeStreamIdentityList" : [
+	],
+	"usePcp" : false,
+	"mask" : {
+		"dstMacAddress" : "FF-FF-FF-FF-FF-FF",
+		"srcMacAddress" : "FF-FF-FF-FF-FF-FF",
+		"msduLength" : 1,
+		"msdu0" : "FF-FF-FF-FF",
+		"msdu1" : "FF-FF-FF-FF",
+		"msdu2" : "FF-FF-FF-FF",
+		"msdu3" : "FF-FF-FF-FF",
+		"msdu4" : "FF-FF-FF-FF"
+	},
+	"maskAndMatchIdentityList" : [
+	],
+	"usePvid" : false
+}

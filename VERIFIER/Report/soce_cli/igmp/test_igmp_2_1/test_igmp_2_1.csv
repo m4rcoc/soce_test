@@ -1,0 +1,2 @@
+PCAP,Description,Frames to analyze,Filter,Expected,Results,PASS/FAIL,PCAP file path
+test_igmp_2_1_captured_IF2.pcap,Total 0 frames,*,,0,0,PASS,VERIFIER/Report/soce_cli/igmp/test_igmp_2_1/test_igmp_2_1_captured_IF2.pcap

@@ -1,0 +1,5 @@
+PCAP,Description,Frames to analyze,Filter,Expected,Results,PASS/FAIL,PCAP file path
+test_prp_11_2_captured_IF3.pcap,Total frames in Interlink = 10,*,,10,10,PASS,VERIFIER/Report/soce_cli/prp/test_prp_11_2/test_prp_11_2_captured_IF3.pcap
+test_prp_11_2_captured_IF3.pcap,Broadcast frames,*,eth.dst==FF:FF:FF:FF:FF:FF,10,10,PASS,VERIFIER/Report/soce_cli/prp/test_prp_11_2/test_prp_11_2_captured_IF3.pcap
+test_prp_11_2_captured_IF3.pcap,PRP untagged frames,*,!prp,10,0,FAIL,VERIFIER/Report/soce_cli/prp/test_prp_11_2/test_prp_11_2_captured_IF3.pcap
+test_prp_11_2_captured_IF3.pcap,frame size=221-6,*,frame.len == 215,10,0,FAIL,VERIFIER/Report/soce_cli/prp/test_prp_11_2/test_prp_11_2_captured_IF3.pcap

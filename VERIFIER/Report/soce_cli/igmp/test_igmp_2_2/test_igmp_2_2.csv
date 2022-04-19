@@ -1,0 +1,5 @@
+PCAP,Description,Frames to analyze,Filter,Expected,Results,PASS/FAIL,PCAP file path
+test_igmp_2_2_captured_IF2.pcap,Total 1500 frames,*,,1500,1500,PASS,VERIFIER/Report/soce_cli/igmp/test_igmp_2_2/test_igmp_2_2_captured_IF2.pcap
+test_igmp_2_2_captured_IF2.pcap,Multicast Frames,*,eth.src==00:aa:aa:aa:aa:aa and eth.dst==01:00:5E:01:02:03,1500,1500,PASS,VERIFIER/Report/soce_cli/igmp/test_igmp_2_2/test_igmp_2_2_captured_IF2.pcap
+test_igmp_2_2_captured_IF2.pcap,MIN size=64,*,MIN(frame.len)frame.len,64,64,PASS,VERIFIER/Report/soce_cli/igmp/test_igmp_2_2/test_igmp_2_2_captured_IF2.pcap
+test_igmp_2_2_captured_IF2.pcap,MAX size=1514,*,MAX(frame.len)frame.len,1514,1514,PASS,VERIFIER/Report/soce_cli/igmp/test_igmp_2_2/test_igmp_2_2_captured_IF2.pcap

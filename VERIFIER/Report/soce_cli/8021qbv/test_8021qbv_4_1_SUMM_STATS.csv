@@ -1,0 +1,9 @@
+Filename,Flow Number,Description,Field to verify,Accurancy,Expected
+REPORTS/8021qbv/test_8021qbv_4_1.stats,1,Port 1 of TS should capture only PCP 0 traffic (Flow 1),Loss %,0.5,0
+REPORTS/8021qbv/test_8021qbv_4_1.stats,2,Port 1 of TS should capture only PCP 0 traffic (Flow 1),Loss %,0.5,100
+REPORTS/8021qbv/test_8021qbv_4_1.stats,3,Port 1 of TS should capture only PCP 0 traffic (Flow 1),Loss %,0.5,100
+REPORTS/8021qbv/test_8021qbv_4_1.stats,4,Port 1 of TS should capture only PCP 0 traffic (Flow 1),Loss %,0.5,100
+REPORTS/8021qbv/test_8021qbv_4_1.stats,5,Port 1 of TS should capture only PCP 0 traffic (Flow 1),Loss %,0.5,100
+REPORTS/8021qbv/test_8021qbv_4_1.stats,6,Port 1 of TS should capture only PCP 0 traffic (Flow 1),Loss %,0.5,100
+REPORTS/8021qbv/test_8021qbv_4_1.stats,7,Port 1 of TS should capture only PCP 0 traffic (Flow 1),Loss %,0.5,100
+REPORTS/8021qbv/test_8021qbv_4_1.stats,8,Port 1 of TS should capture only PCP 0 traffic (Flow 1),Loss %,0.5,100

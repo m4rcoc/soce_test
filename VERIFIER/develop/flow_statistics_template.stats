@@ -1,0 +1,234 @@
+
+Row:0  View:Flow Statistics  Sampled:2022-01-18 10:01:44.553544 UTC
+	Tx Port: Port_0
+	Rx Port: Port_1
+	Traffic Item: Traffic Item 1
+	VLAN:VLAN Priority: 0
+	Flow Group: Traffic Item 1-EndpointSet-4 - Flow Group 0001
+	Tx Frames: 30638
+	Rx Frames: 30638
+	Frames Delta: 0
+	Loss %: 0.600
+	Tx Frame Rate: 0.000
+	Rx Frame Rate: 0.000
+	Tx L1 Rate bps: 0.000
+	Rx L1 Rate bps: 0.000
+	Rx Bytes: 30638000
+	Tx Rate Bps: 0.000
+	Rx Rate Bps: 0.000
+	Tx Rate bps: 0.000
+	Rx Rate bps: 0.000
+	Tx Rate Kbps: 0.000
+	Rx Rate Kbps: 0.000
+	Tx Rate Mbps: 0.000
+	Rx Rate Mbps: 0.000
+	Store-Forward Avg Latency ns: 1439
+	Store-Forward Min Latency ns: 1422
+	Store-Forward Max Latency ns: 2175
+	First TimeStamp: 00:00:01.113
+	Last TimeStamp: 00:00:03.113
+	Dead Flow: 0
+Row:1  View:Flow Statistics  Sampled:2022-01-18 10:01:44.553544 UTC
+	Tx Port: Port_0
+	Rx Port: Port_1
+	Traffic Item: Traffic Item 1
+	VLAN:VLAN Priority: 1
+	Flow Group: Traffic Item 1-EndpointSet-4 - Flow Group 0001
+	Tx Frames: 30638
+	Rx Frames: 30638
+	Frames Delta: 0
+	Loss %: 0.000
+	Tx Frame Rate: 0.000
+	Rx Frame Rate: 0.000
+	Tx L1 Rate bps: 0.000
+	Rx L1 Rate bps: 0.000
+	Rx Bytes: 30638000
+	Tx Rate Bps: 0.000
+	Rx Rate Bps: 0.000
+	Tx Rate bps: 0.000
+	Rx Rate bps: 0.000
+	Tx Rate Kbps: 0.000
+	Rx Rate Kbps: 0.000
+	Tx Rate Mbps: 0.000
+	Rx Rate Mbps: 0.000
+	Store-Forward Avg Latency ns: 1444
+	Store-Forward Min Latency ns: 1422
+	Store-Forward Max Latency ns: 2175
+	First TimeStamp: 00:00:01.113
+	Last TimeStamp: 00:00:03.113
+	Dead Flow: 0
+Row:2  View:Flow Statistics  Sampled:2022-01-18 10:01:44.553544 UTC
+	Tx Port: Port_0
+	Rx Port: Port_1
+	Traffic Item: Traffic Item 1
+	VLAN:VLAN Priority: 2
+	Flow Group: Traffic Item 1-EndpointSet-4 - Flow Group 0001
+	Tx Frames: 30637
+	Rx Frames: 30637
+	Frames Delta: 0
+	Loss %: 0.000
+	Tx Frame Rate: 0.000
+	Rx Frame Rate: 0.000
+	Tx L1 Rate bps: 0.000
+	Rx L1 Rate bps: 0.000
+	Rx Bytes: 30637000
+	Tx Rate Bps: 0.000
+	Rx Rate Bps: 0.000
+	Tx Rate bps: 0.000
+	Rx Rate bps: 0.000
+	Tx Rate Kbps: 0.000
+	Rx Rate Kbps: 0.000
+	Tx Rate Mbps: 0.000
+	Rx Rate Mbps: 0.000
+	Store-Forward Avg Latency ns: 1439
+	Store-Forward Min Latency ns: 1422
+	Store-Forward Max Latency ns: 2175
+	First TimeStamp: 00:00:01.113
+	Last TimeStamp: 00:00:03.113
+	Dead Flow: 0
+Row:3  View:Flow Statistics  Sampled:2022-01-18 10:01:44.553544 UTC
+	Tx Port: Port_0
+	Rx Port: Port_1
+	Traffic Item: Traffic Item 1
+	VLAN:VLAN Priority: 3
+	Flow Group: Traffic Item 1-EndpointSet-4 - Flow Group 0001
+	Tx Frames: 30637
+	Rx Frames: 30637
+	Frames Delta: 0
+	Loss %: 0.000
+	Tx Frame Rate: 0.000
+	Rx Frame Rate: 0.000
+	Tx L1 Rate bps: 0.000
+	Rx L1 Rate bps: 0.000
+	Rx Bytes: 30637000
+	Tx Rate Bps: 0.000
+	Rx Rate Bps: 0.000
+	Tx Rate bps: 0.000
+	Rx Rate bps: 0.000
+	Tx Rate Kbps: 0.000
+	Rx Rate Kbps: 0.000
+	Tx Rate Mbps: 0.000
+	Rx Rate Mbps: 0.000
+	Store-Forward Avg Latency ns: 1444
+	Store-Forward Min Latency ns: 1422
+	Store-Forward Max Latency ns: 2157
+	First TimeStamp: 00:00:01.113
+	Last TimeStamp: 00:00:03.113
+	Dead Flow: 0
+Row:4  View:Flow Statistics  Sampled:2022-01-18 10:01:44.553544 UTC
+	Tx Port: Port_0
+	Rx Port: Port_1
+	Traffic Item: Traffic Item 1
+	VLAN:VLAN Priority: 4
+	Flow Group: Traffic Item 1-EndpointSet-4 - Flow Group 0001
+	Tx Frames: 30637
+	Rx Frames: 30637
+	Frames Delta: 0
+	Loss %: 0.000
+	Tx Frame Rate: 0.000
+	Rx Frame Rate: 0.000
+	Tx L1 Rate bps: 0.000
+	Rx L1 Rate bps: 0.000
+	Rx Bytes: 30637000
+	Tx Rate Bps: 0.000
+	Rx Rate Bps: 0.000
+	Tx Rate bps: 0.000
+	Rx Rate bps: 0.000
+	Tx Rate Kbps: 0.000
+	Rx Rate Kbps: 0.000
+	Tx Rate Mbps: 0.000
+	Rx Rate Mbps: 0.000
+	Store-Forward Avg Latency ns: 1439
+	Store-Forward Min Latency ns: 1422
+	Store-Forward Max Latency ns: 2157
+	First TimeStamp: 00:00:01.113
+	Last TimeStamp: 00:00:03.113
+	Dead Flow: 0
+Row:5  View:Flow Statistics  Sampled:2022-01-18 10:01:44.553544 UTC
+	Tx Port: Port_0
+	Rx Port: Port_1
+	Traffic Item: Traffic Item 1
+	VLAN:VLAN Priority: 5
+	Flow Group: Traffic Item 1-EndpointSet-4 - Flow Group 0001
+	Tx Frames: 30637
+	Rx Frames: 30637
+	Frames Delta: 0
+	Loss %: 0.000
+	Tx Frame Rate: 0.000
+	Rx Frame Rate: 0.000
+	Tx L1 Rate bps: 0.000
+	Rx L1 Rate bps: 0.000
+	Rx Bytes: 30637000
+	Tx Rate Bps: 0.000
+	Rx Rate Bps: 0.000
+	Tx Rate bps: 0.000
+	Rx Rate bps: 0.000
+	Tx Rate Kbps: 0.000
+	Rx Rate Kbps: 0.000
+	Tx Rate Mbps: 0.000
+	Rx Rate Mbps: 0.000
+	Store-Forward Avg Latency ns: 1444
+	Store-Forward Min Latency ns: 1422
+	Store-Forward Max Latency ns: 2157
+	First TimeStamp: 00:00:01.113
+	Last TimeStamp: 00:00:03.113
+	Dead Flow: 0
+Row:6  View:Flow Statistics  Sampled:2022-01-18 10:01:44.553544 UTC
+	Tx Port: Port_0
+	Rx Port: Port_1
+	Traffic Item: Traffic Item 1
+	VLAN:VLAN Priority: 6
+	Flow Group: Traffic Item 1-EndpointSet-4 - Flow Group 0001
+	Tx Frames: 1111.1111
+	Rx Frames: 2222.2222
+	Frames Delta: 3333.3333
+	Loss %: 4444.4444
+	Tx Frame Rate: 5555.5555
+	Rx Frame Rate: 6666.6666
+	Tx L1 Rate bps: 7777.7777
+	Rx L1 Rate bps: 8888.8888
+	Rx Bytes: 9999.9999
+	Tx Rate Bps: 10101010.10101010
+	Rx Rate Bps: 11111111.11111111
+	Tx Rate bps: 12121212.12121212
+	Rx Rate bps: 13131313.13131313
+	Tx Rate Kbps: 14141414.14141414
+	Rx Rate Kbps: 15151515.15151515
+	Tx Rate Mbps: 16161616.16161616
+	Rx Rate Mbps: 17171717.17171717
+	Store-Forward Avg Latency ns: 18181818.18181818
+	Store-Forward Min Latency ns: 19191919.19191919
+	Store-Forward Max Latency ns: 20202020.20202020
+	First TimeStamp: 00:00:01.113
+	Last TimeStamp: 00:00:03.113
+	Dead Flow: 21212121.21212121
+Row:7  View:Flow Statistics  Sampled:2022-01-18 10:01:44.553544 UTC
+	Tx Port: Port_0
+	Rx Port: Port_1
+	Traffic Item: Traffic Item 1
+	VLAN:VLAN Priority: 7
+	Flow Group: Traffic Item 1-EndpointSet-4 - Flow Group 0001
+	Tx Frames: 30637
+	Rx Frames: 30637
+	Frames Delta: 0
+	Loss %: 0.000
+	Tx Frame Rate: 0.000
+	Rx Frame Rate: 0.000
+	Tx L1 Rate bps: 0.000
+	Rx L1 Rate bps: 0.000
+	Rx Bytes: 30637000
+	Tx Rate Bps: 0.000
+	Rx Rate Bps: 0.000
+	Tx Rate bps: 0.000
+	Rx Rate bps: 0.000
+	Tx Rate Kbps: 0.000
+	Rx Rate Kbps: 0.000
+	Tx Rate Mbps: 0.000
+	Rx Rate Mbps: 0.000
+	Store-Forward Avg Latency ns: 1444
+	Store-Forward Min Latency ns: 1422
+	Store-Forward Max Latency ns: 2142
+	First TimeStamp: 00:00:01.113
+	Last TimeStamp: 00:00:03.113
+	Dead Flow: 0
+

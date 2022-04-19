@@ -1,0 +1,23 @@
+|********************************************************************************|
+| Tested by	:	Marco Condori
+| Date		:	mar 02 nov 2021 09:06:11 CET
+|********************************************************************************|
+| Serial number  :  1234-567A                                                    |
+| Product model  :  S3508                                                        |
+| Product version  :  21.2.beta1                                                 |
+| Device name  :  S3508                                                          |
+| Device location  :  soc-e                                                      |
+| Contact info  :  support@relyum.com                                            |
+|--------------------------------------------------------------------------------|
+| HPS:
+| Core version  :  21.01.1200                                                    |
+|--------------------------------------------------------------------------------|
+| SWITCH:
+| Core version  :  21.07.1600                                                    |
+|--------------------------------------------------------------------------------|
+|
+|
+|
+|
+[+] Info: 	Capturing MGT_PORT (eth3) [parallel process] 
+[+] Info: 	Sending Reserved [01:80:c2:00:00:00] Multicast traffic through IF1 

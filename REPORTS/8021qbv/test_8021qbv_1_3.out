@@ -1,0 +1,47 @@
+|********************************************************************************|
+| Tested by	:	Marco Condori
+| Date		:	mar 18 ene 2022 15:46:49 CET
+|********************************************************************************|
+| Serial number  :  0123456789                                                   |
+| Product model  :  RELY_TSN_PCIE                                                |
+| Product version  :  21.1.0beta1                                                |
+| Device name  :  RELY_TSN_PCIe                                                  |
+| Device location  :  Relyum                                                     |
+| Contact info  :  support@relyum.com                                            |
+|--------------------------------------------------------------------------------|
+| HPS:
+| SWITCH:
+| Core version  :  21.01.1100                                                    |
+|--------------------------------------------------------------------------------|
+|
+|
+|
+[+] Info: 	Reading Flow Statistics Results  
+[+] Info: 	Getting Flow statistics report file from IXIA VM (saved in REPORTS/8021qbv/test_8021qbv_1_3.stats )  
+soce_cli# ieee8021qbv get_config_change_time PORT_1
+|--------------------------------------------------------------------------------|
+| Config change time seconds  :  1622478047                                      |
+| Config change time nanoseconds  :  418100000                                   |
+|--------------------------------------------------------------------------------|
+soce_cli# ieee8021qbv get_oper_configuration PORT_1
+|--------------------------------------------------------------------------------|
+| Operative gate states  :  1                                                    |
+| Operative cycle time (ns)  :  1000000                                          |
+| Operative cycle time extension (ns)  :  8                                      |
+| Operative base time seconds  :  0                                              |
+| Operative base time nanoseconds  :  100000                                     |
+|--------------------------------------------------------------------------------|
+| Gate control list entries  :  2                                                |
+|--------------------------------------------------------------------------------|
+|      Operative GCL index  :  0                                                 |
+|      Operative GCL gate states  :  1                                           |
+|      Administrative GCL operation name  :  set-gate-states                     |
+|      Operative GCL time interval  :  500000                                    |
+|--------------------------------------------------------------------------------|
+|      Operative GCL index  :  1                                                 |
+|      Operative GCL gate states  :  0                                           |
+|      Administrative GCL operation name  :  set-gate-states                     |
+|      Operative GCL time interval  :  500000                                    |
+|--------------------------------------------------------------------------------|
+soce_cli# 
+

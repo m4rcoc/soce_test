@@ -1,0 +1,1548 @@
+{
+    "gateEnabled": true,
+    "gateStates": 255,
+    "cycleTimeNumerator": 1000000,
+    "cycleTimeDenominator": 1000000000,
+    "cycleTimeExtension": 8,
+    "baseTimeSeconds": 0,
+    "baseTimeNanoseconds": 0,
+    "gateControlList": [
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 64
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 751120,
+            "gateStates": 0
+        },
+
+        {
+            "operationName": "set-gate-states",
+            "timeInterval": 976,
+            "gateStates": 128
+        }
+    ]
+
+}

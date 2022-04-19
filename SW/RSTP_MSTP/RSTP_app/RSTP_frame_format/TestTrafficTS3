@@ -1,0 +1,17 @@
+TestTrafficTS3
+
+These frames each contain a unique Source MAC Address
+
+Interface		=Ethernet
+Duration(s)		=5
+Interval(frames/s)	=0.5
+MAC_dst 		=00:98:76:54:32:10
+MAC_src			=00:BF:C7:53:DA:7A
+ethertypeType		=0x0064
+size			=60
+
+
+
+
+01:80:C2:00:00:00
+F4:8E:38:8C:52:F0
